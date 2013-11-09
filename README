@@ -1,0 +1,8 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4765
+
+The files contained in the compressed archive provide syntax highlighting for Axiom CAS input files.
+
+Pamphlet files are also supported: you can thus have latex syntax highlight in latex text and Axiom syntax highlight in Axiom code inserted inside a "chunk" environment.
+
+For another syntax file for axiom, see also
+http://axiom-wiki.newsynthesis.org/AxiomInVim
