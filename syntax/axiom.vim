@@ -6,6 +6,8 @@
 " Usage      : See the README file
 "
 " History
+"  20131111 fabio   1.1 Clean up; redefined hilights as keyword instead
+"			that match when possible
 "  20131109 fabio   1.0 Added support for pamphlet files and made some
 "			cleaning
 "  20051116 fabio   0.9 Made some improvements
@@ -15,6 +17,9 @@
 "
 " The latest version of this file will always be available at
 " http://www.vim.org
+" 
+" for another syntax file for axiom see:
+" http://axiom-wiki.newsynthesis.org/AxiomInVim
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
@@ -26,10 +31,11 @@
 
 " builtin categories, domains, packages and operations
 " choose which words you want to be highlighted
-"source $HOME/.vim/syntax/axiom/categories.vim  
+source $HOME/.vim/syntax/axiom/categories.vim  
 source $HOME/.vim/syntax/axiom/domains.vim
-"source $HOME/.vim/syntax/axiom/packages.vim
-source $HOME/.vim/syntax/axiom/operations.vim
+source $HOME/.vim/syntax/axiom/packages.vim
+source $HOME/.vim/syntax/axiom/operations-keyword.vim
+source $HOME/.vim/syntax/axiom/operations-match.vim
 
 
 if version < 600
@@ -39,19 +45,13 @@ else
 endif
 
 
+syn match axComma	"[,;]"
+
 " parenthesis/curly/brace sanity checker
-syn region axZone	matchgroup=Delimiter start="(" end=")" transparent contains=ALLBUT,axError,axErrorBrace,axErrorCurly
-syn region axZone	matchgroup=Delimiter start="{" end="}" transparent contains=ALLBUT,axError,axErrorBrace,axErrorParen
-syn region axZone	matchgroup=Delimiter start="\[" end="]" transparent contains=ALLBUT,axError,axErrorCurly,axErrorParen
-syn match axErrorBrace	"[)}]"	contained
-syn match axErrorCurly	"[)\]]"	contained
-syn match axErrorParen	"[\]}]"	contained
-syn match axError	"[)\]}]"
 syn region axZone	matchgroup=Delimiter start="("  end=")" transparent contains=ALLBUT,axError,axErrorBrace,axErrorCurly
 syn region axZone	matchgroup=Delimiter start="{"  end="}" transparent contains=ALLBUT,axError,axErrorBrace,axErrorParen
 syn region axZone	matchgroup=Delimiter start="\[" end="]" transparent contains=ALLBUT,axError,axErrorCurly,axErrorParen
-syn match axError		"[)\]}]"
-syn match axComma		"[,;:]"
+syn match axError	"[)\]}]"
 syn match axErrorBrace	"[)}]"	contained
 syn match axErrorCurly	"[)\]]"	contained
 syn match axErrorParen	"[\]}]"	contained
@@ -129,7 +129,7 @@ if version >= 508 || !exists("did_axiom_syntax_inits")
 " Choose here your favourite colors for the respective fields
 
 	HiLink	axAssign	magenta
-	HiLink	axChunk 	magentainv
+	HiLink	axChunk 	lightmagenta
 	HiLink	axComma 	lightred
 	HiLink	axComment	cyan
 	HiLink	axCond		lightgreen
@@ -140,7 +140,7 @@ if version >= 508 || !exists("did_axiom_syntax_inits")
 	HiLink	axErrorCurly	redinv
 	HiLink	axErrorParen	redinv
 	HiLink	axErrorSemi	redinv
-	HiLink	axExit 		yellowinv
+	HiLink	axExit 		lightblue
 	HiLink	axMacro		yellow
 	HiLink	axOutput	lightblue
 	HiLink	axRange 	green
@@ -148,7 +148,7 @@ if version >= 508 || !exists("did_axiom_syntax_inits")
 
 	HiLink	axCategory	yellow
 	HiLink	axDomain	yellow
-	HiLink	axOperation	yellow
+	HiLink	axOperation	lightyellow
 	HiLink	axPackage	yellow
 delcommand HiLink
 endif

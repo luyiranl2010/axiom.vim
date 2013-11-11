@@ -4,7 +4,8 @@ This package is formed by the following files:
 ├── axiom
 │   ├── categories.vim
 │   ├── domains.vim
-│   ├── operations.vim
+│   ├── operations-keyword.vim
+│   ├── operations-match.vim
 │   └── packages.vim
 ├── README.axiom
 ├── axiom.vim
