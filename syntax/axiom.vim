@@ -6,6 +6,10 @@
 " Usage      : See the README file
 "
 " History
+"  20131112 fabio   1.2 Added strict magic control in regexps
+"			Added syntax for system commands
+"  			Added instructions to create owns 
+"			[categories|commands|domains|packages|operations].vim
 "  20131111 fabio   1.1 Clean up; redefined hilights as keyword instead
 "			that match when possible
 "  20131109 fabio   1.0 Added support for pamphlet files and made some
@@ -29,62 +33,66 @@
 "  finish
 "endif
 
+
+
+if version < 600
+  set iskeyword=48-57,_,a-z,A-Z,&,!,?
+else
+  setlocal iskeyword=48-57,_,a-z,A-Z,&,!,?
+endif
+
+
+syn match axComma	"\v[,;]"
+
+" parenthesis/curly/brace sanity checker
+syn region axZone	matchgroup=Delimiter start="\V("  end="\V)" transparent contains=ALLBUT,axError,axErrorBrace,axErrorCurly
+syn region axZone	matchgroup=Delimiter start="\V{"  end="\V}" transparent contains=ALLBUT,axError,axErrorBrace,axErrorParen
+syn region axZone	matchgroup=Delimiter start="\V[" end="\V]" transparent contains=ALLBUT,axError,axErrorCurly,axErrorParen
+syn match axError	"\v[)\]}]"
+syn match axErrorBrace	"\v[)}]"	contained
+syn match axErrorCurly	"\v[)\]]"	contained
+syn match axErrorParen	"\v[\]}]"	contained
+"syn match axErrorSemi	"\V;"    contained
+
 " builtin categories, domains, packages and operations
 " choose which words you want to be highlighted
 source $HOME/.vim/syntax/axiom/categories.vim  
 source $HOME/.vim/syntax/axiom/domains.vim
 source $HOME/.vim/syntax/axiom/packages.vim
-source $HOME/.vim/syntax/axiom/operations-keyword.vim
-source $HOME/.vim/syntax/axiom/operations-match.vim
-
-
-if version < 600
-  set iskeyword=48-57,_,a-z,A-Z,-,&,!,?
-else
-  setlocal iskeyword=48-57,_,a-z,A-Z,-,&,!,?
-endif
-
-
-syn match axComma	"[,;]"
-
-" parenthesis/curly/brace sanity checker
-syn region axZone	matchgroup=Delimiter start="("  end=")" transparent contains=ALLBUT,axError,axErrorBrace,axErrorCurly
-syn region axZone	matchgroup=Delimiter start="{"  end="}" transparent contains=ALLBUT,axError,axErrorBrace,axErrorParen
-syn region axZone	matchgroup=Delimiter start="\[" end="]" transparent contains=ALLBUT,axError,axErrorCurly,axErrorParen
-syn match axError	"[)\]}]"
-syn match axErrorBrace	"[)}]"	contained
-syn match axErrorCurly	"[)\]]"	contained
-syn match axErrorParen	"[\]}]"	contained
-syn match axErrorSemi	"[;]"	contained
+source $HOME/.vim/syntax/axiom/operations.vim
+source $HOME/.vim/syntax/axiom/commands.vim  
 
 " Builtin constants 
-syn match axMacro "%e"
-syn match axMacro "%i"
-syn match axMacro "%infinity"
-syn match axMacro "%minusInfinity"
-syn match axMacro "%pi"
-syn match axMacro "%plusInfinity"
-syn match axMacro "SF"
+syn match axMacro "\V%e"
+syn match axMacro "\V%i"
+syn match axMacro "\V%infinity"
+syn match axMacro "\V%minusInfinity"
+syn match axMacro "\V%pi"
+syn match axMacro "\V%plusInfinity"
+syn match axMacro "\VSF"
 
 " Statements
 syn keyword axCond	for while if 
 syn keyword axCondCtrl 	then elif else elseif repeat by in
-syn match   axRange 	"\.\."
+syn match   axRange 	"\V.."
 syn keyword axExit	iterate break return error 
-syn match   axExit 	"=>"
+syn match   axExit 	"\V=>"
 syn keyword axOutput	print 
 syn keyword axOutput	output 
-syn match   axAssign	":"  
-syn match   axAssign	":="  
-syn match   axDefProc	"->"  
-syn match   axDefProc	"+->"  
-syn match   axDefProc	"==" 
-syn match   axDefProc	"==>" 
+syn match   axAssign	"\V:"  
+syn match   axAssign	"\V:="  
+syn match   axCall	"\V::"  
+syn match   axCall	"\V@"  
+syn match   axCall	"\V$"  
+syn match   axDefProc	"\V->"  
+syn match   axDefProc	"\V+->"  
+syn match   axDefProc	"\V==" 
+syn match   axDefProc	"\V==>" 
 
 " Comments and tools.
-syn region axComment	start="++" end="$" 	oneline
-syn region axComment	start="--" end="$" 	oneline
-syn region axString	start=+"+  end=+"+	oneline
+syn region axComment	start="\V++" end="\v$" 	oneline
+syn region axComment	start="\V--" end="\v$" 	oneline
+syn region axString	start=+\V"+  end=+\V"+	oneline
 
 " Definition of colors
 " It would be better to use standard highlight groups... 
@@ -128,13 +136,15 @@ if version >= 508 || !exists("did_axiom_syntax_inits")
 
 " Choose here your favourite colors for the respective fields
 
-	HiLink	axAssign	magenta
+	HiLink	axAssign	lightcyan
+	HiLink	axCall 		lightcyan
 	HiLink	axChunk 	lightmagenta
 	HiLink	axComma 	lightred
+	HiLink	axCommand 	magenta
 	HiLink	axComment	cyan
 	HiLink	axCond		lightgreen
 	HiLink	axCondCtrl	green
-	HiLink	axDefProc	magenta
+	HiLink	axDefProc	lightcyan
 	HiLink	axError		redinv
 	HiLink	axErrorBrace	redinv
 	HiLink	axErrorCurly	redinv

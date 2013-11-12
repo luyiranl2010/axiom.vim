@@ -1,1036 +1,518 @@
-syn keyword axPackage AF
-syn keyword axPackage AlgebraicFunction
-syn keyword axPackage AFALGGRO
-syn keyword axPackage AffineAlgebraicSetComputeWithGroebnerBasis
-syn keyword axPackage AFALGRES
-syn keyword axPackage AffineAlgebraicSetComputeWithResultant
-syn keyword axPackage ALGFACT
-syn keyword axPackage AlgFactor
-syn keyword axPackage ALGMANIP
-syn keyword axPackage AlgebraicManipulations
-syn keyword axPackage ALGMFACT
-syn keyword axPackage AlgebraicMultFact
-syn keyword axPackage ALGPKG
-syn keyword axPackage AlgebraPackage
-syn keyword axPackage ANY1
-syn keyword axPackage AnyFunctions1
-syn keyword axPackage API
-syn keyword axPackage ApplicationProgramInterface
-syn keyword axPackage APPLYORE
-syn keyword axPackage ApplyUnivariateSkewPolynomial
-syn keyword axPackage APPRULE
-syn keyword axPackage ApplyRules
-syn keyword axPackage ARRAY12
-syn keyword axPackage OneDimensionalArrayFunctions2
-syn keyword axPackage ASSOCEQ
-syn keyword axPackage AssociatedEquations
-syn keyword axPackage AXSERV
-syn keyword axPackage AxiomServer
-syn keyword axPackage BALFACT
-syn keyword axPackage BalancedFactorisation
-syn keyword axPackage BEZIER
-syn keyword axPackage Bezier
-syn keyword axPackage BEZOUT
-syn keyword axPackage BezoutMatrix
-syn keyword axPackage BLAS1
-syn keyword axPackage BlasLevelOne
-syn keyword axPackage BLUPPACK
-syn keyword axPackage BlowUpPackage
-syn keyword axPackage BOP1
-syn keyword axPackage BasicOperatorFunctions1
-syn keyword axPackage BOUNDZRO
-syn keyword axPackage BoundIntegerRoots
-syn keyword axPackage BRILL
-syn keyword axPackage BrillhartTests
-syn keyword axPackage CARTEN2
-syn keyword axPackage CartesianTensorFunctions2
-syn keyword axPackage CDEN
-syn keyword axPackage CommonDenominator
-syn keyword axPackage CHARPOL
-syn keyword axPackage CharacteristicPolynomialPackage
-syn keyword axPackage CHVAR
-syn keyword axPackage ChangeOfVariable
-syn keyword axPackage CINTSLPE
-syn keyword axPackage ComplexIntegerSolveLinearPolynomialEquation
-syn keyword axPackage CLIP
-syn keyword axPackage TwoDimensionalPlotClipping
-syn keyword axPackage CMPLXRT
-syn keyword axPackage ComplexRootPackage
-syn keyword axPackage COMBF
-syn keyword axPackage CombinatorialFunction
-syn keyword axPackage COMBINAT
-syn keyword axPackage IntegerCombinatoricFunctions
-syn keyword axPackage COMMONOP
-syn keyword axPackage CommonOperators
-syn keyword axPackage COMMUPC
-syn keyword axPackage CommuteUnivariatePolynomialCategory
-syn keyword axPackage COMPFACT
-syn keyword axPackage ComplexFactorization
-syn keyword axPackage COMPLEX2
-syn keyword axPackage ComplexFunctions2
-syn keyword axPackage COMPLPAT
-syn keyword axPackage ComplexPattern
-syn keyword axPackage COORDSYS
-syn keyword axPackage CoordinateSystems
-syn keyword axPackage CPIMA
-syn keyword axPackage CharacteristicPolynomialInMonogenicalAlgebra
-syn keyword axPackage CPMATCH
-syn keyword axPackage ComplexPatternMatch
-syn keyword axPackage CRAPACK
-syn keyword axPackage CRApackage
-syn keyword axPackage CRFP
-syn keyword axPackage ComplexRootFindingPackage
-syn keyword axPackage CSTTOOLS
-syn keyword axPackage CyclicStreamTools
-syn keyword axPackage CTRIGMNP
-syn keyword axPackage ComplexTrigonometricManipulations
-syn keyword axPackage CVMP
-syn keyword axPackage CoerceVectorMatrixPackage
-syn keyword axPackage CYCLES
-syn keyword axPackage CycleIndicators
-syn keyword axPackage CYCLOTOM
-syn keyword axPackage CyclotomicPolynomialPackage
-syn keyword axPackage D01AGNT
-syn keyword axPackage d01AgentsPackage
-syn keyword axPackage D01WGTS
-syn keyword axPackage d01WeightsPackage
-syn keyword axPackage D02AGNT
-syn keyword axPackage d02AgentsPackage
-syn keyword axPackage D03AGNT
-syn keyword axPackage d03AgentsPackage
-syn keyword axPackage DBLRESP
-syn keyword axPackage DoubleResultantPackage
-syn keyword axPackage DDFACT
-syn keyword axPackage DistinctDegreeFactorize
-syn keyword axPackage DEFINTEF
-syn keyword axPackage ElementaryFunctionDefiniteIntegration
-syn keyword axPackage DEFINTRF
-syn keyword axPackage RationalFunctionDefiniteIntegration
-syn keyword axPackage DEGRED
-syn keyword axPackage DegreeReductionPackage
-syn keyword axPackage DFINTTLS
-syn keyword axPackage DefiniteIntegrationTools
-syn keyword axPackage DFSFUN
-syn keyword axPackage DoubleFloatSpecialFunctions
-syn keyword axPackage DIOSP
-syn keyword axPackage DiophantineSolutionPackage
-syn keyword axPackage DIRPROD2
-syn keyword axPackage DirectProductFunctions2
-syn keyword axPackage DISPLAY
-syn keyword axPackage DisplayPackage
-syn keyword axPackage DLP
-syn keyword axPackage DiscreteLogarithmPackage
-syn keyword axPackage DRAW
-syn keyword axPackage TopLevelDrawFunctions
-syn keyword axPackage DRAWCFUN
-syn keyword axPackage TopLevelDrawFunctionsForCompiledFunctions
-syn keyword axPackage DRAWCURV
-syn keyword axPackage TopLevelDrawFunctionsForAlgebraicCurves
-syn keyword axPackage DRAWCX
-syn keyword axPackage DrawComplex
-syn keyword axPackage DRAWHACK
-syn keyword axPackage DrawNumericHack
-syn keyword axPackage DRAWPT
-syn keyword axPackage TopLevelDrawFunctionsForPoints
-syn keyword axPackage DROPT0
-syn keyword axPackage DrawOptionFunctions0
-syn keyword axPackage DROPT1
-syn keyword axPackage DrawOptionFunctions1
-syn keyword axPackage DTP
-syn keyword axPackage DesingTreePackage
-syn keyword axPackage E04AGNT
-syn keyword axPackage e04AgentsPackage
-syn keyword axPackage EEA
-syn keyword axPackage ExtendedEuclideanAlgorithm
-syn keyword axPackage EF
-syn keyword axPackage ElementaryFunction
-syn keyword axPackage EFSTRUC
-syn keyword axPackage ElementaryFunctionStructurePackage
-syn keyword axPackage ELFUTS
-syn keyword axPackage EllipticFunctionsUnivariateTaylorSeries
-syn keyword axPackage EP
-syn keyword axPackage EigenPackage
-syn keyword axPackage EQ2
-syn keyword axPackage EquationFunctions2
-syn keyword axPackage ERROR
-syn keyword axPackage ErrorFunctions
-syn keyword axPackage ES1
-syn keyword axPackage ExpressionSpaceFunctions1
-syn keyword axPackage ES2
-syn keyword axPackage ExpressionSpaceFunctions2
-syn keyword axPackage ESCONT
-syn keyword axPackage ExpertSystemContinuityPackage
-syn keyword axPackage ESCONT1
-syn keyword axPackage ExpertSystemContinuityPackage1
-syn keyword axPackage ESTOOLS
-syn keyword axPackage ExpertSystemToolsPackage
-syn keyword axPackage ESTOOLS1
-syn keyword axPackage ExpertSystemToolsPackage1
-syn keyword axPackage ESTOOLS2
-syn keyword axPackage ExpertSystemToolsPackage2
-syn keyword axPackage EVALCYC
-syn keyword axPackage EvaluateCycleIndicators
-syn keyword axPackage EXP3D
-syn keyword axPackage Export3D
-syn keyword axPackage EXPR2
-syn keyword axPackage ExpressionFunctions2
-syn keyword axPackage EXPR2UPS
-syn keyword axPackage ExpressionToUnivariatePowerSeries
-syn keyword axPackage EXPRODE
-syn keyword axPackage ExpressionSpaceODESolver
-syn keyword axPackage EXPRSOL
-syn keyword axPackage ExpressionSolve
-syn keyword axPackage EXPRTUBE
-syn keyword axPackage ExpressionTubePlot
-syn keyword axPackage FACTEXT
-syn keyword axPackage FactorisationOverPseudoAlgebraicClosureOfAlgExtOfRationalNumber
-syn keyword axPackage FACTFUNC
-syn keyword axPackage FactoredFunctions
-syn keyword axPackage FACTRN
-syn keyword axPackage FactorisationOverPseudoAlgebraicClosureOfRationalNumber
-syn keyword axPackage FACUTIL
-syn keyword axPackage FactoringUtilities
-syn keyword axPackage FAMR2
-syn keyword axPackage FiniteAbelianMonoidRingFunctions2
-syn keyword axPackage FCPAK1
-syn keyword axPackage FortranCodePackage1
-syn keyword axPackage FDIV2
-syn keyword axPackage FiniteDivisorFunctions2
-syn keyword axPackage FFCAT2
-syn keyword axPackage FunctionFieldCategoryFunctions2
-syn keyword axPackage FFF
-syn keyword axPackage FiniteFieldFunctions
-syn keyword axPackage FFFACTSE
-syn keyword axPackage FiniteFieldFactorizationWithSizeParseBySideEffect
-syn keyword axPackage FFFG
-syn keyword axPackage FractionFreeFastGaussian
-syn keyword axPackage FFFGF
-syn keyword axPackage FractionFreeFastGaussianFractions
-syn keyword axPackage FFHOM
-syn keyword axPackage FiniteFieldHomomorphisms
-syn keyword axPackage FFINTBAS
-syn keyword axPackage FunctionFieldIntegralBasis
-syn keyword axPackage FFPOLY
-syn keyword axPackage FiniteFieldPolynomialPackage
-syn keyword axPackage FFPOLY2
-syn keyword axPackage FiniteFieldPolynomialPackage2
-syn keyword axPackage FFSLPE
-syn keyword axPackage FiniteFieldSolveLinearPolynomialEquation
-syn keyword axPackage FFSQFR
-syn keyword axPackage FiniteFieldSquareFreeDecomposition
-syn keyword axPackage FGLMICPK
-syn keyword axPackage FGLMIfCanPackage
-syn keyword axPackage FLAGG2
-syn keyword axPackage FiniteLinearAggregateFunctions2
-syn keyword axPackage FLASORT
-syn keyword axPackage FiniteLinearAggregateSort
-syn keyword axPackage FLOATCP
-syn keyword axPackage FloatingComplexPackage
-syn keyword axPackage FLOATRP
-syn keyword axPackage FloatingRealPackage
-syn keyword axPackage FOP
-syn keyword axPackage FortranOutputStackPackage
-syn keyword axPackage FORDER
-syn keyword axPackage FindOrderFinite
-syn keyword axPackage FORMULA1
-syn keyword axPackage ScriptFormulaFormat1
-syn keyword axPackage FORT
-syn keyword axPackage FortranPackage
-syn keyword axPackage FR2
-syn keyword axPackage FactoredFunctions2
-syn keyword axPackage FRAC2
-syn keyword axPackage FractionFunctions2
-syn keyword axPackage FRIDEAL2
-syn keyword axPackage FractionalIdealFunctions2
-syn keyword axPackage FRNAAF2
-syn keyword axPackage FramedNonAssociativeAlgebraFunctions2
-syn keyword axPackage FRUTIL
-syn keyword axPackage FactoredFunctionUtilities
-syn keyword axPackage FS2
-syn keyword axPackage FunctionSpaceFunctions2
-syn keyword axPackage FS2EXPXP
-syn keyword axPackage FunctionSpaceToExponentialExpansion
-syn keyword axPackage FS2UPS
-syn keyword axPackage FunctionSpaceToUnivariatePowerSeries
-syn keyword axPackage FSAGG2
-syn keyword axPackage FiniteSetAggregateFunctions2
-syn keyword axPackage FSCINT
-syn keyword axPackage FunctionSpaceComplexIntegration
-syn keyword axPackage FSINT
-syn keyword axPackage FunctionSpaceIntegration
-syn keyword axPackage FSPECF
-syn keyword axPackage FunctionalSpecialFunction
-syn keyword axPackage FSPRMELT
-syn keyword axPackage FunctionSpacePrimitiveElement
-syn keyword axPackage FSRED
-syn keyword axPackage FunctionSpaceReduce
-syn keyword axPackage FSUPFACT
-syn keyword axPackage FunctionSpaceUnivariatePolynomialFactor
-syn keyword axPackage GALFACT
-syn keyword axPackage GaloisGroupFactorizer
-syn keyword axPackage GALFACTU
-syn keyword axPackage GaloisGroupFactorizationUtilities
-syn keyword axPackage GALPOLYU
-syn keyword axPackage GaloisGroupPolynomialUtilities
-syn keyword axPackage GALUTIL
-syn keyword axPackage GaloisGroupUtilities
-syn keyword axPackage GAUSSFAC
-syn keyword axPackage GaussianFactorizationPackage
-syn keyword axPackage GB
-syn keyword axPackage GroebnerPackage
-syn keyword axPackage GBEUCLID
-syn keyword axPackage EuclideanGroebnerBasisPackage
-syn keyword axPackage GBF
-syn keyword axPackage GroebnerFactorizationPackage
-syn keyword axPackage GBINTERN
-syn keyword axPackage GroebnerInternalPackage
-syn keyword axPackage GDRAW
-syn keyword axPackage GnuDraw
-syn keyword axPackage GENEEZ
-syn keyword axPackage GenExEuclid
-syn keyword axPackage GENMFACT
-syn keyword axPackage GeneralizedMultivariateFactorize
-syn keyword axPackage GENPGCD
-syn keyword axPackage GeneralPolynomialGcdPackage
-syn keyword axPackage GENUFACT
-syn keyword axPackage GenUFactorize
-syn keyword axPackage GENUPS
-syn keyword axPackage GenerateUnivariatePowerSeries
-syn keyword axPackage GHENSEL
-syn keyword axPackage GeneralHenselPackage
-syn keyword axPackage GOSPER
-syn keyword axPackage GosperSummationMethod
-syn keyword axPackage GPAFF
-syn keyword axPackage GeneralPackageForAlgebraicFunctionField
-syn keyword axPackage GRAY
-syn keyword axPackage GrayCode
-syn keyword axPackage GRDEF
-syn keyword axPackage GraphicsDefaults
-syn keyword axPackage GROEBSOL
-syn keyword axPackage GroebnerSolve
-syn keyword axPackage GUESS
-syn keyword axPackage Guess
-syn keyword axPackage GUESSAN
-syn keyword axPackage GuessAlgebraicNumber
-syn keyword axPackage GUESSF
-syn keyword axPackage GuessFinite
-syn keyword axPackage GUESSF1
-syn keyword axPackage GuessFiniteFunctions
-syn keyword axPackage GUESSINT
-syn keyword axPackage GuessInteger
-syn keyword axPackage GUESSP
-syn keyword axPackage GuessPolynomial
-syn keyword axPackage GUESSUP
-syn keyword axPackage GuessUnivariatePolynomial
-syn keyword axPackage HB
-syn keyword axPackage HallBasis
-syn keyword axPackage HEUGCD
-syn keyword axPackage HeuGcd
-syn keyword axPackage IALGFACT
-syn keyword axPackage InnerAlgFactor
-syn keyword axPackage IBACHIN
-syn keyword axPackage ChineseRemainderToolsForIntegralBases
-syn keyword axPackage IBATOOL
-syn keyword axPackage IntegralBasisTools
-syn keyword axPackage IBPTOOLS
-syn keyword axPackage IntegralBasisPolynomialTools
-syn keyword axPackage ICDEN
-syn keyword axPackage InnerCommonDenominator
-syn keyword axPackage IDECOMP
-syn keyword axPackage IdealDecompositionPackage
-syn keyword axPackage IMATLIN
-syn keyword axPackage InnerMatrixLinearAlgebraFunctions
-syn keyword axPackage IMATQF
-syn keyword axPackage InnerMatrixQuotientFieldFunctions
-syn keyword axPackage INBFF
-syn keyword axPackage InnerNormalBasisFieldFunctions
-syn keyword axPackage INCRMAPS
-syn keyword axPackage IncrementingMaps
-syn keyword axPackage INEP
-syn keyword axPackage InnerNumericEigenPackage
-syn keyword axPackage INFINITY
-syn keyword axPackage Infinity
-syn keyword axPackage INFORM1
-syn keyword axPackage InputFormFunctions1
-syn keyword axPackage INFPROD0
-syn keyword axPackage InfiniteProductCharacteristicZero
-syn keyword axPackage INFSP
-syn keyword axPackage InnerNumericFloatSolvePackage
-syn keyword axPackage INMODGCD
-syn keyword axPackage InnerModularGcd
-syn keyword axPackage INNMFACT
-syn keyword axPackage InnerMultFact
-syn keyword axPackage INPRODFF
-syn keyword axPackage InfiniteProductFiniteField
-syn keyword axPackage INPRODPF
-syn keyword axPackage InfiniteProductPrimeField
-syn keyword axPackage INPSIGN
-syn keyword axPackage InnerPolySign
-syn keyword axPackage INTAF
-syn keyword axPackage AlgebraicIntegration
-syn keyword axPackage INTALG
-syn keyword axPackage AlgebraicIntegrate
-syn keyword axPackage INTBIT
-syn keyword axPackage IntegerBits
-syn keyword axPackage INTDIVP
-syn keyword axPackage IntersectionDivisorPackage
-syn keyword axPackage INTEF
-syn keyword axPackage ElementaryIntegration
-syn keyword axPackage INTERGB
-syn keyword axPackage InterfaceGroebnerPackage
-syn keyword axPackage INTFACT
-syn keyword axPackage IntegerFactorizationPackage
-syn keyword axPackage INTFRSP
-syn keyword axPackage InterpolateFormsPackage
-syn keyword axPackage INTG0
-syn keyword axPackage GenusZeroIntegration
-syn keyword axPackage INTHEORY
-syn keyword axPackage IntegerNumberTheoryFunctions
-syn keyword axPackage INTHERAL
-syn keyword axPackage AlgebraicHermiteIntegration
-syn keyword axPackage INTHERTR
-syn keyword axPackage TranscendentalHermiteIntegration
-syn keyword axPackage INTPACK
-syn keyword axPackage AnnaNumericalIntegrationPackage
-syn keyword axPackage INTPAF
-syn keyword axPackage PureAlgebraicIntegration
-syn keyword axPackage INTPM
-syn keyword axPackage PatternMatchIntegration
-syn keyword axPackage INTRAT
-syn keyword axPackage RationalIntegration
-syn keyword axPackage INTRET
-syn keyword axPackage IntegerRetractions
-syn keyword axPackage INTRF
-syn keyword axPackage RationalFunctionIntegration
-syn keyword axPackage INTSLPE
-syn keyword axPackage IntegerSolveLinearPolynomialEquation
-syn keyword axPackage INTTOOLS
-syn keyword axPackage IntegrationTools
-syn keyword axPackage INTTR
-syn keyword axPackage TranscendentalIntegration
-syn keyword axPackage INVLAPLA
-syn keyword axPackage InverseLaplaceTransform
-syn keyword axPackage IPRNTPK
-syn keyword axPackage InternalPrintPackage
-syn keyword axPackage IR2
-syn keyword axPackage IntegrationResultFunctions2
-syn keyword axPackage IR2F
-syn keyword axPackage IntegrationResultToFunction
-syn keyword axPackage IROOT
-syn keyword axPackage IntegerRoots
-syn keyword axPackage IRREDFFX
-syn keyword axPackage IrredPolyOverFiniteField
-syn keyword axPackage IRRF2F
-syn keyword axPackage IntegrationResultRFToFunction
-syn keyword axPackage IRSN
-syn keyword axPackage IrrRepSymNatPackage
-syn keyword axPackage IRURPK
-syn keyword axPackage InternalRationalUnivariateRepresentationPackage
-syn keyword axPackage ISUMP
-syn keyword axPackage InnerPolySum
-syn keyword axPackage ITFUN2
-syn keyword axPackage InfiniteTupleFunctions2
-syn keyword axPackage ITFUN3
-syn keyword axPackage InfiniteTupleFunctions3
-syn keyword axPackage ITRIGMNP
-syn keyword axPackage InnerTrigonometricManipulations
-syn keyword axPackage KERNEL2
-syn keyword axPackage KernelFunctions2
-syn keyword axPackage KOVACIC
-syn keyword axPackage Kovacic
-syn keyword axPackage LAPLACE
-syn keyword axPackage LaplaceTransform
-syn keyword axPackage LAZM3PK
-syn keyword axPackage LazardSetSolvingPackage
-syn keyword axPackage LEADCDET
-syn keyword axPackage LeadingCoefDetermination
-syn keyword axPackage LEXTRIPK
-syn keyword axPackage LexTriangularPackage
-syn keyword axPackage LF
-syn keyword axPackage LiouvillianFunction
-syn keyword axPackage LGROBP
-syn keyword axPackage LinGroebnerPackage
-syn keyword axPackage LIMITPS
-syn keyword axPackage PowerSeriesLimitPackage
-syn keyword axPackage LIMITRF
-syn keyword axPackage RationalFunctionLimitPackage
-syn keyword axPackage LINDEP
-syn keyword axPackage LinearDependence
-syn keyword axPackage LIST2
-syn keyword axPackage ListFunctions2
-syn keyword axPackage LIST2MAP
-syn keyword axPackage ListToMap
-syn keyword axPackage LIST3
-syn keyword axPackage ListFunctions3
-syn keyword axPackage LISYSER
-syn keyword axPackage LinearSystemFromPowerSeriesPackage
-syn keyword axPackage LODEEF
-syn keyword axPackage ElementaryFunctionLODESolver
-syn keyword axPackage LODOF
-syn keyword axPackage LinearOrdinaryDifferentialOperatorFactorizer
-syn keyword axPackage LODOOPS
-syn keyword axPackage LinearOrdinaryDifferentialOperatorsOps
-syn keyword axPackage LOP
-syn keyword axPackage LinesOpPack
-syn keyword axPackage LPARSPT
-syn keyword axPackage LocalParametrizationOfSimplePointPackage
-syn keyword axPackage LPEFRAC
-syn keyword axPackage LinearPolynomialEquationByFractions
-syn keyword axPackage LSMP
-syn keyword axPackage LinearSystemMatrixPackage
-syn keyword axPackage LSMP1
-syn keyword axPackage LinearSystemMatrixPackage1
-syn keyword axPackage LSPP
-syn keyword axPackage LinearSystemPolynomialPackage
-syn keyword axPackage MAPHACK1
-syn keyword axPackage MappingPackageInternalHacks1
-syn keyword axPackage MAPHACK2
-syn keyword axPackage MappingPackageInternalHacks2
-syn keyword axPackage MAPHACK3
-syn keyword axPackage MappingPackageInternalHacks3
-syn keyword axPackage MAPPKG1
-syn keyword axPackage MappingPackage1
-syn keyword axPackage MAPPKG2
-syn keyword axPackage MappingPackage2
-syn keyword axPackage MAPPKG3
-syn keyword axPackage MappingPackage3
-syn keyword axPackage MAPPKG4
-syn keyword axPackage MappingPackage4
-syn keyword axPackage MATCAT2
-syn keyword axPackage MatrixCategoryFunctions2
-syn keyword axPackage MATLIN
-syn keyword axPackage MatrixLinearAlgebraFunctions
-syn keyword axPackage MATSTOR
-syn keyword axPackage StorageEfficientMatrixOperations
-syn keyword axPackage MCALCFN
-syn keyword axPackage MultiVariableCalculusFunctions
-syn keyword axPackage MCDEN
-syn keyword axPackage MatrixCommonDenominator
-syn keyword axPackage MDDFACT
-syn keyword axPackage ModularDistinctDegreeFactorizer
-syn keyword axPackage MESH
-syn keyword axPackage MeshCreationRoutinesForThreeDimensions
-syn keyword axPackage MFINFACT
-syn keyword axPackage MultFiniteFactorize
-syn keyword axPackage MHROWRED
-syn keyword axPackage ModularHermitianRowReduction
-syn keyword axPackage MKBCFUNC
-syn keyword axPackage MakeBinaryCompiledFunction
-syn keyword axPackage MKFLCFN
-syn keyword axPackage MakeFloatCompiledFunction
-syn keyword axPackage MKFUNC
-syn keyword axPackage MakeFunction
-syn keyword axPackage MKRECORD
-syn keyword axPackage MakeRecord
-syn keyword axPackage MKUCFUNC
-syn keyword axPackage MakeUnaryCompiledFunction
-syn keyword axPackage MLIFT
-syn keyword axPackage MultivariateLifting
-syn keyword axPackage MMAP
-syn keyword axPackage MultipleMap
-syn keyword axPackage MONOTOOL
-syn keyword axPackage MonomialExtensionTools
-syn keyword axPackage MPC2
-syn keyword axPackage MPolyCatFunctions2
-syn keyword axPackage MPC3
-syn keyword axPackage MPolyCatFunctions3
-syn keyword axPackage MPCPF
-syn keyword axPackage MPolyCatPolyFactorizer
-syn keyword axPackage MPRFF
-syn keyword axPackage MPolyCatRationalFunctionFactorizer
-syn keyword axPackage MRATFAC
-syn keyword axPackage MRationalFactorize
-syn keyword axPackage MRF2
-syn keyword axPackage MonoidRingFunctions2
-syn keyword axPackage MSYSCMD
-syn keyword axPackage MoreSystemCommands
-syn keyword axPackage MTHING
-syn keyword axPackage MergeThing
-syn keyword axPackage MULTFACT
-syn keyword axPackage MultivariateFactorize
-syn keyword axPackage MULTSQFR
-syn keyword axPackage MultivariateSquareFree
-syn keyword axPackage NAGC02
-syn keyword axPackage NagPolynomialRootsPackage
-syn keyword axPackage NAGC05
-syn keyword axPackage NagRootFindingPackage
-syn keyword axPackage NAGC06
-syn keyword axPackage NagSeriesSummationPackage
-syn keyword axPackage NAGD01
-syn keyword axPackage NagIntegrationPackage
-syn keyword axPackage NAGD02
-syn keyword axPackage NagOrdinaryDifferentialEquationsPackage
-syn keyword axPackage NAGD03
-syn keyword axPackage NagPartialDifferentialEquationsPackage
-syn keyword axPackage NAGE01
-syn keyword axPackage NagInterpolationPackage
-syn keyword axPackage NAGE02
-syn keyword axPackage NagFittingPackage
-syn keyword axPackage NAGE04
-syn keyword axPackage NagOptimisationPackage
-syn keyword axPackage NAGF01
-syn keyword axPackage NagMatrixOperationsPackage
-syn keyword axPackage NAGF02
-syn keyword axPackage NagEigenPackage
-syn keyword axPackage NAGF04
-syn keyword axPackage NagLinearEquationSolvingPackage
-syn keyword axPackage NAGF07
-syn keyword axPackage NagLapack
-syn keyword axPackage NAGS
-syn keyword axPackage NagSpecialFunctionsPackage
-syn keyword axPackage NAGSP
-syn keyword axPackage NAGLinkSupportPackage
-syn keyword axPackage NCEP
-syn keyword axPackage NumericComplexEigenPackage
-syn keyword axPackage NCNTFRAC
-syn keyword axPackage NumericContinuedFraction
-syn keyword axPackage NCODIV
-syn keyword axPackage NonCommutativeOperatorDivision
-syn keyword axPackage NEWTON
-syn keyword axPackage NewtonInterpolation
-syn keyword axPackage NFINTBAS
-syn keyword axPackage NumberFieldIntegralBasis
-syn keyword axPackage NLINSOL
-syn keyword axPackage NonLinearSolvePackage
-syn keyword axPackage NODE1
-syn keyword axPackage NonLinearFirstOrderODESolver
-syn keyword axPackage NONE1
-syn keyword axPackage NoneFunctions1
-syn keyword axPackage NORMMA
-syn keyword axPackage NormInMonogenicAlgebra
-syn keyword axPackage NORMPK
-syn keyword axPackage NormalizationPackage
-syn keyword axPackage NORMRETR
-syn keyword axPackage NormRetractPackage
-syn keyword axPackage NPCOEF
-syn keyword axPackage NPCoef
-syn keyword axPackage NPOLYGON
-syn keyword axPackage NewtonPolygon
-syn keyword axPackage NREP
-syn keyword axPackage NumericRealEigenPackage
-syn keyword axPackage NSUP2
-syn keyword axPackage NewSparseUnivariatePolynomialFunctions2
-syn keyword axPackage NTPOLFN
-syn keyword axPackage NumberTheoreticPolynomialFunctions
-syn keyword axPackage NUMERIC
-syn keyword axPackage Numeric
-syn keyword axPackage NUMFMT
-syn keyword axPackage NumberFormats
-syn keyword axPackage NUMODE
-syn keyword axPackage NumericalOrdinaryDifferentialEquations
-syn keyword axPackage NUMQUAD
-syn keyword axPackage NumericalQuadrature
-syn keyword axPackage NUMTUBE
-syn keyword axPackage NumericTubePlot
-syn keyword axPackage OCTCT2
-syn keyword axPackage OctonionCategoryFunctions2
-syn keyword axPackage ODECONST
-syn keyword axPackage ConstantLODE
-syn keyword axPackage ODEEF
-syn keyword axPackage ElementaryFunctionODESolver
-syn keyword axPackage ODEINT
-syn keyword axPackage ODEIntegration
-syn keyword axPackage ODEPACK
-syn keyword axPackage AnnaOrdinaryDifferentialEquationPackage
-syn keyword axPackage ODEPAL
-syn keyword axPackage PureAlgebraicLODE
-syn keyword axPackage ODEPRIM
-syn keyword axPackage PrimitiveRatDE
-syn keyword axPackage ODEPRRIC
-syn keyword axPackage PrimitiveRatRicDE
-syn keyword axPackage ODERAT
-syn keyword axPackage RationalLODE
-syn keyword axPackage ODERED
-syn keyword axPackage ReduceLODE
-syn keyword axPackage ODERTRIC
-syn keyword axPackage RationalRicDE
-syn keyword axPackage ODESYS
-syn keyword axPackage SystemODESolver
-syn keyword axPackage ODETOOLS
-syn keyword axPackage ODETools
-syn keyword axPackage OMEXPR
-syn keyword axPackage ExpressionToOpenMath
-syn keyword axPackage OMPKG
-syn keyword axPackage OpenMathPackage
-syn keyword axPackage OMSERVER
-syn keyword axPackage OpenMathServerPackage
-syn keyword axPackage ONECOMP2
-syn keyword axPackage OnePointCompletionFunctions2
-syn keyword axPackage OPQUERY
-syn keyword axPackage OperationsQuery
-syn keyword axPackage OPTPACK
-syn keyword axPackage AnnaNumericalOptimizationPackage
-syn keyword axPackage ORDCOMP2
-syn keyword axPackage OrderedCompletionFunctions2
-syn keyword axPackage ORDFUNS
-syn keyword axPackage OrderingFunctions
-syn keyword axPackage OREPCTO
-syn keyword axPackage UnivariateSkewPolynomialCategoryOps
-syn keyword axPackage ORTHPOL
-syn keyword axPackage OrthogonalPolynomialFunctions
-syn keyword axPackage OUT
-syn keyword axPackage OutputPackage
-syn keyword axPackage PADE
-syn keyword axPackage PadeApproximants
-syn keyword axPackage PADEPAC
-syn keyword axPackage PadeApproximantPackage
-syn keyword axPackage PAFF
-syn keyword axPackage PackageForAlgebraicFunctionField
-syn keyword axPackage PAFFFF
-syn keyword axPackage PackageForAlgebraicFunctionFieldOverFiniteField
-syn keyword axPackage PAN2EXPR
-syn keyword axPackage PolynomialAN2Expression
-syn keyword axPackage PARAMP
-syn keyword axPackage ParametrizationPackage
-syn keyword axPackage PARPC2
-syn keyword axPackage ParametricPlaneCurveFunctions2
-syn keyword axPackage PARSC2
-syn keyword axPackage ParametricSpaceCurveFunctions2
-syn keyword axPackage PARSU2
-syn keyword axPackage ParametricSurfaceFunctions2
-syn keyword axPackage PARTPERM
-syn keyword axPackage PartitionsAndPermutations
-syn keyword axPackage PATMATCH
-syn keyword axPackage PatternMatch
-syn keyword axPackage PATRES2
-syn keyword axPackage PatternMatchResultFunctions2
-syn keyword axPackage PATTERN1
-syn keyword axPackage PatternFunctions1
-syn keyword axPackage PATTERN2
-syn keyword axPackage PatternFunctions2
-syn keyword axPackage PCOMP
-syn keyword axPackage PolynomialComposition
-syn keyword axPackage PDECOMP
-syn keyword axPackage PolynomialDecomposition
-syn keyword axPackage PDEPACK
-syn keyword axPackage AnnaPartialDifferentialEquationPackage
-syn keyword axPackage PERMAN
-syn keyword axPackage Permanent
-syn keyword axPackage PFBR
-syn keyword axPackage PolynomialFactorizationByRecursion
-syn keyword axPackage PFBRU
-syn keyword axPackage PolynomialFactorizationByRecursionUnivariate
-syn keyword axPackage PFO
-syn keyword axPackage PointsOfFiniteOrder
-syn keyword axPackage PFOQ
-syn keyword axPackage PointsOfFiniteOrderRational
-syn keyword axPackage PFORP
-syn keyword axPackage PackageForPoly
-syn keyword axPackage PFOTOOLS
-syn keyword axPackage PointsOfFiniteOrderTools
-syn keyword axPackage PFRPAC
-syn keyword axPackage PartialFractionPackage
-syn keyword axPackage PGCD
-syn keyword axPackage PolynomialGcdPackage
-syn keyword axPackage PGE
-syn keyword axPackage PermutationGroupExamples
-syn keyword axPackage PGROEB
-syn keyword axPackage PolyGroebner
-syn keyword axPackage PICOERCE
-syn keyword axPackage PiCoercions
-syn keyword axPackage PINTERP
-syn keyword axPackage PolynomialInterpolation
-syn keyword axPackage PINTERPA
-syn keyword axPackage PolynomialInterpolationAlgorithms
-syn keyword axPackage PLEQN
-syn keyword axPackage ParametricLinearEquations
-syn keyword axPackage PLOT1
-syn keyword axPackage PlotFunctions1
-syn keyword axPackage PLOTTOOL
-syn keyword axPackage PlotTools
-syn keyword axPackage PLPKCRV
-syn keyword axPackage PolynomialPackageForCurve
-syn keyword axPackage PMASS
-syn keyword axPackage PatternMatchAssertions
-syn keyword axPackage PMASSFS
-syn keyword axPackage FunctionSpaceAssertions
-syn keyword axPackage PMDOWN
-syn keyword axPackage PatternMatchPushDown
-syn keyword axPackage PMFS
-syn keyword axPackage PatternMatchFunctionSpace
-syn keyword axPackage PMINS
-syn keyword axPackage PatternMatchIntegerNumberSystem
-syn keyword axPackage PMKERNEL
-syn keyword axPackage PatternMatchKernel
-syn keyword axPackage PMLSAGG
-syn keyword axPackage PatternMatchListAggregate
-syn keyword axPackage PMPLCAT
-syn keyword axPackage PatternMatchPolynomialCategory
-syn keyword axPackage PMPRED
-syn keyword axPackage AttachPredicates
-syn keyword axPackage PMPREDFS
-syn keyword axPackage FunctionSpaceAttachPredicates
-syn keyword axPackage PMQFCAT
-syn keyword axPackage PatternMatchQuotientFieldCategory
-syn keyword axPackage PMSYM
-syn keyword axPackage PatternMatchSymbol
-syn keyword axPackage PMTOOLS
-syn keyword axPackage PatternMatchTools
-syn keyword axPackage PNTHEORY
-syn keyword axPackage PolynomialNumberTheoryFunctions
-syn keyword axPackage POLTOPOL
-syn keyword axPackage PolToPol
-syn keyword axPackage POLUTIL
-syn keyword axPackage RealPolynomialUtilitiesPackage
-syn keyword axPackage POLY2
-syn keyword axPackage PolynomialFunctions2
-syn keyword axPackage POLY2UP
-syn keyword axPackage PolynomialToUnivariatePolynomial
-syn keyword axPackage POLYCATQ
-syn keyword axPackage PolynomialCategoryQuotientFunctions
-syn keyword axPackage POLYLIFT
-syn keyword axPackage PolynomialCategoryLifting
-syn keyword axPackage POLYROOT
-syn keyword axPackage PolynomialRoots
-syn keyword axPackage PREASSOC
-syn keyword axPackage PrecomputedAssociatedEquations
-syn keyword axPackage PRIMARR2
-syn keyword axPackage PrimitiveArrayFunctions2
-syn keyword axPackage PRIMELT
-syn keyword axPackage PrimitiveElement
-syn keyword axPackage PRIMES
-syn keyword axPackage IntegerPrimesPackage
-syn keyword axPackage PRINT
-syn keyword axPackage PrintPackage
-syn keyword axPackage PRJALGPK
-syn keyword axPackage ProjectiveAlgebraicSetPackage
-syn keyword axPackage PRS
-syn keyword axPackage PseudoRemainderSequence
-syn keyword axPackage PSETPK
-syn keyword axPackage PolynomialSetUtilitiesPackage
-syn keyword axPackage PSEUDLIN
-syn keyword axPackage PseudoLinearNormalForm
-syn keyword axPackage PSQFR
-syn keyword axPackage PolynomialSquareFree
-syn keyword axPackage PTFUNC2
-syn keyword axPackage PointFunctions2
-syn keyword axPackage PTPACK
-syn keyword axPackage PointPackage
-syn keyword axPackage PUSHVAR
-syn keyword axPackage PushVariables
-syn keyword axPackage PWFFINTB
-syn keyword axPackage PAdicWildFunctionFieldIntegralBasis
-syn keyword axPackage QALGSET2
-syn keyword axPackage QuasiAlgebraicSet2
-syn keyword axPackage QCMPACK
-syn keyword axPackage QuasiComponentPackage
-syn keyword axPackage QFCAT2
-syn keyword axPackage QuotientFieldCategoryFunctions2
-syn keyword axPackage QUATCT2
-syn keyword axPackage QuaternionCategoryFunctions2
-syn keyword axPackage RADUTIL
-syn keyword axPackage RadixUtilities
-syn keyword axPackage RANDSRC
-syn keyword axPackage RandomNumberSource
-syn keyword axPackage RATFACT
-syn keyword axPackage RationalFactorize
-syn keyword axPackage RATRET
-syn keyword axPackage RationalRetractions
-syn keyword axPackage RDEEF
-syn keyword axPackage ElementaryRischDE
-syn keyword axPackage RDEEFS
-syn keyword axPackage ElementaryRischDESystem
-syn keyword axPackage RDETR
-syn keyword axPackage TranscendentalRischDE
-syn keyword axPackage RDETRS
-syn keyword axPackage TranscendentalRischDESystem
-syn keyword axPackage RDIST
-syn keyword axPackage RandomDistributions
-syn keyword axPackage RDIV
-syn keyword axPackage ReducedDivisor
-syn keyword axPackage REAL0
-syn keyword axPackage RealZeroPackage
-syn keyword axPackage REAL0Q
-syn keyword axPackage RealZeroPackageQ
-syn keyword axPackage REALSOLV
-syn keyword axPackage RealSolvePackage
-syn keyword axPackage RECOP
-syn keyword axPackage RecurrenceOperator
-syn keyword axPackage REDORDER
-syn keyword axPackage ReductionOfOrder
-syn keyword axPackage REP
-syn keyword axPackage RadicalEigenPackage
-syn keyword axPackage REP1
-syn keyword axPackage RepresentationPackage1
-syn keyword axPackage REP2
-syn keyword axPackage RepresentationPackage2
-syn keyword axPackage REPDB
-syn keyword axPackage RepeatedDoubling
-syn keyword axPackage REPSQ
-syn keyword axPackage RepeatedSquaring
-syn keyword axPackage RESLATC
-syn keyword axPackage ResolveLatticeCompletion
-syn keyword axPackage RETSOL
-syn keyword axPackage RetractSolvePackage
-syn keyword axPackage RF
-syn keyword axPackage RationalFunction
-syn keyword axPackage RFDIST
-syn keyword axPackage RandomFloatDistributions
-syn keyword axPackage RFFACT
-syn keyword axPackage RationalFunctionFactor
-syn keyword axPackage RFFACTOR
-syn keyword axPackage RationalFunctionFactorizer
-syn keyword axPackage RFP
-syn keyword axPackage RootsFindingPackage
-syn keyword axPackage RIDIST
-syn keyword axPackage RandomIntegerDistributions
-syn keyword axPackage RINTERP
-syn keyword axPackage RationalInterpolation
-syn keyword axPackage RMCAT2
-syn keyword axPackage RectangularMatrixCategoryFunctions2
-syn keyword axPackage RSDCMPK
-syn keyword axPackage RegularSetDecompositionPackage
-syn keyword axPackage RSETGCD
-syn keyword axPackage RegularTriangularSetGcdPackage
-syn keyword axPackage RURPK
-syn keyword axPackage RationalUnivariateRepresentationPackage
-syn keyword axPackage SAEFACT
-syn keyword axPackage SimpleAlgebraicExtensionAlgFactor
-syn keyword axPackage SAERFFC
-syn keyword axPackage SAERationalFunctionAlgFactor
-syn keyword axPackage SCACHE
-syn keyword axPackage SortedCache
-syn keyword axPackage SCPKG
-syn keyword axPackage StructuralConstantsPackage
-syn keyword axPackage SEG2
-syn keyword axPackage SegmentFunctions2
-syn keyword axPackage SEGBIND2
-syn keyword axPackage SegmentBindingFunctions2
-syn keyword axPackage SFQCMPK
-syn keyword axPackage SquareFreeQuasiComponentPackage
-syn keyword axPackage SFRGCD
-syn keyword axPackage SquareFreeRegularTriangularSetGcdPackage
-syn keyword axPackage SGCF
-syn keyword axPackage SymmetricGroupCombinatoricFunctions
-syn keyword axPackage SHP
-syn keyword axPackage SturmHabichtPackage
-syn keyword axPackage SIGNEF
-syn keyword axPackage ElementaryFunctionSign
-syn keyword axPackage SIGNRF
-syn keyword axPackage RationalFunctionSign
-syn keyword axPackage SIMPAN
-syn keyword axPackage SimplifyAlgebraicNumberConvertPackage
-syn keyword axPackage SMITH
-syn keyword axPackage SmithNormalForm
-syn keyword axPackage SOLVEFOR
-syn keyword axPackage PolynomialSolveByFormulas
-syn keyword axPackage SOLVERAD
-syn keyword axPackage RadicalSolvePackage
-syn keyword axPackage SOLVESER
-syn keyword axPackage TransSolvePackageService
-syn keyword axPackage SOLVETRA
-syn keyword axPackage TransSolvePackage
-syn keyword axPackage SORTPAK
-syn keyword axPackage SortPackage
-syn keyword axPackage SPECOUT
-syn keyword axPackage SpecialOutputPackage
-syn keyword axPackage SRDCMPK
-syn keyword axPackage SquareFreeRegularSetDecompositionPackage
-syn keyword axPackage STINPROD
-syn keyword axPackage StreamInfiniteProduct
-syn keyword axPackage STNSR
-syn keyword axPackage StreamTensor
-syn keyword axPackage STREAM1
-syn keyword axPackage StreamFunctions1
-syn keyword axPackage STREAM2
-syn keyword axPackage StreamFunctions2
-syn keyword axPackage STREAM3
-syn keyword axPackage StreamFunctions3
-syn keyword axPackage STTAYLOR
-syn keyword axPackage StreamTaylorSeriesOperations
-syn keyword axPackage STTF
-syn keyword axPackage StreamTranscendentalFunctions
-syn keyword axPackage STTFNC
-syn keyword axPackage StreamTranscendentalFunctionsNonCommutative
-syn keyword axPackage SUBRESP
-syn keyword axPackage SubResultantPackage
-syn keyword axPackage SUMFS
-syn keyword axPackage FunctionSpaceSum
-syn keyword axPackage SUMRF
-syn keyword axPackage RationalFunctionSum
-syn keyword axPackage SUP2
-syn keyword axPackage SparseUnivariatePolynomialFunctions2
-syn keyword axPackage SUPFRACF
-syn keyword axPackage SupFractionFactorizer
-syn keyword axPackage SYMFUNC
-syn keyword axPackage SymmetricFunctions
-syn keyword axPackage SYSSOLP
-syn keyword axPackage SystemSolvePackage
-syn keyword axPackage TABLBUMP
-syn keyword axPackage TableauxBumpers
-syn keyword axPackage TANEXP
-syn keyword axPackage TangentExpansions
-syn keyword axPackage TBCMPPK
-syn keyword axPackage TabulatedComputationPackage
-syn keyword axPackage TEMUTL
-syn keyword axPackage TemplateUtilities
-syn keyword axPackage TEX1
-syn keyword axPackage TexFormat1
-syn keyword axPackage TOOLSIGN
-syn keyword axPackage ToolsForSign
-syn keyword axPackage TOPSP
-syn keyword axPackage TopLevelThreeSpace
-syn keyword axPackage TRIGMNIP
-syn keyword axPackage TrigonometricManipulations
-syn keyword axPackage TRIMAT
-syn keyword axPackage TriangularMatrixOperations
-syn keyword axPackage TRMANIP
-syn keyword axPackage TranscendentalManipulations
-syn keyword axPackage TUBETOOL
-syn keyword axPackage TubePlotTools
-syn keyword axPackage TWOFACT
-syn keyword axPackage TwoFactorize
-syn keyword axPackage UDPO
-syn keyword axPackage UserDefinedPartialOrdering
-syn keyword axPackage UDVO
-syn keyword axPackage UserDefinedVariableOrdering
-syn keyword axPackage UFPS1
-syn keyword axPackage UnivariateFormalPowerSeriesFunctions
-syn keyword axPackage ULS2
-syn keyword axPackage UnivariateLaurentSeriesFunctions2
-syn keyword axPackage UNIFACT
-syn keyword axPackage UnivariateFactorize
-syn keyword axPackage UNISEG2
-syn keyword axPackage UniversalSegmentFunctions2
-syn keyword axPackage UP2
-syn keyword axPackage UnivariatePolynomialFunctions2
-syn keyword axPackage UPCDEN
-syn keyword axPackage UnivariatePolynomialCommonDenominator
-syn keyword axPackage UPDECOMP
-syn keyword axPackage UnivariatePolynomialDecompositionPackage
-syn keyword axPackage UPDIVP
-syn keyword axPackage UnivariatePolynomialDivisionPackage
-syn keyword axPackage UPMP
-syn keyword axPackage UnivariatePolynomialMultiplicationPackage
-syn keyword axPackage UPOLYC2
-syn keyword axPackage UnivariatePolynomialCategoryFunctions2
-syn keyword axPackage UPSQFREE
-syn keyword axPackage UnivariatePolynomialSquareFree
-syn keyword axPackage UPXS2
-syn keyword axPackage UnivariatePuiseuxSeriesFunctions2
-syn keyword axPackage UTS2
-syn keyword axPackage UnivariateTaylorSeriesFunctions2
-syn keyword axPackage UTSODE
-syn keyword axPackage UnivariateTaylorSeriesODESolver
-syn keyword axPackage UTSODETL
-syn keyword axPackage UTSodetools
-syn keyword axPackage UTSSOL
-syn keyword axPackage TaylorSolve
-syn keyword axPackage VECTOR2
-syn keyword axPackage VectorFunctions2
-syn keyword axPackage VIEW
-syn keyword axPackage ViewportPackage
-syn keyword axPackage VIEWDEF
-syn keyword axPackage ViewDefaultsPackage
-syn keyword axPackage WEIER
-syn keyword axPackage WeierstrassPreparation
-syn keyword axPackage WFFINTBS
-syn keyword axPackage WildFunctionFieldIntegralBasis
-syn keyword axPackage XEXPPKG
-syn keyword axPackage XExponentialPackage
-syn keyword axPackage YSTREAM
-syn keyword axPackage ParadoxicalCombinatorsForStreams
-syn keyword axPackage ZDSOLVE
-syn keyword axPackage ZeroDimensionalSolvePackage
-syn keyword axPackage ZLINDEP
-syn keyword axPackage IntegerLinearDependence
+syn keyword axPackages  AF       AlgebraicFunction
+syn keyword axPackages  AFALGGRO AffineAlgebraicSetComputeWithGroebnerBasis
+syn keyword axPackages  AFALGRES AffineAlgebraicSetComputeWithResultant
+syn keyword axPackages  ALGFACT  AlgFactor
+syn keyword axPackages  ALGMANIP AlgebraicManipulations
+syn keyword axPackages  ALGMFACT AlgebraicMultFact
+syn keyword axPackages  ALGPKG   AlgebraPackage
+syn keyword axPackages  ANY1     AnyFunctions1
+syn keyword axPackages  API      ApplicationProgramInterface
+syn keyword axPackages  APPLYORE ApplyUnivariateSkewPolynomial
+syn keyword axPackages  APPRULE  ApplyRules
+syn keyword axPackages  ARRAY12  OneDimensionalArrayFunctions2
+syn keyword axPackages  ASSOCEQ  AssociatedEquations
+syn keyword axPackages  AXSERV   AxiomServer
+syn keyword axPackages  BALFACT  BalancedFactorisation
+syn keyword axPackages  BEZIER   Bezier
+syn keyword axPackages  BEZOUT   BezoutMatrix
+syn keyword axPackages  BLAS1    BlasLevelOne
+syn keyword axPackages  BLUPPACK BlowUpPackage
+syn keyword axPackages  BOP1     BasicOperatorFunctions1
+syn keyword axPackages  BOUNDZRO BoundIntegerRoots
+syn keyword axPackages  BRILL    BrillhartTests
+syn keyword axPackages  CARTEN2  CartesianTensorFunctions2
+syn keyword axPackages  CDEN     CommonDenominator
+syn keyword axPackages  CHARPOL  CharacteristicPolynomialPackage
+syn keyword axPackages  CHVAR    ChangeOfVariable
+syn keyword axPackages  CINTSLPE ComplexIntegerSolveLinearPolynomialEquation
+syn keyword axPackages  CLIP     TwoDimensionalPlotClipping
+syn keyword axPackages  CMPLXRT  ComplexRootPackage
+syn keyword axPackages  COMBF    CombinatorialFunction
+syn keyword axPackages  COMBINAT IntegerCombinatoricFunctions
+syn keyword axPackages  COMMONOP CommonOperators
+syn keyword axPackages  COMMUPC  CommuteUnivariatePolynomialCategory
+syn keyword axPackages  COMPFACT ComplexFactorization
+syn keyword axPackages  COMPLEX2 ComplexFunctions2
+syn keyword axPackages  COMPLPAT ComplexPattern
+syn keyword axPackages  COORDSYS CoordinateSystems
+syn keyword axPackages  CPIMA    CharacteristicPolynomialInMonogenicalAlgebra
+syn keyword axPackages  CPMATCH  ComplexPatternMatch
+syn keyword axPackages  CRAPACK  CRApackage
+syn keyword axPackages  CRFP     ComplexRootFindingPackage
+syn keyword axPackages  CSTTOOLS CyclicStreamTools
+syn keyword axPackages  CTRIGMNP ComplexTrigonometricManipulations
+syn keyword axPackages  CVMP     CoerceVectorMatrixPackage
+syn keyword axPackages  CYCLES   CycleIndicators
+syn keyword axPackages  CYCLOTOM CyclotomicPolynomialPackage
+syn keyword axPackages  D01AGNT  d01AgentsPackage
+syn keyword axPackages  D01WGTS  d01WeightsPackage
+syn keyword axPackages  D02AGNT  d02AgentsPackage
+syn keyword axPackages  D03AGNT  d03AgentsPackage
+syn keyword axPackages  DBLRESP  DoubleResultantPackage
+syn keyword axPackages  DDFACT   DistinctDegreeFactorize
+syn keyword axPackages  DEFINTEF ElementaryFunctionDefiniteIntegration
+syn keyword axPackages  DEFINTRF RationalFunctionDefiniteIntegration
+syn keyword axPackages  DEGRED   DegreeReductionPackage
+syn keyword axPackages  DFINTTLS DefiniteIntegrationTools
+syn keyword axPackages  DFSFUN   DoubleFloatSpecialFunctions
+syn keyword axPackages  DIOSP    DiophantineSolutionPackage
+syn keyword axPackages  DIRPROD2 DirectProductFunctions2
+syn keyword axPackages  DISPLAY  DisplayPackage
+syn keyword axPackages  DLP      DiscreteLogarithmPackage
+syn keyword axPackages  DRAW     TopLevelDrawFunctions
+syn keyword axPackages  DRAWCFUN TopLevelDrawFunctionsForCompiledFunctions
+syn keyword axPackages  DRAWCURV TopLevelDrawFunctionsForAlgebraicCurves
+syn keyword axPackages  DRAWCX   DrawComplex
+syn keyword axPackages  DRAWHACK DrawNumericHack
+syn keyword axPackages  DRAWPT   TopLevelDrawFunctionsForPoints
+syn keyword axPackages  DROPT0   DrawOptionFunctions0
+syn keyword axPackages  DROPT1   DrawOptionFunctions1
+syn keyword axPackages  DTP      DesingTreePackage
+syn keyword axPackages  E04AGNT  e04AgentsPackage
+syn keyword axPackages  EEA      ExtendedEuclideanAlgorithm
+syn keyword axPackages  EF       ElementaryFunction
+syn keyword axPackages  EFSTRUC  ElementaryFunctionStructurePackage
+syn keyword axPackages  ELFUTS   EllipticFunctionsUnivariateTaylorSeries
+syn keyword axPackages  EP       EigenPackage
+syn keyword axPackages  EQ2      EquationFunctions2
+syn keyword axPackages  ERROR    ErrorFunctions
+syn keyword axPackages  ES1      ExpressionSpaceFunctions1
+syn keyword axPackages  ES2      ExpressionSpaceFunctions2
+syn keyword axPackages  ESCONT   ExpertSystemContinuityPackage
+syn keyword axPackages  ESCONT1  ExpertSystemContinuityPackage1
+syn keyword axPackages  ESTOOLS  ExpertSystemToolsPackage
+syn keyword axPackages  ESTOOLS1 ExpertSystemToolsPackage1
+syn keyword axPackages  ESTOOLS2 ExpertSystemToolsPackage2
+syn keyword axPackages  EVALCYC  EvaluateCycleIndicators
+syn keyword axPackages  EXP3D    Export3D
+syn keyword axPackages  EXPR2    ExpressionFunctions2
+syn keyword axPackages  EXPR2UPS ExpressionToUnivariatePowerSeries
+syn keyword axPackages  EXPRODE  ExpressionSpaceODESolver
+syn keyword axPackages  EXPRSOL  ExpressionSolve
+syn keyword axPackages  EXPRTUBE ExpressionTubePlot
+syn keyword axPackages  FACTEXT  FactorisationOverPseudoAlgebraicClosureOfAlgExtOfRationalNumber
+syn keyword axPackages  FACTFUNC FactoredFunctions
+syn keyword axPackages  FACTRN   FactorisationOverPseudoAlgebraicClosureOfRationalNumber
+syn keyword axPackages  FACUTIL  FactoringUtilities
+syn keyword axPackages  FAMR2    FiniteAbelianMonoidRingFunctions2
+syn keyword axPackages  FCPAK1   FortranCodePackage1
+syn keyword axPackages  FDIV2    FiniteDivisorFunctions2
+syn keyword axPackages  FFCAT2   FunctionFieldCategoryFunctions2
+syn keyword axPackages  FFF      FiniteFieldFunctions
+syn keyword axPackages  FFFACTSE FiniteFieldFactorizationWithSizeParseBySideEffect
+syn keyword axPackages  FFFG     FractionFreeFastGaussian
+syn keyword axPackages  FFFGF    FractionFreeFastGaussianFractions
+syn keyword axPackages  FFHOM    FiniteFieldHomomorphisms
+syn keyword axPackages  FFINTBAS FunctionFieldIntegralBasis
+syn keyword axPackages  FFPOLY   FiniteFieldPolynomialPackage
+syn keyword axPackages  FFPOLY2  FiniteFieldPolynomialPackage2
+syn keyword axPackages  FFSLPE   FiniteFieldSolveLinearPolynomialEquation
+syn keyword axPackages  FFSQFR   FiniteFieldSquareFreeDecomposition
+syn keyword axPackages  FGLMICPK FGLMIfCanPackage
+syn keyword axPackages  FLAGG2   FiniteLinearAggregateFunctions2
+syn keyword axPackages  FLASORT  FiniteLinearAggregateSort
+syn keyword axPackages  FLOATCP  FloatingComplexPackage
+syn keyword axPackages  FLOATRP  FloatingRealPackage
+syn keyword axPackages  FOP      FortranOutputStackPackage
+syn keyword axPackages  FORDER   FindOrderFinite
+syn keyword axPackages  FORMULA1 ScriptFormulaFormat1
+syn keyword axPackages  FORT     FortranPackage
+syn keyword axPackages  FR2      FactoredFunctions2
+syn keyword axPackages  FRAC2    FractionFunctions2
+syn keyword axPackages  FRIDEAL2 FractionalIdealFunctions2
+syn keyword axPackages  FRNAAF2  FramedNonAssociativeAlgebraFunctions2
+syn keyword axPackages  FRUTIL   FactoredFunctionUtilities
+syn keyword axPackages  FS2      FunctionSpaceFunctions2
+syn keyword axPackages  FS2EXPXP FunctionSpaceToExponentialExpansion
+syn keyword axPackages  FS2UPS   FunctionSpaceToUnivariatePowerSeries
+syn keyword axPackages  FSAGG2   FiniteSetAggregateFunctions2
+syn keyword axPackages  FSCINT   FunctionSpaceComplexIntegration
+syn keyword axPackages  FSINT    FunctionSpaceIntegration
+syn keyword axPackages  FSPECF   FunctionalSpecialFunction
+syn keyword axPackages  FSPRMELT FunctionSpacePrimitiveElement
+syn keyword axPackages  FSRED    FunctionSpaceReduce
+syn keyword axPackages  FSUPFACT FunctionSpaceUnivariatePolynomialFactor
+syn keyword axPackages  GALFACT  GaloisGroupFactorizer
+syn keyword axPackages  GALFACTU GaloisGroupFactorizationUtilities
+syn keyword axPackages  GALPOLYU GaloisGroupPolynomialUtilities
+syn keyword axPackages  GALUTIL  GaloisGroupUtilities
+syn keyword axPackages  GAUSSFAC GaussianFactorizationPackage
+syn keyword axPackages  GB       GroebnerPackage
+syn keyword axPackages  GBEUCLID EuclideanGroebnerBasisPackage
+syn keyword axPackages  GBF      GroebnerFactorizationPackage
+syn keyword axPackages  GBINTERN GroebnerInternalPackage
+syn keyword axPackages  GDRAW    GnuDraw
+syn keyword axPackages  GENEEZ   GenExEuclid
+syn keyword axPackages  GENMFACT GeneralizedMultivariateFactorize
+syn keyword axPackages  GENPGCD  GeneralPolynomialGcdPackage
+syn keyword axPackages  GENUFACT GenUFactorize
+syn keyword axPackages  GENUPS   GenerateUnivariatePowerSeries
+syn keyword axPackages  GHENSEL  GeneralHenselPackage
+syn keyword axPackages  GOSPER   GosperSummationMethod
+syn keyword axPackages  GPAFF    GeneralPackageForAlgebraicFunctionField
+syn keyword axPackages  GRAY     GrayCode
+syn keyword axPackages  GRDEF    GraphicsDefaults
+syn keyword axPackages  GROEBSOL GroebnerSolve
+syn keyword axPackages  GUESS    Guess
+syn keyword axPackages  GUESSAN  GuessAlgebraicNumber
+syn keyword axPackages  GUESSF   GuessFinite
+syn keyword axPackages  GUESSF1  GuessFiniteFunctions
+syn keyword axPackages  GUESSINT GuessInteger
+syn keyword axPackages  GUESSP   GuessPolynomial
+syn keyword axPackages  GUESSUP  GuessUnivariatePolynomial
+syn keyword axPackages  HB       HallBasis
+syn keyword axPackages  HEUGCD   HeuGcd
+syn keyword axPackages  IALGFACT InnerAlgFactor
+syn keyword axPackages  IBACHIN  ChineseRemainderToolsForIntegralBases
+syn keyword axPackages  IBATOOL  IntegralBasisTools
+syn keyword axPackages  IBPTOOLS IntegralBasisPolynomialTools
+syn keyword axPackages  ICDEN    InnerCommonDenominator
+syn keyword axPackages  IDECOMP  IdealDecompositionPackage
+syn keyword axPackages  IMATLIN  InnerMatrixLinearAlgebraFunctions
+syn keyword axPackages  IMATQF   InnerMatrixQuotientFieldFunctions
+syn keyword axPackages  INBFF    InnerNormalBasisFieldFunctions
+syn keyword axPackages  INCRMAPS IncrementingMaps
+syn keyword axPackages  INEP     InnerNumericEigenPackage
+syn keyword axPackages  INFINITY Infinity
+syn keyword axPackages  INFORM1  InputFormFunctions1
+syn keyword axPackages  INFPROD0 InfiniteProductCharacteristicZero
+syn keyword axPackages  INFSP    InnerNumericFloatSolvePackage
+syn keyword axPackages  INMODGCD InnerModularGcd
+syn keyword axPackages  INNMFACT InnerMultFact
+syn keyword axPackages  INPRODFF InfiniteProductFiniteField
+syn keyword axPackages  INPRODPF InfiniteProductPrimeField
+syn keyword axPackages  INPSIGN  InnerPolySign
+syn keyword axPackages  INTAF    AlgebraicIntegration
+syn keyword axPackages  INTALG   AlgebraicIntegrate
+syn keyword axPackages  INTBIT   IntegerBits
+syn keyword axPackages  INTDIVP  IntersectionDivisorPackage
+syn keyword axPackages  INTEF    ElementaryIntegration
+syn keyword axPackages  INTERGB  InterfaceGroebnerPackage
+syn keyword axPackages  INTFACT  IntegerFactorizationPackage
+syn keyword axPackages  INTFRSP  InterpolateFormsPackage
+syn keyword axPackages  INTG0    GenusZeroIntegration
+syn keyword axPackages  INTHEORY IntegerNumberTheoryFunctions
+syn keyword axPackages  INTHERAL AlgebraicHermiteIntegration
+syn keyword axPackages  INTHERTR TranscendentalHermiteIntegration
+syn keyword axPackages  INTPACK  AnnaNumericalIntegrationPackage
+syn keyword axPackages  INTPAF   PureAlgebraicIntegration
+syn keyword axPackages  INTPM    PatternMatchIntegration
+syn keyword axPackages  INTRAT   RationalIntegration
+syn keyword axPackages  INTRET   IntegerRetractions
+syn keyword axPackages  INTRF    RationalFunctionIntegration
+syn keyword axPackages  INTSLPE  IntegerSolveLinearPolynomialEquation
+syn keyword axPackages  INTTOOLS IntegrationTools
+syn keyword axPackages  INTTR    TranscendentalIntegration
+syn keyword axPackages  INVLAPLA InverseLaplaceTransform
+syn keyword axPackages  IPRNTPK  InternalPrintPackage
+syn keyword axPackages  IR2      IntegrationResultFunctions2
+syn keyword axPackages  IR2F     IntegrationResultToFunction
+syn keyword axPackages  IROOT    IntegerRoots
+syn keyword axPackages  IRREDFFX IrredPolyOverFiniteField
+syn keyword axPackages  IRRF2F   IntegrationResultRFToFunction
+syn keyword axPackages  IRSN     IrrRepSymNatPackage
+syn keyword axPackages  IRURPK   InternalRationalUnivariateRepresentationPackage
+syn keyword axPackages  ISUMP    InnerPolySum
+syn keyword axPackages  ITFUN2   InfiniteTupleFunctions2
+syn keyword axPackages  ITFUN3   InfiniteTupleFunctions3
+syn keyword axPackages  ITRIGMNP InnerTrigonometricManipulations
+syn keyword axPackages  KERNEL2  KernelFunctions2
+syn keyword axPackages  KOVACIC  Kovacic
+syn keyword axPackages  LAPLACE  LaplaceTransform
+syn keyword axPackages  LAZM3PK  LazardSetSolvingPackage
+syn keyword axPackages  LEADCDET LeadingCoefDetermination
+syn keyword axPackages  LEXTRIPK LexTriangularPackage
+syn keyword axPackages  LF       LiouvillianFunction
+syn keyword axPackages  LGROBP   LinGroebnerPackage
+syn keyword axPackages  LIMITPS  PowerSeriesLimitPackage
+syn keyword axPackages  LIMITRF  RationalFunctionLimitPackage
+syn keyword axPackages  LINDEP   LinearDependence
+syn keyword axPackages  LIST2    ListFunctions2
+syn keyword axPackages  LIST2MAP ListToMap
+syn keyword axPackages  LIST3    ListFunctions3
+syn keyword axPackages  LISYSER  LinearSystemFromPowerSeriesPackage
+syn keyword axPackages  LODEEF   ElementaryFunctionLODESolver
+syn keyword axPackages  LODOF    LinearOrdinaryDifferentialOperatorFactorizer
+syn keyword axPackages  LODOOPS  LinearOrdinaryDifferentialOperatorsOps
+syn keyword axPackages  LOP      LinesOpPack
+syn keyword axPackages  LPARSPT  LocalParametrizationOfSimplePointPackage
+syn keyword axPackages  LPEFRAC  LinearPolynomialEquationByFractions
+syn keyword axPackages  LSMP     LinearSystemMatrixPackage
+syn keyword axPackages  LSMP1    LinearSystemMatrixPackage1
+syn keyword axPackages  LSPP     LinearSystemPolynomialPackage
+syn keyword axPackages  MAPHACK1 MappingPackageInternalHacks1
+syn keyword axPackages  MAPHACK2 MappingPackageInternalHacks2
+syn keyword axPackages  MAPHACK3 MappingPackageInternalHacks3
+syn keyword axPackages  MAPPKG1  MappingPackage1
+syn keyword axPackages  MAPPKG2  MappingPackage2
+syn keyword axPackages  MAPPKG3  MappingPackage3
+syn keyword axPackages  MAPPKG4  MappingPackage4
+syn keyword axPackages  MATCAT2  MatrixCategoryFunctions2
+syn keyword axPackages  MATLIN   MatrixLinearAlgebraFunctions
+syn keyword axPackages  MATSTOR  StorageEfficientMatrixOperations
+syn keyword axPackages  MCALCFN  MultiVariableCalculusFunctions
+syn keyword axPackages  MCDEN    MatrixCommonDenominator
+syn keyword axPackages  MDDFACT  ModularDistinctDegreeFactorizer
+syn keyword axPackages  MESH     MeshCreationRoutinesForThreeDimensions
+syn keyword axPackages  MFINFACT MultFiniteFactorize
+syn keyword axPackages  MHROWRED ModularHermitianRowReduction
+syn keyword axPackages  MKBCFUNC MakeBinaryCompiledFunction
+syn keyword axPackages  MKFLCFN  MakeFloatCompiledFunction
+syn keyword axPackages  MKFUNC   MakeFunction
+syn keyword axPackages  MKRECORD MakeRecord
+syn keyword axPackages  MKUCFUNC MakeUnaryCompiledFunction
+syn keyword axPackages  MLIFT    MultivariateLifting
+syn keyword axPackages  MMAP     MultipleMap
+syn keyword axPackages  MONOTOOL MonomialExtensionTools
+syn keyword axPackages  MPC2     MPolyCatFunctions2
+syn keyword axPackages  MPC3     MPolyCatFunctions3
+syn keyword axPackages  MPCPF    MPolyCatPolyFactorizer
+syn keyword axPackages  MPRFF    MPolyCatRationalFunctionFactorizer
+syn keyword axPackages  MRATFAC  MRationalFactorize
+syn keyword axPackages  MRF2     MonoidRingFunctions2
+syn keyword axPackages  MSYSCMD  MoreSystemCommands
+syn keyword axPackages  MTHING   MergeThing
+syn keyword axPackages  MULTFACT MultivariateFactorize
+syn keyword axPackages  MULTSQFR MultivariateSquareFree
+syn keyword axPackages  NAGC02   NagPolynomialRootsPackage
+syn keyword axPackages  NAGC05   NagRootFindingPackage
+syn keyword axPackages  NAGC06   NagSeriesSummationPackage
+syn keyword axPackages  NAGD01   NagIntegrationPackage
+syn keyword axPackages  NAGD02   NagOrdinaryDifferentialEquationsPackage
+syn keyword axPackages  NAGD03   NagPartialDifferentialEquationsPackage
+syn keyword axPackages  NAGE01   NagInterpolationPackage
+syn keyword axPackages  NAGE02   NagFittingPackage
+syn keyword axPackages  NAGE04   NagOptimisationPackage
+syn keyword axPackages  NAGF01   NagMatrixOperationsPackage
+syn keyword axPackages  NAGF02   NagEigenPackage
+syn keyword axPackages  NAGF04   NagLinearEquationSolvingPackage
+syn keyword axPackages  NAGF07   NagLapack
+syn keyword axPackages  NAGS     NagSpecialFunctionsPackage
+syn keyword axPackages  NAGSP    NAGLinkSupportPackage
+syn keyword axPackages  NCEP     NumericComplexEigenPackage
+syn keyword axPackages  NCNTFRAC NumericContinuedFraction
+syn keyword axPackages  NCODIV   NonCommutativeOperatorDivision
+syn keyword axPackages  NEWTON   NewtonInterpolation
+syn keyword axPackages  NFINTBAS NumberFieldIntegralBasis
+syn keyword axPackages  NLINSOL  NonLinearSolvePackage
+syn keyword axPackages  NODE1    NonLinearFirstOrderODESolver
+syn keyword axPackages  NONE1    NoneFunctions1
+syn keyword axPackages  NORMMA   NormInMonogenicAlgebra
+syn keyword axPackages  NORMPK   NormalizationPackage
+syn keyword axPackages  NORMRETR NormRetractPackage
+syn keyword axPackages  NPCOEF   NPCoef
+syn keyword axPackages  NPOLYGON NewtonPolygon
+syn keyword axPackages  NREP     NumericRealEigenPackage
+syn keyword axPackages  NSUP2    NewSparseUnivariatePolynomialFunctions2
+syn keyword axPackages  NTPOLFN  NumberTheoreticPolynomialFunctions
+syn keyword axPackages  NUMERIC  Numeric
+syn keyword axPackages  NUMFMT   NumberFormats
+syn keyword axPackages  NUMODE   NumericalOrdinaryDifferentialEquations
+syn keyword axPackages  NUMQUAD  NumericalQuadrature
+syn keyword axPackages  NUMTUBE  NumericTubePlot
+syn keyword axPackages  OCTCT2   OctonionCategoryFunctions2
+syn keyword axPackages  ODECONST ConstantLODE
+syn keyword axPackages  ODEEF    ElementaryFunctionODESolver
+syn keyword axPackages  ODEINT   ODEIntegration
+syn keyword axPackages  ODEPACK  AnnaOrdinaryDifferentialEquationPackage
+syn keyword axPackages  ODEPAL   PureAlgebraicLODE
+syn keyword axPackages  ODEPRIM  PrimitiveRatDE
+syn keyword axPackages  ODEPRRIC PrimitiveRatRicDE
+syn keyword axPackages  ODERAT   RationalLODE
+syn keyword axPackages  ODERED   ReduceLODE
+syn keyword axPackages  ODERTRIC RationalRicDE
+syn keyword axPackages  ODESYS   SystemODESolver
+syn keyword axPackages  ODETOOLS ODETools
+syn keyword axPackages  OMEXPR   ExpressionToOpenMath
+syn keyword axPackages  OMPKG    OpenMathPackage
+syn keyword axPackages  OMSERVER OpenMathServerPackage
+syn keyword axPackages  ONECOMP2 OnePointCompletionFunctions2
+syn keyword axPackages  OPQUERY  OperationsQuery
+syn keyword axPackages  OPTPACK  AnnaNumericalOptimizationPackage
+syn keyword axPackages  ORDCOMP2 OrderedCompletionFunctions2
+syn keyword axPackages  ORDFUNS  OrderingFunctions
+syn keyword axPackages  OREPCTO  UnivariateSkewPolynomialCategoryOps
+syn keyword axPackages  ORTHPOL  OrthogonalPolynomialFunctions
+syn keyword axPackages  OUT      OutputPackage
+syn keyword axPackages  PADE     PadeApproximants
+syn keyword axPackages  PADEPAC  PadeApproximantPackage
+syn keyword axPackages  PAFF     PackageForAlgebraicFunctionField
+syn keyword axPackages  PAFFFF   PackageForAlgebraicFunctionFieldOverFiniteField
+syn keyword axPackages  PAN2EXPR PolynomialAN2Expression
+syn keyword axPackages  PARAMP   ParametrizationPackage
+syn keyword axPackages  PARPC2   ParametricPlaneCurveFunctions2
+syn keyword axPackages  PARSC2   ParametricSpaceCurveFunctions2
+syn keyword axPackages  PARSU2   ParametricSurfaceFunctions2
+syn keyword axPackages  PARTPERM PartitionsAndPermutations
+syn keyword axPackages  PATMATCH PatternMatch
+syn keyword axPackages  PATRES2  PatternMatchResultFunctions2
+syn keyword axPackages  PATTERN1 PatternFunctions1
+syn keyword axPackages  PATTERN2 PatternFunctions2
+syn keyword axPackages  PCOMP    PolynomialComposition
+syn keyword axPackages  PDECOMP  PolynomialDecomposition
+syn keyword axPackages  PDEPACK  AnnaPartialDifferentialEquationPackage
+syn keyword axPackages  PERMAN   Permanent
+syn keyword axPackages  PFBR     PolynomialFactorizationByRecursion
+syn keyword axPackages  PFBRU    PolynomialFactorizationByRecursionUnivariate
+syn keyword axPackages  PFO      PointsOfFiniteOrder
+syn keyword axPackages  PFOQ     PointsOfFiniteOrderRational
+syn keyword axPackages  PFORP    PackageForPoly
+syn keyword axPackages  PFOTOOLS PointsOfFiniteOrderTools
+syn keyword axPackages  PFRPAC   PartialFractionPackage
+syn keyword axPackages  PGCD     PolynomialGcdPackage
+syn keyword axPackages  PGE      PermutationGroupExamples
+syn keyword axPackages  PGROEB   PolyGroebner
+syn keyword axPackages  PICOERCE PiCoercions
+syn keyword axPackages  PINTERP  PolynomialInterpolation
+syn keyword axPackages  PINTERPA PolynomialInterpolationAlgorithms
+syn keyword axPackages  PLEQN    ParametricLinearEquations
+syn keyword axPackages  PLOT1    PlotFunctions1
+syn keyword axPackages  PLOTTOOL PlotTools
+syn keyword axPackages  PLPKCRV  PolynomialPackageForCurve
+syn keyword axPackages  PMASS    PatternMatchAssertions
+syn keyword axPackages  PMASSFS  FunctionSpaceAssertions
+syn keyword axPackages  PMDOWN   PatternMatchPushDown
+syn keyword axPackages  PMFS     PatternMatchFunctionSpace
+syn keyword axPackages  PMINS    PatternMatchIntegerNumberSystem
+syn keyword axPackages  PMKERNEL PatternMatchKernel
+syn keyword axPackages  PMLSAGG  PatternMatchListAggregate
+syn keyword axPackages  PMPLCAT  PatternMatchPolynomialCategory
+syn keyword axPackages  PMPRED   AttachPredicates
+syn keyword axPackages  PMPREDFS FunctionSpaceAttachPredicates
+syn keyword axPackages  PMQFCAT  PatternMatchQuotientFieldCategory
+syn keyword axPackages  PMSYM    PatternMatchSymbol
+syn keyword axPackages  PMTOOLS  PatternMatchTools
+syn keyword axPackages  PNTHEORY PolynomialNumberTheoryFunctions
+syn keyword axPackages  POLTOPOL PolToPol
+syn keyword axPackages  POLUTIL  RealPolynomialUtilitiesPackage
+syn keyword axPackages  POLY2    PolynomialFunctions2
+syn keyword axPackages  POLY2UP  PolynomialToUnivariatePolynomial
+syn keyword axPackages  POLYCATQ PolynomialCategoryQuotientFunctions
+syn keyword axPackages  POLYLIFT PolynomialCategoryLifting
+syn keyword axPackages  POLYROOT PolynomialRoots
+syn keyword axPackages  PREASSOC PrecomputedAssociatedEquations
+syn keyword axPackages  PRIMARR2 PrimitiveArrayFunctions2
+syn keyword axPackages  PRIMELT  PrimitiveElement
+syn keyword axPackages  PRIMES   IntegerPrimesPackage
+syn keyword axPackages  PRINT    PrintPackage
+syn keyword axPackages  PRJALGPK ProjectiveAlgebraicSetPackage
+syn keyword axPackages  PRS      PseudoRemainderSequence
+syn keyword axPackages  PSETPK   PolynomialSetUtilitiesPackage
+syn keyword axPackages  PSEUDLIN PseudoLinearNormalForm
+syn keyword axPackages  PSQFR    PolynomialSquareFree
+syn keyword axPackages  PTFUNC2  PointFunctions2
+syn keyword axPackages  PTPACK   PointPackage
+syn keyword axPackages  PUSHVAR  PushVariables
+syn keyword axPackages  PWFFINTB PAdicWildFunctionFieldIntegralBasis
+syn keyword axPackages  QALGSET2 QuasiAlgebraicSet2
+syn keyword axPackages  QCMPACK  QuasiComponentPackage
+syn keyword axPackages  QFCAT2   QuotientFieldCategoryFunctions2
+syn keyword axPackages  QUATCT2  QuaternionCategoryFunctions2
+syn keyword axPackages  RADUTIL  RadixUtilities
+syn keyword axPackages  RANDSRC  RandomNumberSource
+syn keyword axPackages  RATFACT  RationalFactorize
+syn keyword axPackages  RATRET   RationalRetractions
+syn keyword axPackages  RDEEF    ElementaryRischDE
+syn keyword axPackages  RDEEFS   ElementaryRischDESystem
+syn keyword axPackages  RDETR    TranscendentalRischDE
+syn keyword axPackages  RDETRS   TranscendentalRischDESystem
+syn keyword axPackages  RDIST    RandomDistributions
+syn keyword axPackages  RDIV     ReducedDivisor
+syn keyword axPackages  REAL0    RealZeroPackage
+syn keyword axPackages  REAL0Q   RealZeroPackageQ
+syn keyword axPackages  REALSOLV RealSolvePackage
+syn keyword axPackages  RECOP    RecurrenceOperator
+syn keyword axPackages  REDORDER ReductionOfOrder
+syn keyword axPackages  REP      RadicalEigenPackage
+syn keyword axPackages  REP1     RepresentationPackage1
+syn keyword axPackages  REP2     RepresentationPackage2
+syn keyword axPackages  REPDB    RepeatedDoubling
+syn keyword axPackages  REPSQ    RepeatedSquaring
+syn keyword axPackages  RESLATC  ResolveLatticeCompletion
+syn keyword axPackages  RETSOL   RetractSolvePackage
+syn keyword axPackages  RF       RationalFunction
+syn keyword axPackages  RFDIST   RandomFloatDistributions
+syn keyword axPackages  RFFACT   RationalFunctionFactor
+syn keyword axPackages  RFFACTOR RationalFunctionFactorizer
+syn keyword axPackages  RFP      RootsFindingPackage
+syn keyword axPackages  RIDIST   RandomIntegerDistributions
+syn keyword axPackages  RINTERP  RationalInterpolation
+syn keyword axPackages  RMCAT2   RectangularMatrixCategoryFunctions2
+syn keyword axPackages  RSDCMPK  RegularSetDecompositionPackage
+syn keyword axPackages  RSETGCD  RegularTriangularSetGcdPackage
+syn keyword axPackages  RURPK    RationalUnivariateRepresentationPackage
+syn keyword axPackages  SAEFACT  SimpleAlgebraicExtensionAlgFactor
+syn keyword axPackages  SAERFFC  SAERationalFunctionAlgFactor
+syn keyword axPackages  SCACHE   SortedCache
+syn keyword axPackages  SCPKG    StructuralConstantsPackage
+syn keyword axPackages  SEG2     SegmentFunctions2
+syn keyword axPackages  SEGBIND2 SegmentBindingFunctions2
+syn keyword axPackages  SFQCMPK  SquareFreeQuasiComponentPackage
+syn keyword axPackages  SFRGCD   SquareFreeRegularTriangularSetGcdPackage
+syn keyword axPackages  SGCF     SymmetricGroupCombinatoricFunctions
+syn keyword axPackages  SHP      SturmHabichtPackage
+syn keyword axPackages  SIGNEF   ElementaryFunctionSign
+syn keyword axPackages  SIGNRF   RationalFunctionSign
+syn keyword axPackages  SIMPAN   SimplifyAlgebraicNumberConvertPackage
+syn keyword axPackages  SMITH    SmithNormalForm
+syn keyword axPackages  SOLVEFOR PolynomialSolveByFormulas
+syn keyword axPackages  SOLVERAD RadicalSolvePackage
+syn keyword axPackages  SOLVESER TransSolvePackageService
+syn keyword axPackages  SOLVETRA TransSolvePackage
+syn keyword axPackages  SORTPAK  SortPackage
+syn keyword axPackages  SPECOUT  SpecialOutputPackage
+syn keyword axPackages  SRDCMPK  SquareFreeRegularSetDecompositionPackage
+syn keyword axPackages  STINPROD StreamInfiniteProduct
+syn keyword axPackages  STNSR    StreamTensor
+syn keyword axPackages  STREAM1  StreamFunctions1
+syn keyword axPackages  STREAM2  StreamFunctions2
+syn keyword axPackages  STREAM3  StreamFunctions3
+syn keyword axPackages  STTAYLOR StreamTaylorSeriesOperations
+syn keyword axPackages  STTF     StreamTranscendentalFunctions
+syn keyword axPackages  STTFNC   StreamTranscendentalFunctionsNonCommutative
+syn keyword axPackages  SUBRESP  SubResultantPackage
+syn keyword axPackages  SUMFS    FunctionSpaceSum
+syn keyword axPackages  SUMRF    RationalFunctionSum
+syn keyword axPackages  SUP2     SparseUnivariatePolynomialFunctions2
+syn keyword axPackages  SUPFRACF SupFractionFactorizer
+syn keyword axPackages  SYMFUNC  SymmetricFunctions
+syn keyword axPackages  SYSSOLP  SystemSolvePackage
+syn keyword axPackages  TABLBUMP TableauxBumpers
+syn keyword axPackages  TANEXP   TangentExpansions
+syn keyword axPackages  TBCMPPK  TabulatedComputationPackage
+syn keyword axPackages  TEMUTL   TemplateUtilities
+syn keyword axPackages  TEX1     TexFormat1
+syn keyword axPackages  TOOLSIGN ToolsForSign
+syn keyword axPackages  TOPSP    TopLevelThreeSpace
+syn keyword axPackages  TRIGMNIP TrigonometricManipulations
+syn keyword axPackages  TRIMAT   TriangularMatrixOperations
+syn keyword axPackages  TRMANIP  TranscendentalManipulations
+syn keyword axPackages  TUBETOOL TubePlotTools
+syn keyword axPackages  TWOFACT  TwoFactorize
+syn keyword axPackages  UDPO     UserDefinedPartialOrdering
+syn keyword axPackages  UDVO     UserDefinedVariableOrdering
+syn keyword axPackages  UFPS1    UnivariateFormalPowerSeriesFunctions
+syn keyword axPackages  ULS2     UnivariateLaurentSeriesFunctions2
+syn keyword axPackages  UNIFACT  UnivariateFactorize
+syn keyword axPackages  UNISEG2  UniversalSegmentFunctions2
+syn keyword axPackages  UP2      UnivariatePolynomialFunctions2
+syn keyword axPackages  UPCDEN   UnivariatePolynomialCommonDenominator
+syn keyword axPackages  UPDECOMP UnivariatePolynomialDecompositionPackage
+syn keyword axPackages  UPDIVP   UnivariatePolynomialDivisionPackage
+syn keyword axPackages  UPMP     UnivariatePolynomialMultiplicationPackage
+syn keyword axPackages  UPOLYC2  UnivariatePolynomialCategoryFunctions2
+syn keyword axPackages  UPSQFREE UnivariatePolynomialSquareFree
+syn keyword axPackages  UPXS2    UnivariatePuiseuxSeriesFunctions2
+syn keyword axPackages  UTS2     UnivariateTaylorSeriesFunctions2
+syn keyword axPackages  UTSODE   UnivariateTaylorSeriesODESolver
+syn keyword axPackages  UTSODETL UTSodetools
+syn keyword axPackages  UTSSOL   TaylorSolve
+syn keyword axPackages  VECTOR2  VectorFunctions2
+syn keyword axPackages  VIEW     ViewportPackage
+syn keyword axPackages  VIEWDEF  ViewDefaultsPackage
+syn keyword axPackages  WEIER    WeierstrassPreparation
+syn keyword axPackages  WFFINTBS WildFunctionFieldIntegralBasis
+syn keyword axPackages  XEXPPKG  XExponentialPackage
+syn keyword axPackages  YSTREAM  ParadoxicalCombinatorsForStreams
+syn keyword axPackages  ZDSOLVE  ZeroDimensionalSolvePackage
+syn keyword axPackages  ZLINDEP  IntegerLinearDependence
