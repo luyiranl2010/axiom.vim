@@ -6,6 +6,9 @@
 " Usage      : See the README file
 "
 " History
+"  20131113 fabio   2.0 Colors are defined in term of standard classes
+"			customization is possible sourcing and changing
+"			axiom/colors.vim
 "  20131112 fabio   1.2 Added strict magic control in regexps
 "			Added syntax for system commands
 "  			Added instructions to create owns 
@@ -22,18 +25,8 @@
 " The latest version of this file will always be available at
 " http://www.vim.org
 " 
-" for another syntax file for axiom see:
+" For another syntax file for axiom see:
 " http://axiom-wiki.newsynthesis.org/AxiomInVim
-
-" For version 5.x: Clear all syntax items
-" For version 6.x: Quit when a syntax file was already loaded
-"if version < 600
-"  syntax clear
-"elseif exists("b:current_syntax")
-"  finish
-"endif
-
-
 
 if version < 600
   set iskeyword=48-57,_,a-z,A-Z,&,!,?
@@ -41,26 +34,27 @@ else
   setlocal iskeyword=48-57,_,a-z,A-Z,&,!,?
 endif
 
-
 syn match axComma	"\v[,;]"
 
-" parenthesis/curly/brace sanity checker
-syn region axZone	matchgroup=Delimiter start="\V("  end="\V)" transparent contains=ALLBUT,axError,axErrorBrace,axErrorCurly
-syn region axZone	matchgroup=Delimiter start="\V{"  end="\V}" transparent contains=ALLBUT,axError,axErrorBrace,axErrorParen
-syn region axZone	matchgroup=Delimiter start="\V[" end="\V]" transparent contains=ALLBUT,axError,axErrorCurly,axErrorParen
-syn match axError	"\v[)\]}]"
-syn match axErrorBrace	"\v[)}]"	contained
-syn match axErrorCurly	"\v[)\]]"	contained
-syn match axErrorParen	"\v[\]}]"	contained
+" Parenthesis/bracket sanity checker
+syn region axZone	matchgroup=Delimiter start="\V("  end="\V)" transparent contains=ALLBUT,axError,axErrorParen
+syn region axZone	matchgroup=Delimiter start="\V[" end="\V]" transparent contains=ALLBUT,axError,axErrorBrack
+syn match axError	"\v[)\]]"
+syn match axErrorBrack	"\v[\]]"	contained
+syn match axErrorParen	"\v[)]"		contained
 "syn match axErrorSemi	"\V;"    contained
 
-" builtin categories, domains, packages and operations
-" choose which words you want to be highlighted
+" Builtin categories, domains, packages and operations
+" Choose which words you want to be highlighted
 source $HOME/.vim/syntax/axiom/categories.vim  
 source $HOME/.vim/syntax/axiom/domains.vim
 source $HOME/.vim/syntax/axiom/packages.vim
 source $HOME/.vim/syntax/axiom/operations.vim
 source $HOME/.vim/syntax/axiom/commands.vim  
+
+" A couple of handy shortcuts 
+syn match axCommand "\V)sys\m" 
+syn match axCommand "\V)abbrev\m" 
 
 " Builtin constants 
 syn match axMacro "\V%e"
@@ -72,8 +66,8 @@ syn match axMacro "\V%plusInfinity"
 syn match axMacro "\VSF"
 
 " Statements
-syn keyword axCond	for while if 
-syn keyword axCondCtrl 	then elif else elseif repeat by in
+syn keyword axCond	if then elif else elseif
+syn keyword axRepeat	for while repeat by in
 syn match   axRange 	"\V.."
 syn keyword axExit	iterate break return error 
 syn match   axExit 	"\V=>"
@@ -84,6 +78,7 @@ syn match   axAssign	"\V:="
 syn match   axCall	"\V::"  
 syn match   axCall	"\V@"  
 syn match   axCall	"\V$"  
+syn match   axArg	"\V%"  
 syn match   axDefProc	"\V->"  
 syn match   axDefProc	"\V+->"  
 syn match   axDefProc	"\V==" 
@@ -94,74 +89,38 @@ syn region axComment	start="\V++" end="\v$" 	oneline
 syn region axComment	start="\V--" end="\v$" 	oneline
 syn region axString	start=+\V"+  end=+\V"+	oneline
 
-" Definition of colors
-" It would be better to use standard highlight groups... 
-" so maybe this section will change/disappear in the future...
-" Meanwhile, redefine them to your taste
-" IMO, these colors are nice with a black bg. If you need to change the
-" bg color, just add "ctermbg=x" to every line, where x is the number
-" of the color: 
-" 0=black, 1=red, 2=green, 3=yellow, 4=blue, 5=magenta, 6=cyan, 7=white
-hi lightblack 		ctermfg=0 cterm=bold term=bold guifg=black
-hi lightred 		ctermfg=1 cterm=bold term=bold guifg=lightred 
-hi lightgreen 		ctermfg=2 cterm=bold term=bold guifg=lightgreen
-hi lightyellow 		ctermfg=3 cterm=bold term=bold guifg=lightyellow 
-hi lightblue 		ctermfg=4 cterm=bold term=bold guifg=lightblue
-hi lightmagenta 	ctermfg=5 cterm=bold term=bold guifg=lightmagenta 
-hi lightcyan 		ctermfg=6 cterm=bold term=bold guifg=lightcyan 
-hi lightwhite 		ctermfg=7 cterm=bold term=bold guifg=white 
-hi black		ctermfg=0 guifg=black
-hi red 			ctermfg=1 guifg=red 
-hi green 		ctermfg=2 guifg=green
-hi yellow 		ctermfg=3 guifg=yellow 
-hi blue 		ctermfg=4 guifg=blue
-hi magenta		ctermfg=5 guifg=magenta 
-hi cyan 		ctermfg=6 guifg=cyan 
-hi white 		ctermfg=7 guifg=white 
-hi magentainv 		ctermbg=5 ctermfg=0 guibg=magenta guifg=black
-hi redinv 		ctermbg=1 ctermfg=7 guibg=red guifg=white
-hi yellowinv 		ctermbg=3 ctermfg=7 cterm=bold term=bold guibg=yellow guifg=white
+" Define the default highlighting: Axiom keywords are defined in term of
+" standard classes
+hi link	axArg		Typedef		
+hi link	axAssign	Define		
+hi link	axCall 		Define		
+hi link	axChunk 	SpecialComment	
+hi link	axComma 	Label		
+hi link	axComment	Comment		
+hi link	axCond		Conditional	
+hi link	axDefProc	Define		
+hi link	axError		Error		
+hi link	axErrorBrack	Error		
+hi link	axErrorParen	Error		
+hi link	axErrorSemi	Error		
+hi link	axExit 		StorageClass	
+hi link	axMacro		Macro		
+hi link	axOutput	StorageClass	
+hi link	axRange 	Repeat 		
+hi link	axRepeat	Repeat		
+hi link	axString	String		
+                        
+hi link	axCategory	Type		
+hi link	axCommand 	Function	
+hi link	axDomain	Type		
+hi link	axOperation	Operator	
+hi link	axPackage	Type		
 
-" Define the default highlighting (type :highlight to see available classes).
-" For version 5.7 and earlier: only when not done already
-" For version 5.8 and later: only when an item doesn't have highlighting yet
-
-if version >= 508 || !exists("did_axiom_syntax_inits")
-  if version < 508
-    let did_axiom_syntax_inits = 1
-    command -nargs=+ HiLink hi link <args>
-  else
-    command -nargs=+ HiLink hi def link <args>
-  endif
-
-" Choose here your favourite colors for the respective fields
-
-	HiLink	axAssign	lightcyan
-	HiLink	axCall 		lightcyan
-	HiLink	axChunk 	lightmagenta
-	HiLink	axComma 	lightred
-	HiLink	axCommand 	magenta
-	HiLink	axComment	cyan
-	HiLink	axCond		lightgreen
-	HiLink	axCondCtrl	green
-	HiLink	axDefProc	lightcyan
-	HiLink	axError		redinv
-	HiLink	axErrorBrace	redinv
-	HiLink	axErrorCurly	redinv
-	HiLink	axErrorParen	redinv
-	HiLink	axErrorSemi	redinv
-	HiLink	axExit 		lightblue
-	HiLink	axMacro		yellow
-	HiLink	axOutput	lightblue
-	HiLink	axRange 	green
-	HiLink	axString	blue
-
-	HiLink	axCategory	yellow
-	HiLink	axDomain	yellow
-	HiLink	axOperation	lightyellow
-	HiLink	axPackage	yellow
-delcommand HiLink
-endif
+" Definition of colors for standard classes are predefined in vim
+" following the default or a personal color scheme.
+" If you want to change them, edit the axiom/colors.vim change
+" the definitions after your personal taste and uncomment the following
+" line
+"source $HOME/.vim/syntax/axiom/colors.vim
 
 let b:current_syntax = "axiom"
-

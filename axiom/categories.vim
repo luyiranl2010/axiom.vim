@@ -1,217 +1,434 @@
-syn keyword axCategories  A1AGG    OneDimensionalArrayAggregate
-syn keyword axCategories  ABELGRP  AbelianGroup
-syn keyword axCategories  ABELMON  AbelianMonoid
-syn keyword axCategories  ABELSG   AbelianSemiGroup
-syn keyword axCategories  ACF      AlgebraicallyClosedField
-syn keyword axCategories  ACFS     AlgebraicallyClosedFunctionSpace
-syn keyword axCategories  AFSPCAT  AffineSpaceCategory
-syn keyword axCategories  AGG      Aggregate
-syn keyword axCategories  AHYP     ArcHyperbolicFunctionCategory
-syn keyword axCategories  ALAGG    AssociationListAggregate
-syn keyword axCategories  ALGEBRA  Algebra
-syn keyword axCategories  AMR      AbelianMonoidRing
-syn keyword axCategories  ARR2CAT  TwoDimensionalArrayCategory
-syn keyword axCategories  ATRIG    ArcTrigonometricFunctionCategory
-syn keyword axCategories  ATTREG   AttributeRegistry
-syn keyword axCategories  BASTYPE  BasicType
-syn keyword axCategories  BGAGG    BagAggregate
-syn keyword axCategories  BLMETCT  BlowUpMethodCategory
-syn keyword axCategories  BMODULE  BiModule
-syn keyword axCategories  BRAGG    BinaryRecursiveAggregate
-syn keyword axCategories  BTAGG    BitAggregate
-syn keyword axCategories  BTCAT    BinaryTreeCategory
-syn keyword axCategories  CABMON   CancellationAbelianMonoid
-syn keyword axCategories  CACHSET  CachableSet
-syn keyword axCategories  CFCAT    CombinatorialFunctionCategory
-syn keyword axCategories  CHARNZ   CharacteristicNonZero
-syn keyword axCategories  CHARZ    CharacteristicZero
-syn keyword axCategories  CLAGG    Collection
-syn keyword axCategories  COMBOPC  CombinatorialOpsCategory
-syn keyword axCategories  COMPCAT  ComplexCategory
-syn keyword axCategories  COMRING  CommutativeRing
-syn keyword axCategories  DIAGG    Dictionary
-syn keyword axCategories  DIFEXT   DifferentialExtension
-syn keyword axCategories  DIFRING  DifferentialRing
-syn keyword axCategories  DIOPS    DictionaryOperations
-syn keyword axCategories  DIRPCAT  DirectProductCategory
-syn keyword axCategories  DIVCAT   DivisorCategory
-syn keyword axCategories  DIVRING  DivisionRing
-syn keyword axCategories  DLAGG    DoublyLinkedAggregate
-syn keyword axCategories  DPOLCAT  DifferentialPolynomialCategory
-syn keyword axCategories  DQAGG    DequeueAggregate
-syn keyword axCategories  DSTRCAT  DesingTreeCategory
-syn keyword axCategories  DVARCAT  DifferentialVariableCategory
-syn keyword axCategories  ELAGG    ExtensibleLinearAggregate
-syn keyword axCategories  ELEMFUN  ElementaryFunctionCategory
-syn keyword axCategories  ELTAB    Eltable
-syn keyword axCategories  ELTAGG   EltableAggregate
-syn keyword axCategories  ENTIRER  EntireRing
-syn keyword axCategories  ES       ExpressionSpace
-syn keyword axCategories  EUCDOM   EuclideanDomain
-syn keyword axCategories  EVALAB   Evalable
-syn keyword axCategories  FAMONC   FreeAbelianMonoidCategory
-syn keyword axCategories  FAMR     FiniteAbelianMonoidRing
-syn keyword axCategories  FAXF     FiniteAlgebraicExtensionField
-syn keyword axCategories  FDIVCAT  FiniteDivisorCategory
-syn keyword axCategories  FEVALAB  FullyEvalableOver
-syn keyword axCategories  FFCAT    FunctionFieldCategory
-syn keyword axCategories  FFIELDC  FiniteFieldCategory
-syn keyword axCategories  FIELD    Field
-syn keyword axCategories  FILECAT  FileCategory
-syn keyword axCategories  FINAALG  FiniteRankNonAssociativeAlgebra
-syn keyword axCategories  FINITE   Finite
-syn keyword axCategories  FINRALG  FiniteRankAlgebra
-syn keyword axCategories  FLAGG    FiniteLinearAggregate
-syn keyword axCategories  FLALG    FreeLieAlgebra
-syn keyword axCategories  FLINEXP  FullyLinearlyExplicitRingOver
-syn keyword axCategories  FMC      FortranMatrixCategory
-syn keyword axCategories  FMCAT    FreeModuleCat
-syn keyword axCategories  FMFUN    FortranMatrixFunctionCategory
-syn keyword axCategories  FMTC     FortranMachineTypeCategory
-syn keyword axCategories  FNCAT    FileNameCategory
-syn keyword axCategories  FORTCAT  FortranProgramCategory
-syn keyword axCategories  FORTFN   FortranFunctionCategory
-syn keyword axCategories  FPATMAB  FullyPatternMatchable
-syn keyword axCategories  FPC      FieldOfPrimeCharacteristic
-syn keyword axCategories  FPS      FloatingPointSystem
-syn keyword axCategories  FRAMALG  FramedAlgebra
-syn keyword axCategories  FRETRCT  FullyRetractableTo
-syn keyword axCategories  FRNAALG  FramedNonAssociativeAlgebra
-syn keyword axCategories  FS       FunctionSpace
-syn keyword axCategories  FSAGG    FiniteSetAggregate
-syn keyword axCategories  FVC      FortranVectorCategory
-syn keyword axCategories  FVFUN    FortranVectorFunctionCategory
-syn keyword axCategories  GCDDOM   GcdDomain
-syn keyword axCategories  GRALG    GradedAlgebra
-syn keyword axCategories  GRMOD    GradedModule
-syn keyword axCategories  GROUP    Group
-syn keyword axCategories  HOAGG    HomogeneousAggregate
-syn keyword axCategories  HYPCAT   HyperbolicFunctionCategory
-syn keyword axCategories  IDPC     IndexedDirectProductCategory
-syn keyword axCategories  IEVALAB  InnerEvalable
-syn keyword axCategories  INFCLCT  InfinitlyClosePointCategory
-syn keyword axCategories  INS      IntegerNumberSystem
-syn keyword axCategories  INTCAT   IntervalCategory
-syn keyword axCategories  INTDOM   IntegralDomain
-syn keyword axCategories  IXAGG    IndexedAggregate
-syn keyword axCategories  KDAGG    KeyedDictionary
-syn keyword axCategories  KOERCE   CoercibleTo
-syn keyword axCategories  KONVERT  ConvertibleTo
-syn keyword axCategories  LALG     LeftAlgebra
-syn keyword axCategories  LFCAT    LiouvillianFunctionCategory
-syn keyword axCategories  LIECAT   LieAlgebra
-syn keyword axCategories  LINEXP   LinearlyExplicitRingOver
-syn keyword axCategories  LMODULE  LeftModule
-syn keyword axCategories  LNAGG    LinearAggregate
-syn keyword axCategories  LOCPOWC  LocalPowerSeriesCategory
-syn keyword axCategories  LODOCAT  LinearOrdinaryDifferentialOperatorCategory
-syn keyword axCategories  LOGIC    Logic
-syn keyword axCategories  LSAGG    ListAggregate
-syn keyword axCategories  LZSTAGG  LazyStreamAggregate
-syn keyword axCategories  MATCAT   MatrixCategory
-syn keyword axCategories  MDAGG    MultiDictionary
-syn keyword axCategories  MLO      MonogenicLinearOperator
-syn keyword axCategories  MODULE   Module
-syn keyword axCategories  MONAD    Monad
-syn keyword axCategories  MONADWU  MonadWithUnit
-syn keyword axCategories  MONOGEN  MonogenicAlgebra
-syn keyword axCategories  MONOID   Monoid
-syn keyword axCategories  MSETAGG  MultisetAggregate
-syn keyword axCategories  MTSCAT   MultivariateTaylorSeriesCategory
-syn keyword axCategories  NAALG    NonAssociativeAlgebra
-syn keyword axCategories  NARNG    NonAssociativeRng
-syn keyword axCategories  NASRING  NonAssociativeRing
-syn keyword axCategories  NTSCAT   NormalizedTriangularSetCategory
-syn keyword axCategories  NUMINT   NumericalIntegrationCategory
-syn keyword axCategories  OAGROUP  OrderedAbelianGroup
-syn keyword axCategories  OAMON    OrderedAbelianMonoid
-syn keyword axCategories  OAMONS   OrderedAbelianMonoidSup
-syn keyword axCategories  OASGP    OrderedAbelianSemiGroup
-syn keyword axCategories  OC       OctonionCategory
-syn keyword axCategories  OCAMON   OrderedCancellationAbelianMonoid
-syn keyword axCategories  ODECAT   OrdinaryDifferentialEquationsSolverCategory
-syn keyword axCategories  OINTDOM  OrderedIntegralDomain
-syn keyword axCategories  OM       OpenMath
-syn keyword axCategories  OMSAGG   OrderedMultisetAggregate
-syn keyword axCategories  OPTCAT   NumericalOptimizationCategory
-syn keyword axCategories  ORDFIN   OrderedFinite
-syn keyword axCategories  ORDMON   OrderedMonoid
-syn keyword axCategories  ORDRING  OrderedRing
-syn keyword axCategories  ORDSET   OrderedSet
-syn keyword axCategories  OREPCAT  UnivariateSkewPolynomialCategory
-syn keyword axCategories  PACEXTC  PseudoAlgebraicClosureOfAlgExtOfRationalNumberCategory
-syn keyword axCategories  PACFFC   PseudoAlgebraicClosureOfFiniteFieldCategory
-syn keyword axCategories  PACPERC  PseudoAlgebraicClosureOfPerfectFieldCategory
-syn keyword axCategories  PACRATC  PseudoAlgebraicClosureOfRationalNumberCategory
-syn keyword axCategories  PADICCT  PAdicIntegerCategory
-syn keyword axCategories  PATAB    Patternable
-syn keyword axCategories  PATMAB   PatternMatchable
-syn keyword axCategories  PDECAT   PartialDifferentialEquationsSolverCategory
-syn keyword axCategories  PDRING   PartialDifferentialRing
-syn keyword axCategories  PERMCAT  PermutationCategory
-syn keyword axCategories  PFECAT   PolynomialFactorizationExplicit
-syn keyword axCategories  PID      PrincipalIdealDomain
-syn keyword axCategories  PLACESC  PlacesCategory
-syn keyword axCategories  POLYCAT  PolynomialCategory
-syn keyword axCategories  PPCURVE  PlottablePlaneCurveCategory
-syn keyword axCategories  PRIMCAT  PrimitiveFunctionCategory
-syn keyword axCategories  PRQAGG   PriorityQueueAggregate
-syn keyword axCategories  PRSPCAT  ProjectiveSpaceCategory
-syn keyword axCategories  PSCAT    PowerSeriesCategory
-syn keyword axCategories  PSCURVE  PlottableSpaceCurveCategory
-syn keyword axCategories  PSETCAT  PolynomialSetCategory
-syn keyword axCategories  PTCAT    PointCategory
-syn keyword axCategories  PTRANFN  PartialTranscendentalFunctions
-syn keyword axCategories  QFCAT    QuotientFieldCategory
-syn keyword axCategories  QUAGG    QueueAggregate
-syn keyword axCategories  QUATCAT  QuaternionCategory
-syn keyword axCategories  RADCAT   RadicalCategory
-syn keyword axCategories  RCAGG    RecursiveAggregate
-syn keyword axCategories  RCFIELD  RealClosedField
-syn keyword axCategories  REAL     RealConstant
-syn keyword axCategories  RETRACT  RetractableTo
-syn keyword axCategories  RING     Ring
-syn keyword axCategories  RMATCAT  RectangularMatrixCategory
-syn keyword axCategories  RMODULE  RightModule
-syn keyword axCategories  RNG      Rng
-syn keyword axCategories  RNS      RealNumberSystem
-syn keyword axCategories  RPOLCAT  RecursivePolynomialCategory
-syn keyword axCategories  RRCC     RealRootCharacterizationCategory
-syn keyword axCategories  RSETCAT  RegularTriangularSetCategory
-syn keyword axCategories  SEGCAT   SegmentCategory
-syn keyword axCategories  SEGXCAT  SegmentExpansionCategory
-syn keyword axCategories  SETAGG   SetAggregate
-syn keyword axCategories  SETCAT   SetCategory
-syn keyword axCategories  SETCATD  SetCategoryWithDegree
-syn keyword axCategories  SEXCAT   SExpressionCategory
-syn keyword axCategories  SFRTCAT  SquareFreeRegularTriangularSetCategory
-syn keyword axCategories  SGROUP   SemiGroup
-syn keyword axCategories  SKAGG    StackAggregate
-syn keyword axCategories  SMATCAT  SquareMatrixCategory
-syn keyword axCategories  SNTSCAT  SquareFreeNormalizedTriangularSetCategory
-syn keyword axCategories  SPACEC   ThreeSpaceCategory
-syn keyword axCategories  SPFCAT   SpecialFunctionCategory
-syn keyword axCategories  SRAGG    StringAggregate
-syn keyword axCategories  STAGG    StreamAggregate
-syn keyword axCategories  STEP     StepThrough
-syn keyword axCategories  STRICAT  StringCategory
-syn keyword axCategories  TBAGG    TableAggregate
-syn keyword axCategories  TRANFUN  TranscendentalFunctionCategory
-syn keyword axCategories  TRIGCAT  TrigonometricFunctionCategory
-syn keyword axCategories  TSETCAT  TriangularSetCategory
-syn keyword axCategories  TYPE     Type
-syn keyword axCategories  UFD      UniqueFactorizationDomain
-syn keyword axCategories  ULSCAT   UnivariateLaurentSeriesCategory
-syn keyword axCategories  ULSCCAT  UnivariateLaurentSeriesConstructorCategory
-syn keyword axCategories  UPOLYC   UnivariatePolynomialCategory
-syn keyword axCategories  UPSCAT   UnivariatePowerSeriesCategory
-syn keyword axCategories  UPXSCAT  UnivariatePuiseuxSeriesCategory
-syn keyword axCategories  UPXSCCA  UnivariatePuiseuxSeriesConstructorCategory
-syn keyword axCategories  URAGG    UnaryRecursiveAggregate
-syn keyword axCategories  UTSCAT   UnivariateTaylorSeriesCategory
-syn keyword axCategories  VECTCAT  VectorCategory
-syn keyword axCategories  VSPACE   VectorSpace
-syn keyword axCategories  XALG     XAlgebra
-syn keyword axCategories  XF       ExtensionField
-syn keyword axCategories  XFALG    XFreeAlgebra
-syn keyword axCategories  XPOLYC   XPolynomialsCat
+syn keyword axCategory A1AGG
+syn keyword axCategory OneDimensionalArrayAggregate
+syn keyword axCategory ABELGRP
+syn keyword axCategory AbelianGroup
+syn keyword axCategory ABELMON
+syn keyword axCategory AbelianMonoid
+syn keyword axCategory ABELSG
+syn keyword axCategory AbelianSemiGroup
+syn keyword axCategory ACF
+syn keyword axCategory AlgebraicallyClosedField
+syn keyword axCategory ACFS
+syn keyword axCategory AlgebraicallyClosedFunctionSpace
+syn keyword axCategory AFSPCAT
+syn keyword axCategory AffineSpaceCategory
+syn keyword axCategory AGG
+syn keyword axCategory Aggregate
+syn keyword axCategory AHYP
+syn keyword axCategory ArcHyperbolicFunctionCategory
+syn keyword axCategory ALAGG
+syn keyword axCategory AssociationListAggregate
+syn keyword axCategory ALGEBRA
+syn keyword axCategory Algebra
+syn keyword axCategory AMR
+syn keyword axCategory AbelianMonoidRing
+syn keyword axCategory ARR2CAT
+syn keyword axCategory TwoDimensionalArrayCategory
+syn keyword axCategory ATRIG
+syn keyword axCategory ArcTrigonometricFunctionCategory
+syn keyword axCategory ATTREG
+syn keyword axCategory AttributeRegistry
+syn keyword axCategory BASTYPE
+syn keyword axCategory BasicType
+syn keyword axCategory BGAGG
+syn keyword axCategory BagAggregate
+syn keyword axCategory BLMETCT
+syn keyword axCategory BlowUpMethodCategory
+syn keyword axCategory BMODULE
+syn keyword axCategory BiModule
+syn keyword axCategory BRAGG
+syn keyword axCategory BinaryRecursiveAggregate
+syn keyword axCategory BTAGG
+syn keyword axCategory BitAggregate
+syn keyword axCategory BTCAT
+syn keyword axCategory BinaryTreeCategory
+syn keyword axCategory CABMON
+syn keyword axCategory CancellationAbelianMonoid
+syn keyword axCategory CACHSET
+syn keyword axCategory CachableSet
+syn keyword axCategory CFCAT
+syn keyword axCategory CombinatorialFunctionCategory
+syn keyword axCategory CHARNZ
+syn keyword axCategory CharacteristicNonZero
+syn keyword axCategory CHARZ
+syn keyword axCategory CharacteristicZero
+syn keyword axCategory CLAGG
+syn keyword axCategory Collection
+syn keyword axCategory COMBOPC
+syn keyword axCategory CombinatorialOpsCategory
+syn keyword axCategory COMPCAT
+syn keyword axCategory ComplexCategory
+syn keyword axCategory COMRING
+syn keyword axCategory CommutativeRing
+syn keyword axCategory DIAGG
+syn keyword axCategory Dictionary
+syn keyword axCategory DIFEXT
+syn keyword axCategory DifferentialExtension
+syn keyword axCategory DIFRING
+syn keyword axCategory DifferentialRing
+syn keyword axCategory DIOPS
+syn keyword axCategory DictionaryOperations
+syn keyword axCategory DIRPCAT
+syn keyword axCategory DirectProductCategory
+syn keyword axCategory DIVCAT
+syn keyword axCategory DivisorCategory
+syn keyword axCategory DIVRING
+syn keyword axCategory DivisionRing
+syn keyword axCategory DLAGG
+syn keyword axCategory DoublyLinkedAggregate
+syn keyword axCategory DPOLCAT
+syn keyword axCategory DifferentialPolynomialCategory
+syn keyword axCategory DQAGG
+syn keyword axCategory DequeueAggregate
+syn keyword axCategory DSTRCAT
+syn keyword axCategory DesingTreeCategory
+syn keyword axCategory DVARCAT
+syn keyword axCategory DifferentialVariableCategory
+syn keyword axCategory ELAGG
+syn keyword axCategory ExtensibleLinearAggregate
+syn keyword axCategory ELEMFUN
+syn keyword axCategory ElementaryFunctionCategory
+syn keyword axCategory ELTAB
+syn keyword axCategory Eltable
+syn keyword axCategory ELTAGG
+syn keyword axCategory EltableAggregate
+syn keyword axCategory ENTIRER
+syn keyword axCategory EntireRing
+syn keyword axCategory ES
+syn keyword axCategory ExpressionSpace
+syn keyword axCategory EUCDOM
+syn keyword axCategory EuclideanDomain
+syn keyword axCategory EVALAB
+syn keyword axCategory Evalable
+syn keyword axCategory FAMONC
+syn keyword axCategory FreeAbelianMonoidCategory
+syn keyword axCategory FAMR
+syn keyword axCategory FiniteAbelianMonoidRing
+syn keyword axCategory FAXF
+syn keyword axCategory FiniteAlgebraicExtensionField
+syn keyword axCategory FDIVCAT
+syn keyword axCategory FiniteDivisorCategory
+syn keyword axCategory FEVALAB
+syn keyword axCategory FullyEvalableOver
+syn keyword axCategory FFCAT
+syn keyword axCategory FunctionFieldCategory
+syn keyword axCategory FFIELDC
+syn keyword axCategory FiniteFieldCategory
+syn keyword axCategory FIELD
+syn keyword axCategory Field
+syn keyword axCategory FILECAT
+syn keyword axCategory FileCategory
+syn keyword axCategory FINAALG
+syn keyword axCategory FiniteRankNonAssociativeAlgebra
+syn keyword axCategory FINITE
+syn keyword axCategory Finite
+syn keyword axCategory FINRALG
+syn keyword axCategory FiniteRankAlgebra
+syn keyword axCategory FLAGG
+syn keyword axCategory FiniteLinearAggregate
+syn keyword axCategory FLALG
+syn keyword axCategory FreeLieAlgebra
+syn keyword axCategory FLINEXP
+syn keyword axCategory FullyLinearlyExplicitRingOver
+syn keyword axCategory FMC
+syn keyword axCategory FortranMatrixCategory
+syn keyword axCategory FMCAT
+syn keyword axCategory FreeModuleCat
+syn keyword axCategory FMFUN
+syn keyword axCategory FortranMatrixFunctionCategory
+syn keyword axCategory FMTC
+syn keyword axCategory FortranMachineTypeCategory
+syn keyword axCategory FNCAT
+syn keyword axCategory FileNameCategory
+syn keyword axCategory FORTCAT
+syn keyword axCategory FortranProgramCategory
+syn keyword axCategory FORTFN
+syn keyword axCategory FortranFunctionCategory
+syn keyword axCategory FPATMAB
+syn keyword axCategory FullyPatternMatchable
+syn keyword axCategory FPC
+syn keyword axCategory FieldOfPrimeCharacteristic
+syn keyword axCategory FPS
+syn keyword axCategory FloatingPointSystem
+syn keyword axCategory FRAMALG
+syn keyword axCategory FramedAlgebra
+syn keyword axCategory FRETRCT
+syn keyword axCategory FullyRetractableTo
+syn keyword axCategory FRNAALG
+syn keyword axCategory FramedNonAssociativeAlgebra
+syn keyword axCategory FS
+syn keyword axCategory FunctionSpace
+syn keyword axCategory FSAGG
+syn keyword axCategory FiniteSetAggregate
+syn keyword axCategory FVC
+syn keyword axCategory FortranVectorCategory
+syn keyword axCategory FVFUN
+syn keyword axCategory FortranVectorFunctionCategory
+syn keyword axCategory GCDDOM
+syn keyword axCategory GcdDomain
+syn keyword axCategory GRALG
+syn keyword axCategory GradedAlgebra
+syn keyword axCategory GRMOD
+syn keyword axCategory GradedModule
+syn keyword axCategory GROUP
+syn keyword axCategory Group
+syn keyword axCategory HOAGG
+syn keyword axCategory HomogeneousAggregate
+syn keyword axCategory HYPCAT
+syn keyword axCategory HyperbolicFunctionCategory
+syn keyword axCategory IDPC
+syn keyword axCategory IndexedDirectProductCategory
+syn keyword axCategory IEVALAB
+syn keyword axCategory InnerEvalable
+syn keyword axCategory INFCLCT
+syn keyword axCategory InfinitlyClosePointCategory
+syn keyword axCategory INS
+syn keyword axCategory IntegerNumberSystem
+syn keyword axCategory INTCAT
+syn keyword axCategory IntervalCategory
+syn keyword axCategory INTDOM
+syn keyword axCategory IntegralDomain
+syn keyword axCategory IXAGG
+syn keyword axCategory IndexedAggregate
+syn keyword axCategory KDAGG
+syn keyword axCategory KeyedDictionary
+syn keyword axCategory KOERCE
+syn keyword axCategory CoercibleTo
+syn keyword axCategory KONVERT
+syn keyword axCategory ConvertibleTo
+syn keyword axCategory LALG
+syn keyword axCategory LeftAlgebra
+syn keyword axCategory LFCAT
+syn keyword axCategory LiouvillianFunctionCategory
+syn keyword axCategory LIECAT
+syn keyword axCategory LieAlgebra
+syn keyword axCategory LINEXP
+syn keyword axCategory LinearlyExplicitRingOver
+syn keyword axCategory LMODULE
+syn keyword axCategory LeftModule
+syn keyword axCategory LNAGG
+syn keyword axCategory LinearAggregate
+syn keyword axCategory LOCPOWC
+syn keyword axCategory LocalPowerSeriesCategory
+syn keyword axCategory LODOCAT
+syn keyword axCategory LinearOrdinaryDifferentialOperatorCategory
+syn keyword axCategory LOGIC
+syn keyword axCategory Logic
+syn keyword axCategory LSAGG
+syn keyword axCategory ListAggregate
+syn keyword axCategory LZSTAGG
+syn keyword axCategory LazyStreamAggregate
+syn keyword axCategory MATCAT
+syn keyword axCategory MatrixCategory
+syn keyword axCategory MDAGG
+syn keyword axCategory MultiDictionary
+syn keyword axCategory MLO
+syn keyword axCategory MonogenicLinearOperator
+syn keyword axCategory MODULE
+syn keyword axCategory Module
+syn keyword axCategory MONAD
+syn keyword axCategory Monad
+syn keyword axCategory MONADWU
+syn keyword axCategory MonadWithUnit
+syn keyword axCategory MONOGEN
+syn keyword axCategory MonogenicAlgebra
+syn keyword axCategory MONOID
+syn keyword axCategory Monoid
+syn keyword axCategory MSETAGG
+syn keyword axCategory MultisetAggregate
+syn keyword axCategory MTSCAT
+syn keyword axCategory MultivariateTaylorSeriesCategory
+syn keyword axCategory NAALG
+syn keyword axCategory NonAssociativeAlgebra
+syn keyword axCategory NARNG
+syn keyword axCategory NonAssociativeRng
+syn keyword axCategory NASRING
+syn keyword axCategory NonAssociativeRing
+syn keyword axCategory NTSCAT
+syn keyword axCategory NormalizedTriangularSetCategory
+syn keyword axCategory NUMINT
+syn keyword axCategory NumericalIntegrationCategory
+syn keyword axCategory OAGROUP
+syn keyword axCategory OrderedAbelianGroup
+syn keyword axCategory OAMON
+syn keyword axCategory OrderedAbelianMonoid
+syn keyword axCategory OAMONS
+syn keyword axCategory OrderedAbelianMonoidSup
+syn keyword axCategory OASGP
+syn keyword axCategory OrderedAbelianSemiGroup
+syn keyword axCategory OC
+syn keyword axCategory OctonionCategory
+syn keyword axCategory OCAMON
+syn keyword axCategory OrderedCancellationAbelianMonoid
+syn keyword axCategory ODECAT
+syn keyword axCategory OrdinaryDifferentialEquationsSolverCategory
+syn keyword axCategory OINTDOM
+syn keyword axCategory OrderedIntegralDomain
+syn keyword axCategory OM
+syn keyword axCategory OpenMath
+syn keyword axCategory OMSAGG
+syn keyword axCategory OrderedMultisetAggregate
+syn keyword axCategory OPTCAT
+syn keyword axCategory NumericalOptimizationCategory
+syn keyword axCategory ORDFIN
+syn keyword axCategory OrderedFinite
+syn keyword axCategory ORDMON
+syn keyword axCategory OrderedMonoid
+syn keyword axCategory ORDRING
+syn keyword axCategory OrderedRing
+syn keyword axCategory ORDSET
+syn keyword axCategory OrderedSet
+syn keyword axCategory OREPCAT
+syn keyword axCategory UnivariateSkewPolynomialCategory
+syn keyword axCategory PACEXTC
+syn keyword axCategory PseudoAlgebraicClosureOfAlgExtOfRationalNumberCategory
+syn keyword axCategory PACFFC
+syn keyword axCategory PseudoAlgebraicClosureOfFiniteFieldCategory
+syn keyword axCategory PACPERC
+syn keyword axCategory PseudoAlgebraicClosureOfPerfectFieldCategory
+syn keyword axCategory PACRATC
+syn keyword axCategory PseudoAlgebraicClosureOfRationalNumberCategory
+syn keyword axCategory PADICCT
+syn keyword axCategory PAdicIntegerCategory
+syn keyword axCategory PATAB
+syn keyword axCategory Patternable
+syn keyword axCategory PATMAB
+syn keyword axCategory PatternMatchable
+syn keyword axCategory PDECAT
+syn keyword axCategory PartialDifferentialEquationsSolverCategory
+syn keyword axCategory PDRING
+syn keyword axCategory PartialDifferentialRing
+syn keyword axCategory PERMCAT
+syn keyword axCategory PermutationCategory
+syn keyword axCategory PFECAT
+syn keyword axCategory PolynomialFactorizationExplicit
+syn keyword axCategory PID
+syn keyword axCategory PrincipalIdealDomain
+syn keyword axCategory PLACESC
+syn keyword axCategory PlacesCategory
+syn keyword axCategory POLYCAT
+syn keyword axCategory PolynomialCategory
+syn keyword axCategory PPCURVE
+syn keyword axCategory PlottablePlaneCurveCategory
+syn keyword axCategory PRIMCAT
+syn keyword axCategory PrimitiveFunctionCategory
+syn keyword axCategory PRQAGG
+syn keyword axCategory PriorityQueueAggregate
+syn keyword axCategory PRSPCAT
+syn keyword axCategory ProjectiveSpaceCategory
+syn keyword axCategory PSCAT
+syn keyword axCategory PowerSeriesCategory
+syn keyword axCategory PSCURVE
+syn keyword axCategory PlottableSpaceCurveCategory
+syn keyword axCategory PSETCAT
+syn keyword axCategory PolynomialSetCategory
+syn keyword axCategory PTCAT
+syn keyword axCategory PointCategory
+syn keyword axCategory PTRANFN
+syn keyword axCategory PartialTranscendentalFunctions
+syn keyword axCategory QFCAT
+syn keyword axCategory QuotientFieldCategory
+syn keyword axCategory QUAGG
+syn keyword axCategory QueueAggregate
+syn keyword axCategory QUATCAT
+syn keyword axCategory QuaternionCategory
+syn keyword axCategory RADCAT
+syn keyword axCategory RadicalCategory
+syn keyword axCategory RCAGG
+syn keyword axCategory RecursiveAggregate
+syn keyword axCategory RCFIELD
+syn keyword axCategory RealClosedField
+syn keyword axCategory REAL
+syn keyword axCategory RealConstant
+syn keyword axCategory RETRACT
+syn keyword axCategory RetractableTo
+syn keyword axCategory RING
+syn keyword axCategory Ring
+syn keyword axCategory RMATCAT
+syn keyword axCategory RectangularMatrixCategory
+syn keyword axCategory RMODULE
+syn keyword axCategory RightModule
+syn keyword axCategory RNG
+syn keyword axCategory Rng
+syn keyword axCategory RNS
+syn keyword axCategory RealNumberSystem
+syn keyword axCategory RPOLCAT
+syn keyword axCategory RecursivePolynomialCategory
+syn keyword axCategory RRCC
+syn keyword axCategory RealRootCharacterizationCategory
+syn keyword axCategory RSETCAT
+syn keyword axCategory RegularTriangularSetCategory
+syn keyword axCategory SEGCAT
+syn keyword axCategory SegmentCategory
+syn keyword axCategory SEGXCAT
+syn keyword axCategory SegmentExpansionCategory
+syn keyword axCategory SETAGG
+syn keyword axCategory SetAggregate
+syn keyword axCategory SETCAT
+syn keyword axCategory SetCategory
+syn keyword axCategory SETCATD
+syn keyword axCategory SetCategoryWithDegree
+syn keyword axCategory SEXCAT
+syn keyword axCategory SExpressionCategory
+syn keyword axCategory SFRTCAT
+syn keyword axCategory SquareFreeRegularTriangularSetCategory
+syn keyword axCategory SGROUP
+syn keyword axCategory SemiGroup
+syn keyword axCategory SKAGG
+syn keyword axCategory StackAggregate
+syn keyword axCategory SMATCAT
+syn keyword axCategory SquareMatrixCategory
+syn keyword axCategory SNTSCAT
+syn keyword axCategory SquareFreeNormalizedTriangularSetCategory
+syn keyword axCategory SPACEC
+syn keyword axCategory ThreeSpaceCategory
+syn keyword axCategory SPFCAT
+syn keyword axCategory SpecialFunctionCategory
+syn keyword axCategory SRAGG
+syn keyword axCategory StringAggregate
+syn keyword axCategory STAGG
+syn keyword axCategory StreamAggregate
+syn keyword axCategory STEP
+syn keyword axCategory StepThrough
+syn keyword axCategory STRICAT
+syn keyword axCategory StringCategory
+syn keyword axCategory TBAGG
+syn keyword axCategory TableAggregate
+syn keyword axCategory TRANFUN
+syn keyword axCategory TranscendentalFunctionCategory
+syn keyword axCategory TRIGCAT
+syn keyword axCategory TrigonometricFunctionCategory
+syn keyword axCategory TSETCAT
+syn keyword axCategory TriangularSetCategory
+syn keyword axCategory TYPE
+syn keyword axCategory Type
+syn keyword axCategory UFD
+syn keyword axCategory UniqueFactorizationDomain
+syn keyword axCategory ULSCAT
+syn keyword axCategory UnivariateLaurentSeriesCategory
+syn keyword axCategory ULSCCAT
+syn keyword axCategory UnivariateLaurentSeriesConstructorCategory
+syn keyword axCategory UPOLYC
+syn keyword axCategory UnivariatePolynomialCategory
+syn keyword axCategory UPSCAT
+syn keyword axCategory UnivariatePowerSeriesCategory
+syn keyword axCategory UPXSCAT
+syn keyword axCategory UnivariatePuiseuxSeriesCategory
+syn keyword axCategory UPXSCCA
+syn keyword axCategory UnivariatePuiseuxSeriesConstructorCategory
+syn keyword axCategory URAGG
+syn keyword axCategory UnaryRecursiveAggregate
+syn keyword axCategory UTSCAT
+syn keyword axCategory UnivariateTaylorSeriesCategory
+syn keyword axCategory VECTCAT
+syn keyword axCategory VectorCategory
+syn keyword axCategory VSPACE
+syn keyword axCategory VectorSpace
+syn keyword axCategory XALG
+syn keyword axCategory XAlgebra
+syn keyword axCategory XF
+syn keyword axCategory ExtensionField
+syn keyword axCategory XFALG
+syn keyword axCategory XFreeAlgebra
+syn keyword axCategory XPOLYC
+syn keyword axCategory XPolynomialsCat

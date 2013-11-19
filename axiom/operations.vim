@@ -1027,7 +1027,6 @@ syn keyword axOperation extDegree
 syn keyword axOperation extend
 syn keyword axOperation extendIfCan
 syn keyword axOperation extendedEuclidean
-syn keyword axOperation extendedGCD
 syn keyword axOperation extendedIntegrate
 syn keyword axOperation extendedResultant
 syn keyword axOperation extendedSubResultantGcd

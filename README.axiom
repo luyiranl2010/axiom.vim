@@ -1,0 +1,54 @@
+DESCRIPTION
+
+  The files in this package provide syntax highlighting for axiom files.
+  Axiom files come in two version:
+  *.input 
+     they contains only axiom code: syntax is provided by axiom.vim
+  *.pamphlet
+     they are literate programs written in pure latex which contain axiom
+     code inside the "chunk" environment. The files pamphlet.vim calls
+     axiom syntax inside this environment and latex syntax outside.
+
+  Since there are a lot of commands, domains, etc, the syntax file is
+  designed in a modular way: it contains just the basic functions, whereas
+  categories, domains, operations and packages are defined in files inside
+  the axiom directory and are sourced by the main file. This, together
+  with a provided script (see CUSTOMIZATION) helps to update the files
+  with new axiom versions. 
+  Moreover, the user has a better control for choosing which fields he
+  wants to be highlighted.
+  
+USAGE
+
+  The files should be copied in your ~/.vim/syntax directory; after this, 
+  to have syntax highlight in *.input and *.spad files, just add to your
+  ~/.vimrc file the line  
+  
+  au BufNewFile,BufRead *.input *.spad  exe "source ~/.vim/syntax/axiom.vim"
+  
+  For pamphlet file, you can have both latex highlight in latex text and
+  axiom highlight in the "chunk" environment by adding
+  
+  au BufRead,BufNewFile *.pamphlet   setfiletype tex
+  au BufRead,BufNewFile *.pamphlet   exe "source ~/.vim/syntax/pamphlet.vim"
+  
+  to your ~/.vimrc file.
+
+CUSTOMIZATION
+
+  You can produce your own *.vim by running the provided shell script:
+  
+  ./keywords.sh axiom
+
+  If you get an error, you have to set manually the AXIOM variable in the
+  script.
+
+  To assign colors, we define new keywords which are linked to standard
+  classes: this way, colors will follow your predefined (default or
+  custom) color scheme.
+  To further customize colors, you can either:
+  - change the linkings in axiom.vim
+  - uncomment the line
+    source $HOME/.vim/syntax/axiom/colors.vim
+    an then edit the file colors.vim and modify standard class 
+    definitions as you prefer

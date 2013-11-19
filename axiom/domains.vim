@@ -1,527 +1,1050 @@
-syn keyword axDomain  A1AGG-   OneDimensionalArrayAggregate&
-syn keyword axDomain  ABELGRP- AbelianGroup&
-syn keyword axDomain  ABELMON- AbelianMonoid&
-syn keyword axDomain  ABELSG-  AbelianSemiGroup&
-syn keyword axDomain  ACF-     AlgebraicallyClosedField&
-syn keyword axDomain  ACFS-    AlgebraicallyClosedFunctionSpace&
-syn keyword axDomain  ACPLOT   PlaneAlgebraicCurvePlot
-syn keyword axDomain  AFFPL    AffinePlane
-syn keyword axDomain  AFFPLPS  AffinePlaneOverPseudoAlgebraicClosureOfFiniteField
-syn keyword axDomain  AFFSP    AffineSpace
-syn keyword axDomain  AGG-     Aggregate&
-syn keyword axDomain  ALGEBRA- Algebra&
-syn keyword axDomain  ALGFF    AlgebraicFunctionField
-syn keyword axDomain  ALGSC    AlgebraGivenByStructuralConstants
-syn keyword axDomain  ALIST    AssociationList
-syn keyword axDomain  AMR-     AbelianMonoidRing&
-syn keyword axDomain  AN       AlgebraicNumber
-syn keyword axDomain  ANON     AnonymousFunction
-syn keyword axDomain  ANTISYM  AntiSymm
-syn keyword axDomain  ANY      Any
-syn keyword axDomain  ARR2CAT- TwoDimensionalArrayCategory&
-syn keyword axDomain  ARRAY1   OneDimensionalArray
-syn keyword axDomain  ARRAY2   TwoDimensionalArray
-syn keyword axDomain  ASP1     Asp1
-syn keyword axDomain  ASP10    Asp10
-syn keyword axDomain  ASP12    Asp12
-syn keyword axDomain  ASP19    Asp19
-syn keyword axDomain  ASP20    Asp20
-syn keyword axDomain  ASP24    Asp24
-syn keyword axDomain  ASP27    Asp27
-syn keyword axDomain  ASP28    Asp28
-syn keyword axDomain  ASP29    Asp29
-syn keyword axDomain  ASP30    Asp30
-syn keyword axDomain  ASP31    Asp31
-syn keyword axDomain  ASP33    Asp33
-syn keyword axDomain  ASP34    Asp34
-syn keyword axDomain  ASP35    Asp35
-syn keyword axDomain  ASP4     Asp4
-syn keyword axDomain  ASP41    Asp41
-syn keyword axDomain  ASP42    Asp42
-syn keyword axDomain  ASP49    Asp49
-syn keyword axDomain  ASP50    Asp50
-syn keyword axDomain  ASP55    Asp55
-syn keyword axDomain  ASP6     Asp6
-syn keyword axDomain  ASP7     Asp7
-syn keyword axDomain  ASP73    Asp73
-syn keyword axDomain  ASP74    Asp74
-syn keyword axDomain  ASP77    Asp77
-syn keyword axDomain  ASP78    Asp78
-syn keyword axDomain  ASP8     Asp8
-syn keyword axDomain  ASP80    Asp80
-syn keyword axDomain  ASP9     Asp9
-syn keyword axDomain  ASTACK   ArrayStack
-syn keyword axDomain  ATRIG-   ArcTrigonometricFunctionCategory&
-syn keyword axDomain  ATTRBUT  AttributeButtons
-syn keyword axDomain  AUTOMOR  Automorphism
-syn keyword axDomain  BASTYPE- BasicType&
-syn keyword axDomain  BBTREE   BalancedBinaryTree
-syn keyword axDomain  BFUNCT   BasicFunctions
-syn keyword axDomain  BGAGG-   BagAggregate&
-syn keyword axDomain  BINARY   BinaryExpansion
-syn keyword axDomain  BINFILE  BinaryFile
-syn keyword axDomain  BITS     Bits
-syn keyword axDomain  BLHN     BlowUpWithHamburgerNoether
-syn keyword axDomain  BLQT     BlowUpWithQuadTrans
-syn keyword axDomain  BOOLEAN  Boolean
-syn keyword axDomain  BOP      BasicOperator
-syn keyword axDomain  BPADIC   BalancedPAdicInteger
-syn keyword axDomain  BPADICRT BalancedPAdicRational
-syn keyword axDomain  BRAGG-   BinaryRecursiveAggregate&
-syn keyword axDomain  BSD      BasicStochasticDifferential
-syn keyword axDomain  BSTREE   BinarySearchTree
-syn keyword axDomain  BTAGG-   BitAggregate&
-syn keyword axDomain  BTCAT-   BinaryTreeCategory&
-syn keyword axDomain  BTOURN   BinaryTournament
-syn keyword axDomain  BTREE    BinaryTree
-syn keyword axDomain  CARD     CardinalNumber
-syn keyword axDomain  CARTEN   CartesianTensor
-syn keyword axDomain  CCLASS   CharacterClass
-syn keyword axDomain  CDFMAT   ComplexDoubleFloatMatrix
-syn keyword axDomain  CDFVEC   ComplexDoubleFloatVector
-syn keyword axDomain  CHAR     Character
-syn keyword axDomain  CLAGG-   Collection&
-syn keyword axDomain  CLIF     CliffordAlgebra
-syn keyword axDomain  COLOR    Color
-syn keyword axDomain  COMM     Commutator
-syn keyword axDomain  COMPCAT- ComplexCategory&
-syn keyword axDomain  COMPLEX  Complex
-syn keyword axDomain  COMPPROP SubSpaceComponentProperty
-syn keyword axDomain  CONTFRAC ContinuedFraction
-syn keyword axDomain  D01AJFA  d01ajfAnnaType
-syn keyword axDomain  D01AKFA  d01akfAnnaType
-syn keyword axDomain  D01ALFA  d01alfAnnaType
-syn keyword axDomain  D01AMFA  d01amfAnnaType
-syn keyword axDomain  D01ANFA  d01anfAnnaType
-syn keyword axDomain  D01APFA  d01apfAnnaType
-syn keyword axDomain  D01AQFA  d01aqfAnnaType
-syn keyword axDomain  D01ASFA  d01asfAnnaType
-syn keyword axDomain  D01FCFA  d01fcfAnnaType
-syn keyword axDomain  D01GBFA  d01gbfAnnaType
-syn keyword axDomain  D01TRNS  d01TransformFunctionType
-syn keyword axDomain  D02BBFA  d02bbfAnnaType
-syn keyword axDomain  D02BHFA  d02bhfAnnaType
-syn keyword axDomain  D02CJFA  d02cjfAnnaType
-syn keyword axDomain  D02EJFA  d02ejfAnnaType
-syn keyword axDomain  D03EEFA  d03eefAnnaType
-syn keyword axDomain  D03FAFA  d03fafAnnaType
-syn keyword axDomain  DBASE    Database
-syn keyword axDomain  DECIMAL  DecimalExpansion
-syn keyword axDomain  DEQUEUE  Dequeue
-syn keyword axDomain  DERHAM   DeRhamComplex
-syn keyword axDomain  DFLOAT   DoubleFloat
-syn keyword axDomain  DFMAT    DoubleFloatMatrix
-syn keyword axDomain  DFVEC    DoubleFloatVector
-syn keyword axDomain  DHMATRIX DenavitHartenbergMatrix
-syn keyword axDomain  DIAGG-   Dictionary&
-syn keyword axDomain  DIFEXT-  DifferentialExtension&
-syn keyword axDomain  DIFRING- DifferentialRing&
-syn keyword axDomain  DIOPS-   DictionaryOperations&
-syn keyword axDomain  DIRPCAT- DirectProductCategory&
-syn keyword axDomain  DIRPROD  DirectProduct
-syn keyword axDomain  DIRRING  DirichletRing
-syn keyword axDomain  DIV      Divisor
-syn keyword axDomain  DIVRING- DivisionRing&
-syn keyword axDomain  DLIST    DataList
-syn keyword axDomain  DMP      DistributedMultivariatePolynomial
-syn keyword axDomain  DPMM     DirectProductMatrixModule
-syn keyword axDomain  DPMO     DirectProductModule
-syn keyword axDomain  DPOLCAT- DifferentialPolynomialCategory&
-syn keyword axDomain  DROPT    DrawOption
-syn keyword axDomain  DSMP     DifferentialSparseMultivariatePolynomial
-syn keyword axDomain  DSTREE   DesingTree
-syn keyword axDomain  DVARCAT- DifferentialVariableCategory&
-syn keyword axDomain  E04DGFA  e04dgfAnnaType
-syn keyword axDomain  E04FDFA  e04fdfAnnaType
-syn keyword axDomain  E04GCFA  e04gcfAnnaType
-syn keyword axDomain  E04JAFA  e04jafAnnaType
-syn keyword axDomain  E04MBFA  e04mbfAnnaType
-syn keyword axDomain  E04NAFA  e04nafAnnaType
-syn keyword axDomain  E04UCFA  e04ucfAnnaType
-syn keyword axDomain  EAB      ExtAlgBasis
-syn keyword axDomain  EFULS    ElementaryFunctionsUnivariateLaurentSeries
-syn keyword axDomain  EFUPXS   ElementaryFunctionsUnivariatePuiseuxSeries
-syn keyword axDomain  ELAGG-   ExtensibleLinearAggregate&
-syn keyword axDomain  ELEMFUN- ElementaryFunctionCategory&
-syn keyword axDomain  ELTAGG-  EltableAggregate&
-syn keyword axDomain  EMR      EuclideanModularRing
-syn keyword axDomain  EQ       Equation
-syn keyword axDomain  EQTBL    EqTable
-syn keyword axDomain  ES-      ExpressionSpace&
-syn keyword axDomain  EUCDOM-  EuclideanDomain&
-syn keyword axDomain  EVALAB-  Evalable&
-syn keyword axDomain  EXIT     Exit
-syn keyword axDomain  EXPEXPAN ExponentialExpansion
-syn keyword axDomain  EXPR     Expression
-syn keyword axDomain  EXPUPXS  ExponentialOfUnivariatePuiseuxSeries
-syn keyword axDomain  FAGROUP  FreeAbelianGroup
-syn keyword axDomain  FAMONOID FreeAbelianMonoid
-syn keyword axDomain  FAMR-    FiniteAbelianMonoidRing&
-syn keyword axDomain  FARRAY   FlexibleArray
-syn keyword axDomain  FAXF-    FiniteAlgebraicExtensionField&
-syn keyword axDomain  FC       FortranCode
-syn keyword axDomain  FCOMP    FourierComponent
-syn keyword axDomain  FDIV     FiniteDivisor
-syn keyword axDomain  FDIVCAT- FiniteDivisorCategory&
-syn keyword axDomain  FEVALAB- FullyEvalableOver&
-syn keyword axDomain  FEXPR    FortranExpression
-syn keyword axDomain  FF       FiniteField
-syn keyword axDomain  FFCAT-   FunctionFieldCategory&
-syn keyword axDomain  FFCG     FiniteFieldCyclicGroup
-syn keyword axDomain  FFCGP    FiniteFieldCyclicGroupExtensionByPolynomial
-syn keyword axDomain  FFCGX    FiniteFieldCyclicGroupExtension
-syn keyword axDomain  FFIELDC- FiniteFieldCategory&
-syn keyword axDomain  FFNB     FiniteFieldNormalBasis
-syn keyword axDomain  FFNBP    FiniteFieldNormalBasisExtensionByPolynomial
-syn keyword axDomain  FFNBX    FiniteFieldNormalBasisExtension
-syn keyword axDomain  FFP      FiniteFieldExtensionByPolynomial
-syn keyword axDomain  FFX      FiniteFieldExtension
-syn keyword axDomain  FGROUP   FreeGroup
-syn keyword axDomain  FIELD-   Field&
-syn keyword axDomain  FILE     File
-syn keyword axDomain  FINAALG- FiniteRankNonAssociativeAlgebra&
-syn keyword axDomain  FINRALG- FiniteRankAlgebra&
-syn keyword axDomain  FLAGG-   FiniteLinearAggregate&
-syn keyword axDomain  FLINEXP- FullyLinearlyExplicitRingOver&
-syn keyword axDomain  FLOAT    Float
-syn keyword axDomain  FM       FreeModule
-syn keyword axDomain  FM1      FreeModule1
-syn keyword axDomain  FMONOID  FreeMonoid
-syn keyword axDomain  FNAME    FileName
-syn keyword axDomain  FNLA     FreeNilpotentLie
-syn keyword axDomain  FORMULA  ScriptFormulaFormat
-syn keyword axDomain  FORTRAN  FortranProgram
-syn keyword axDomain  FPARFRAC FullPartialFractionExpansion
-syn keyword axDomain  FPC-     FieldOfPrimeCharacteristic&
-syn keyword axDomain  FPS-     FloatingPointSystem&
-syn keyword axDomain  FR       Factored
-syn keyword axDomain  FRAC     Fraction
-syn keyword axDomain  FRAMALG- FramedAlgebra&
-syn keyword axDomain  FRETRCT- FullyRetractableTo&
-syn keyword axDomain  FRIDEAL  FractionalIdeal
-syn keyword axDomain  FRMOD    FramedModule
-syn keyword axDomain  FRNAALG- FramedNonAssociativeAlgebra&
-syn keyword axDomain  FS-      FunctionSpace&
-syn keyword axDomain  FSAGG-   FiniteSetAggregate&
-syn keyword axDomain  FSERIES  FourierSeries
-syn keyword axDomain  FST      FortranScalarType
-syn keyword axDomain  FT       FortranType
-syn keyword axDomain  FTEM     FortranTemplate
-syn keyword axDomain  FUNCTION FunctionCalled
-syn keyword axDomain  GCDDOM-  GcdDomain&
-syn keyword axDomain  GCNAALG  GenericNonAssociativeAlgebra
-syn keyword axDomain  GDMP     GeneralDistributedMultivariatePolynomial
-syn keyword axDomain  GMODPOL  GeneralModulePolynomial
-syn keyword axDomain  GOPT     GuessOption
-syn keyword axDomain  GOPT0    GuessOptionFunctions0
-syn keyword axDomain  GPOLSET  GeneralPolynomialSet
-syn keyword axDomain  GRALG-   GradedAlgebra&
-syn keyword axDomain  GRIMAGE  GraphImage
-syn keyword axDomain  GRMOD-   GradedModule&
-syn keyword axDomain  GROUP-   Group&
-syn keyword axDomain  GSERIES  GeneralUnivariatePowerSeries
-syn keyword axDomain  GSTBL    GeneralSparseTable
-syn keyword axDomain  GTSET    GeneralTriangularSet
-syn keyword axDomain  HACKPI   Pi
-syn keyword axDomain  HASHTBL  HashTable
-syn keyword axDomain  HDMP     HomogeneousDistributedMultivariatePolynomial
-syn keyword axDomain  HDP      HomogeneousDirectProduct
-syn keyword axDomain  HEAP     Heap
-syn keyword axDomain  HELLFDIV HyperellipticFiniteDivisor
-syn keyword axDomain  HEXADEC  HexadecimalExpansion
-syn keyword axDomain  HOAGG-   HomogeneousAggregate&
-syn keyword axDomain  HTMLFORM HTMLFormat
-syn keyword axDomain  HYPCAT-  HyperbolicFunctionCategory&
-syn keyword axDomain  IAN      InnerAlgebraicNumber
-syn keyword axDomain  IARRAY1  IndexedOneDimensionalArray
-syn keyword axDomain  IARRAY2  IndexedTwoDimensionalArray
-syn keyword axDomain  IBITS    IndexedBits
-syn keyword axDomain  ICARD    IndexCard
-syn keyword axDomain  ICP      InfClsPt
-syn keyword axDomain  IDEAL    PolynomialIdeals
-syn keyword axDomain  IDPAG    IndexedDirectProductAbelianGroup
-syn keyword axDomain  IDPAM    IndexedDirectProductAbelianMonoid
-syn keyword axDomain  IDPO     IndexedDirectProductObject
-syn keyword axDomain  IDPOAM   IndexedDirectProductOrderedAbelianMonoid
-syn keyword axDomain  IDPOAMS  IndexedDirectProductOrderedAbelianMonoidSup
-syn keyword axDomain  IEVALAB- InnerEvalable&
-syn keyword axDomain  IFAMON   InnerFreeAbelianMonoid
-syn keyword axDomain  IFARRAY  IndexedFlexibleArray
-syn keyword axDomain  IFF      InnerFiniteField
-syn keyword axDomain  IIARRAY2 InnerIndexedTwoDimensionalArray
-syn keyword axDomain  ILIST    IndexedList
-syn keyword axDomain  IMATRIX  IndexedMatrix
-syn keyword axDomain  INDE     IndexedExponents
-syn keyword axDomain  INFCLSPS InfinitlyClosePointOverPseudoAlgebraicClosureOfFiniteField
-syn keyword axDomain  INFCLSPT InfinitlyClosePoint
-syn keyword axDomain  INFORM   InputForm
-syn keyword axDomain  INS-     IntegerNumberSystem&
-syn keyword axDomain  INT      Integer
-syn keyword axDomain  INTABL   InnerTable
-syn keyword axDomain  INTDOM-  IntegralDomain&
-syn keyword axDomain  INTFTBL  IntegrationFunctionsTable
-syn keyword axDomain  INTRVL   Interval
-syn keyword axDomain  IPADIC   InnerPAdicInteger
-syn keyword axDomain  IPF      InnerPrimeField
-syn keyword axDomain  IR       IntegrationResult
-syn keyword axDomain  ISTRING  IndexedString
-syn keyword axDomain  ISUPS    InnerSparseUnivariatePowerSeries
-syn keyword axDomain  ITAYLOR  InnerTaylorSeries
-syn keyword axDomain  ITUPLE   InfiniteTuple
-syn keyword axDomain  IVECTOR  IndexedVector
-syn keyword axDomain  IXAGG-   IndexedAggregate&
-syn keyword axDomain  JORDAN   AssociatedJordanAlgebra
-syn keyword axDomain  KAFILE   KeyedAccessFile
-syn keyword axDomain  KDAGG-   KeyedDictionary&
-syn keyword axDomain  KERNEL   Kernel
-syn keyword axDomain  LA       LocalAlgebra
-syn keyword axDomain  LALG-    LeftAlgebra&
-syn keyword axDomain  LAUPOL   LaurentPolynomial
-syn keyword axDomain  LEXP     LieExponentials
-syn keyword axDomain  LIB      Library
-syn keyword axDomain  LIE      AssociatedLieAlgebra
-syn keyword axDomain  LIECAT-  LieAlgebra&
-syn keyword axDomain  LIST     List
-syn keyword axDomain  LMDICT   ListMultiDictionary
-syn keyword axDomain  LMOPS    ListMonoidOps
-syn keyword axDomain  LNAGG-   LinearAggregate&
-syn keyword axDomain  LO       Localize
-syn keyword axDomain  LODO     LinearOrdinaryDifferentialOperator
-syn keyword axDomain  LODO1    LinearOrdinaryDifferentialOperator1
-syn keyword axDomain  LODO2    LinearOrdinaryDifferentialOperator2
-syn keyword axDomain  LODOCAT- LinearOrdinaryDifferentialOperatorCategory&
-syn keyword axDomain  LOGIC-   Logic&
-syn keyword axDomain  LPOLY    LiePolynomial
-syn keyword axDomain  LSAGG-   ListAggregate&
-syn keyword axDomain  LSQM     LieSquareMatrix
-syn keyword axDomain  LWORD    LyndonWord
-syn keyword axDomain  LZSTAGG- LazyStreamAggregate&
-syn keyword axDomain  M3D      ThreeDimensionalMatrix
-syn keyword axDomain  MAGMA    Magma
-syn keyword axDomain  MATCAT-  MatrixCategory&
-syn keyword axDomain  MATRIX   Matrix
-syn keyword axDomain  MCMPLX   MachineComplex
-syn keyword axDomain  MFLOAT   MachineFloat
-syn keyword axDomain  MINT     MachineInteger
-syn keyword axDomain  MKCHSET  MakeCachableSet
-syn keyword axDomain  MMLFORM  MathMLFormat
-syn keyword axDomain  MODFIELD ModularField
-syn keyword axDomain  MODMON   ModMonic
-syn keyword axDomain  MODMONOM ModuleMonomial
-syn keyword axDomain  MODOP    ModuleOperator
-syn keyword axDomain  MODRING  ModularRing
-syn keyword axDomain  MODULE-  Module&
-syn keyword axDomain  MOEBIUS  MoebiusTransform
-syn keyword axDomain  MONAD-   Monad&
-syn keyword axDomain  MONADWU- MonadWithUnit&
-syn keyword axDomain  MONOGEN- MonogenicAlgebra&
-syn keyword axDomain  MONOID-  Monoid&
-syn keyword axDomain  MPOLY    MultivariatePolynomial
-syn keyword axDomain  MRING    MonoidRing
-syn keyword axDomain  MSET     Multiset
-syn keyword axDomain  MYEXPR   MyExpression
-syn keyword axDomain  MYUP     MyUnivariatePolynomial
-syn keyword axDomain  NAALG-   NonAssociativeAlgebra&
-syn keyword axDomain  NARNG-   NonAssociativeRng&
-syn keyword axDomain  NASRING- NonAssociativeRing&
-syn keyword axDomain        Enumeration
-syn keyword axDomain        Mapping
-syn keyword axDomain        Record
-syn keyword axDomain        Union
-syn keyword axDomain  NIPROB   NumericalIntegrationProblem
-syn keyword axDomain  NNI      NonNegativeInteger
-syn keyword axDomain  NONE     None
-syn keyword axDomain  NOTTING  NottinghamGroup
-syn keyword axDomain  NSDPS    NeitherSparseOrDensePowerSeries
-syn keyword axDomain  NSMP     NewSparseMultivariatePolynomial
-syn keyword axDomain  NSUP     NewSparseUnivariatePolynomial
-syn keyword axDomain  OC-      OctonionCategory&
-syn keyword axDomain  OCT      Octonion
-syn keyword axDomain  ODEIFTBL ODEIntensityFunctionsTable
-syn keyword axDomain  ODEPROB  NumericalODEProblem
-syn keyword axDomain  ODP      OrderedDirectProduct
-syn keyword axDomain  ODPOL    OrderlyDifferentialPolynomial
-syn keyword axDomain  ODR      OrdinaryDifferentialRing
-syn keyword axDomain  ODVAR    OrderlyDifferentialVariable
-syn keyword axDomain  OFMONOID OrderedFreeMonoid
-syn keyword axDomain  OMCONN   OpenMathConnection
-syn keyword axDomain  OMDEV    OpenMathDevice
-syn keyword axDomain  OMENC    OpenMathEncoding
-syn keyword axDomain  OMERR    OpenMathError
-syn keyword axDomain  OMERRK   OpenMathErrorKind
-syn keyword axDomain  OMLO     OppositeMonogenicLinearOperator
-syn keyword axDomain  ONECOMP  OnePointCompletion
-syn keyword axDomain  OP       Operator
-syn keyword axDomain  OPTPROB  NumericalOptimizationProblem
-syn keyword axDomain  ORDCOMP  OrderedCompletion
-syn keyword axDomain  ORDRING- OrderedRing&
-syn keyword axDomain  ORDSET-  OrderedSet&
-syn keyword axDomain  OREPCAT- UnivariateSkewPolynomialCategory&
-syn keyword axDomain  ORESUP   SparseUnivariateSkewPolynomial
-syn keyword axDomain  OREUP    UnivariateSkewPolynomial
-syn keyword axDomain  OSI      OrdSetInts
-syn keyword axDomain  OUTFORM  OutputForm
-syn keyword axDomain  OVAR     OrderedVariableList
-syn keyword axDomain  OWP      OrdinaryWeightedPolynomials
-syn keyword axDomain  PACEXT   PseudoAlgebraicClosureOfAlgExtOfRationalNumber
-syn keyword axDomain  PACOFF   PseudoAlgebraicClosureOfFiniteField
-syn keyword axDomain  PACRAT   PseudoAlgebraicClosureOfRationalNumber
-syn keyword axDomain  PADIC    PAdicInteger
-syn keyword axDomain  PADICRAT PAdicRational
-syn keyword axDomain  PADICRC  PAdicRationalConstructor
-syn keyword axDomain  PALETTE  Palette
-syn keyword axDomain  PARPCURV ParametricPlaneCurve
-syn keyword axDomain  PARSCURV ParametricSpaceCurve
-syn keyword axDomain  PARSURF  ParametricSurface
-syn keyword axDomain  PATLRES  PatternMatchListResult
-syn keyword axDomain  PATRES   PatternMatchResult
-syn keyword axDomain  PATTERN  Pattern
-syn keyword axDomain  PBWLB    PoincareBirkhoffWittLyndonBasis
-syn keyword axDomain  PDEPROB  NumericalPDEProblem
-syn keyword axDomain  PDRING-  PartialDifferentialRing&
-syn keyword axDomain  PENDTREE PendantTree
-syn keyword axDomain  PERM     Permutation
-syn keyword axDomain  PERMGRP  PermutationGroup
-syn keyword axDomain  PF       PrimeField
-syn keyword axDomain  PFECAT-  PolynomialFactorizationExplicit&
-syn keyword axDomain  PFR      PartialFraction
-syn keyword axDomain  PI       PositiveInteger
-syn keyword axDomain  PLACES   Places
-syn keyword axDomain  PLACESPS PlacesOverPseudoAlgebraicClosureOfFiniteField
-syn keyword axDomain  PLCS     Plcs
-syn keyword axDomain  PLOT     Plot
-syn keyword axDomain  PLOT3D   Plot3D
-syn keyword axDomain  POINT    Point
-syn keyword axDomain  POLY     Polynomial
-syn keyword axDomain  POLYCAT- PolynomialCategory&
-syn keyword axDomain  PR       PolynomialRing
-syn keyword axDomain  PRIMARR  PrimitiveArray
-syn keyword axDomain  PRODUCT  Product
-syn keyword axDomain  PROJPL   ProjectivePlane
-syn keyword axDomain  PROJPLPS ProjectivePlaneOverPseudoAlgebraicClosureOfFiniteField
-syn keyword axDomain  PROJSP   ProjectiveSpace
-syn keyword axDomain  PRTITION Partition
-syn keyword axDomain  PSCAT-   PowerSeriesCategory&
-syn keyword axDomain  PSETCAT- PolynomialSetCategory&
-syn keyword axDomain  QALGSET  QuasiAlgebraicSet
-syn keyword axDomain  QEQUAT   QueryEquation
-syn keyword axDomain  QFCAT-   QuotientFieldCategory&
-syn keyword axDomain  QFORM    QuadraticForm
-syn keyword axDomain  QUAT     Quaternion
-syn keyword axDomain  QUATCAT- QuaternionCategory&
-syn keyword axDomain  QUEUE    Queue
-syn keyword axDomain  RADCAT-  RadicalCategory&
-syn keyword axDomain  RADFF    RadicalFunctionField
-syn keyword axDomain  RADIX    RadixExpansion
-syn keyword axDomain  RCAGG-   RecursiveAggregate&
-syn keyword axDomain  RCFIELD- RealClosedField&
-syn keyword axDomain  RECLOS   RealClosure
-syn keyword axDomain  REF      Reference
-syn keyword axDomain  REGSET   RegularTriangularSet
-syn keyword axDomain  RESRING  ResidueRing
-syn keyword axDomain  RESULT   Result
-syn keyword axDomain  RETRACT- RetractableTo&
-syn keyword axDomain  RGCHAIN  RegularChain
-syn keyword axDomain  RING-    Ring&
-syn keyword axDomain  RMATCAT- RectangularMatrixCategory&
-syn keyword axDomain  RMATRIX  RectangularMatrix
-syn keyword axDomain  RNS-     RealNumberSystem&
-syn keyword axDomain  ROIRC    RightOpenIntervalRootCharacterization
-syn keyword axDomain  ROMAN    RomanNumeral
-syn keyword axDomain  ROUTINE  RoutinesTable
-syn keyword axDomain  RPOLCAT- RecursivePolynomialCategory&
-syn keyword axDomain  RRCC-    RealRootCharacterizationCategory&
-syn keyword axDomain  RSETCAT- RegularTriangularSetCategory&
-syn keyword axDomain  RULE     RewriteRule
-syn keyword axDomain  RULECOLD RuleCalled
-syn keyword axDomain  RULESET  Ruleset
-syn keyword axDomain  SAE      SimpleAlgebraicExtension
-syn keyword axDomain  SAOS     SingletonAsOrderedSet
-syn keyword axDomain  SD       StochasticDifferential
-syn keyword axDomain  SDPOL    SequentialDifferentialPolynomial
-syn keyword axDomain  SDVAR    SequentialDifferentialVariable
-syn keyword axDomain  SEG      Segment
-syn keyword axDomain  SEGBIND  SegmentBinding
-syn keyword axDomain  SET      Set
-syn keyword axDomain  SETAGG-  SetAggregate&
-syn keyword axDomain  SETCAT-  SetCategory&
-syn keyword axDomain  SETMN    SetOfMIntegersInOneToN
-syn keyword axDomain  SEX      SExpression
-syn keyword axDomain  SEXOF    SExpressionOf
-syn keyword axDomain  SFORT    SimpleFortranProgram
-syn keyword axDomain  SGROUP-  SemiGroup&
-syn keyword axDomain  SHDP     SplitHomogeneousDirectProduct
-syn keyword axDomain  SINT     SingleInteger
-syn keyword axDomain  SMATCAT- SquareMatrixCategory&
-syn keyword axDomain  SMP      SparseMultivariatePolynomial
-syn keyword axDomain  SMTS     SparseMultivariateTaylorSeries
-syn keyword axDomain  SPACE3   ThreeSpace
-syn keyword axDomain  SPLNODE  SplittingNode
-syn keyword axDomain  SPLTREE  SplittingTree
-syn keyword axDomain  SQMATRIX SquareMatrix
-syn keyword axDomain  SRAGG-   StringAggregate&
-syn keyword axDomain  SREGSET  SquareFreeRegularTriangularSet
-syn keyword axDomain  STACK    Stack
-syn keyword axDomain  STAGG-   StreamAggregate&
-syn keyword axDomain  STBL     SparseTable
-syn keyword axDomain  STREAM   Stream
-syn keyword axDomain  STRING   String
-syn keyword axDomain  STRTBL   StringTable
-syn keyword axDomain  SUBSPACE SubSpace
-syn keyword axDomain  SUCH     SuchThat
-syn keyword axDomain  SULS     SparseUnivariateLaurentSeries
-syn keyword axDomain  SUP      SparseUnivariatePolynomial
-syn keyword axDomain  SUPEXPR  SparseUnivariatePolynomialExpressions
-syn keyword axDomain  SUPXS    SparseUnivariatePuiseuxSeries
-syn keyword axDomain  SUTS     SparseUnivariateTaylorSeries
-syn keyword axDomain  SWITCH   Switch
-syn keyword axDomain  SYMBOL   Symbol
-syn keyword axDomain  SYMPOLY  SymmetricPolynomial
-syn keyword axDomain  SYMS     TheSymbolTable
-syn keyword axDomain  SYMTAB   SymbolTable
-syn keyword axDomain  TABLE    Table
-syn keyword axDomain  TABLEAU  Tableau
-syn keyword axDomain  TBAGG-   TableAggregate&
-syn keyword axDomain  TEX      TexFormat
-syn keyword axDomain  TEXTFILE TextFile
-syn keyword axDomain  TRANFUN- TranscendentalFunctionCategory&
-syn keyword axDomain  TREE     Tree
-syn keyword axDomain  TRIGCAT- TrigonometricFunctionCategory&
-syn keyword axDomain  TS       TaylorSeries
-syn keyword axDomain  TSETCAT- TriangularSetCategory&
-syn keyword axDomain  TUBE     TubePlot
-syn keyword axDomain  TUPLE    Tuple
-syn keyword axDomain  U32VEC   U32Vector
-syn keyword axDomain  UFD-     UniqueFactorizationDomain&
-syn keyword axDomain  UFPS     UnivariateFormalPowerSeries
-syn keyword axDomain  ULS      UnivariateLaurentSeries
-syn keyword axDomain  ULSCCAT- UnivariateLaurentSeriesConstructorCategory&
-syn keyword axDomain  ULSCONS  UnivariateLaurentSeriesConstructor
-syn keyword axDomain  UNISEG   UniversalSegment
-syn keyword axDomain  UP       UnivariatePolynomial
-syn keyword axDomain  UPOLYC-  UnivariatePolynomialCategory&
-syn keyword axDomain  UPSCAT-  UnivariatePowerSeriesCategory&
-syn keyword axDomain  UPXS     UnivariatePuiseuxSeries
-syn keyword axDomain  UPXSCCA- UnivariatePuiseuxSeriesConstructorCategory&
-syn keyword axDomain  UPXSCONS UnivariatePuiseuxSeriesConstructor
-syn keyword axDomain  UPXSSING UnivariatePuiseuxSeriesWithExponentialSingularity
-syn keyword axDomain  URAGG-   UnaryRecursiveAggregate&
-syn keyword axDomain  UTS      UnivariateTaylorSeries
-syn keyword axDomain  UTSCAT-  UnivariateTaylorSeriesCategory&
-syn keyword axDomain  UTSZ     UnivariateTaylorSeriesCZero
-syn keyword axDomain  VARIABLE Variable
-syn keyword axDomain  VECTCAT- VectorCategory&
-syn keyword axDomain  VECTOR   Vector
-syn keyword axDomain  VIEW2D   TwoDimensionalViewport
-syn keyword axDomain  VIEW3D   ThreeDimensionalViewport
-syn keyword axDomain  VOID     Void
-syn keyword axDomain  VSPACE-  VectorSpace&
-syn keyword axDomain  WP       WeightedPolynomials
-syn keyword axDomain  WUTSET   WuWenTsunTriangularSet
-syn keyword axDomain  XDPOLY   XDistributedPolynomial
-syn keyword axDomain  XF-      ExtensionField&
-syn keyword axDomain  XPBWPOLY XPBWPolynomial
-syn keyword axDomain  XPOLY    XPolynomial
-syn keyword axDomain  XPR      XPolynomialRing
-syn keyword axDomain  XRPOLY   XRecursivePolynomial
-syn keyword axDomain  ZMOD     IntegerMod
+syn keyword axDomain A1AGG-
+syn keyword axDomain OneDimensionalArrayAggregate&
+syn keyword axDomain ABELGRP-
+syn keyword axDomain AbelianGroup&
+syn keyword axDomain ABELMON-
+syn keyword axDomain AbelianMonoid&
+syn keyword axDomain ABELSG-
+syn keyword axDomain AbelianSemiGroup&
+syn keyword axDomain ACF-
+syn keyword axDomain AlgebraicallyClosedField&
+syn keyword axDomain ACFS-
+syn keyword axDomain AlgebraicallyClosedFunctionSpace&
+syn keyword axDomain ACPLOT
+syn keyword axDomain PlaneAlgebraicCurvePlot
+syn keyword axDomain AFFPL
+syn keyword axDomain AffinePlane
+syn keyword axDomain AFFPLPS
+syn keyword axDomain AffinePlaneOverPseudoAlgebraicClosureOfFiniteField
+syn keyword axDomain AFFSP
+syn keyword axDomain AffineSpace
+syn keyword axDomain AGG-
+syn keyword axDomain Aggregate&
+syn keyword axDomain ALGEBRA-
+syn keyword axDomain Algebra&
+syn keyword axDomain ALGFF
+syn keyword axDomain AlgebraicFunctionField
+syn keyword axDomain ALGSC
+syn keyword axDomain AlgebraGivenByStructuralConstants
+syn keyword axDomain ALIST
+syn keyword axDomain AssociationList
+syn keyword axDomain AMR-
+syn keyword axDomain AbelianMonoidRing&
+syn keyword axDomain AN
+syn keyword axDomain AlgebraicNumber
+syn keyword axDomain ANON
+syn keyword axDomain AnonymousFunction
+syn keyword axDomain ANTISYM
+syn keyword axDomain AntiSymm
+syn keyword axDomain ANY
+syn keyword axDomain Any
+syn keyword axDomain ARR2CAT-
+syn keyword axDomain TwoDimensionalArrayCategory&
+syn keyword axDomain ARRAY1
+syn keyword axDomain OneDimensionalArray
+syn keyword axDomain ARRAY2
+syn keyword axDomain TwoDimensionalArray
+syn keyword axDomain ASP1
+syn keyword axDomain Asp1
+syn keyword axDomain ASP10
+syn keyword axDomain Asp10
+syn keyword axDomain ASP12
+syn keyword axDomain Asp12
+syn keyword axDomain ASP19
+syn keyword axDomain Asp19
+syn keyword axDomain ASP20
+syn keyword axDomain Asp20
+syn keyword axDomain ASP24
+syn keyword axDomain Asp24
+syn keyword axDomain ASP27
+syn keyword axDomain Asp27
+syn keyword axDomain ASP28
+syn keyword axDomain Asp28
+syn keyword axDomain ASP29
+syn keyword axDomain Asp29
+syn keyword axDomain ASP30
+syn keyword axDomain Asp30
+syn keyword axDomain ASP31
+syn keyword axDomain Asp31
+syn keyword axDomain ASP33
+syn keyword axDomain Asp33
+syn keyword axDomain ASP34
+syn keyword axDomain Asp34
+syn keyword axDomain ASP35
+syn keyword axDomain Asp35
+syn keyword axDomain ASP4
+syn keyword axDomain Asp4
+syn keyword axDomain ASP41
+syn keyword axDomain Asp41
+syn keyword axDomain ASP42
+syn keyword axDomain Asp42
+syn keyword axDomain ASP49
+syn keyword axDomain Asp49
+syn keyword axDomain ASP50
+syn keyword axDomain Asp50
+syn keyword axDomain ASP55
+syn keyword axDomain Asp55
+syn keyword axDomain ASP6
+syn keyword axDomain Asp6
+syn keyword axDomain ASP7
+syn keyword axDomain Asp7
+syn keyword axDomain ASP73
+syn keyword axDomain Asp73
+syn keyword axDomain ASP74
+syn keyword axDomain Asp74
+syn keyword axDomain ASP77
+syn keyword axDomain Asp77
+syn keyword axDomain ASP78
+syn keyword axDomain Asp78
+syn keyword axDomain ASP8
+syn keyword axDomain Asp8
+syn keyword axDomain ASP80
+syn keyword axDomain Asp80
+syn keyword axDomain ASP9
+syn keyword axDomain Asp9
+syn keyword axDomain ASTACK
+syn keyword axDomain ArrayStack
+syn keyword axDomain ATRIG-
+syn keyword axDomain ArcTrigonometricFunctionCategory&
+syn keyword axDomain ATTRBUT
+syn keyword axDomain AttributeButtons
+syn keyword axDomain AUTOMOR
+syn keyword axDomain Automorphism
+syn keyword axDomain BASTYPE-
+syn keyword axDomain BasicType&
+syn keyword axDomain BBTREE
+syn keyword axDomain BalancedBinaryTree
+syn keyword axDomain BFUNCT
+syn keyword axDomain BasicFunctions
+syn keyword axDomain BGAGG-
+syn keyword axDomain BagAggregate&
+syn keyword axDomain BINARY
+syn keyword axDomain BinaryExpansion
+syn keyword axDomain BINFILE
+syn keyword axDomain BinaryFile
+syn keyword axDomain BITS
+syn keyword axDomain Bits
+syn keyword axDomain BLHN
+syn keyword axDomain BlowUpWithHamburgerNoether
+syn keyword axDomain BLQT
+syn keyword axDomain BlowUpWithQuadTrans
+syn keyword axDomain BOOLEAN
+syn keyword axDomain Boolean
+syn keyword axDomain BOP
+syn keyword axDomain BasicOperator
+syn keyword axDomain BPADIC
+syn keyword axDomain BalancedPAdicInteger
+syn keyword axDomain BPADICRT
+syn keyword axDomain BalancedPAdicRational
+syn keyword axDomain BRAGG-
+syn keyword axDomain BinaryRecursiveAggregate&
+syn keyword axDomain BSD
+syn keyword axDomain BasicStochasticDifferential
+syn keyword axDomain BSTREE
+syn keyword axDomain BinarySearchTree
+syn keyword axDomain BTAGG-
+syn keyword axDomain BitAggregate&
+syn keyword axDomain BTCAT-
+syn keyword axDomain BinaryTreeCategory&
+syn keyword axDomain BTOURN
+syn keyword axDomain BinaryTournament
+syn keyword axDomain BTREE
+syn keyword axDomain BinaryTree
+syn keyword axDomain CARD
+syn keyword axDomain CardinalNumber
+syn keyword axDomain CARTEN
+syn keyword axDomain CartesianTensor
+syn keyword axDomain CCLASS
+syn keyword axDomain CharacterClass
+syn keyword axDomain CDFMAT
+syn keyword axDomain ComplexDoubleFloatMatrix
+syn keyword axDomain CDFVEC
+syn keyword axDomain ComplexDoubleFloatVector
+syn keyword axDomain CHAR
+syn keyword axDomain Character
+syn keyword axDomain CLAGG-
+syn keyword axDomain Collection&
+syn keyword axDomain CLIF
+syn keyword axDomain CliffordAlgebra
+syn keyword axDomain COLOR
+syn keyword axDomain Color
+syn keyword axDomain COMM
+syn keyword axDomain Commutator
+syn keyword axDomain COMPCAT-
+syn keyword axDomain ComplexCategory&
+syn keyword axDomain COMPLEX
+syn keyword axDomain Complex
+syn keyword axDomain COMPPROP
+syn keyword axDomain SubSpaceComponentProperty
+syn keyword axDomain CONTFRAC
+syn keyword axDomain ContinuedFraction
+syn keyword axDomain D01AJFA
+syn keyword axDomain d01ajfAnnaType
+syn keyword axDomain D01AKFA
+syn keyword axDomain d01akfAnnaType
+syn keyword axDomain D01ALFA
+syn keyword axDomain d01alfAnnaType
+syn keyword axDomain D01AMFA
+syn keyword axDomain d01amfAnnaType
+syn keyword axDomain D01ANFA
+syn keyword axDomain d01anfAnnaType
+syn keyword axDomain D01APFA
+syn keyword axDomain d01apfAnnaType
+syn keyword axDomain D01AQFA
+syn keyword axDomain d01aqfAnnaType
+syn keyword axDomain D01ASFA
+syn keyword axDomain d01asfAnnaType
+syn keyword axDomain D01FCFA
+syn keyword axDomain d01fcfAnnaType
+syn keyword axDomain D01GBFA
+syn keyword axDomain d01gbfAnnaType
+syn keyword axDomain D01TRNS
+syn keyword axDomain d01TransformFunctionType
+syn keyword axDomain D02BBFA
+syn keyword axDomain d02bbfAnnaType
+syn keyword axDomain D02BHFA
+syn keyword axDomain d02bhfAnnaType
+syn keyword axDomain D02CJFA
+syn keyword axDomain d02cjfAnnaType
+syn keyword axDomain D02EJFA
+syn keyword axDomain d02ejfAnnaType
+syn keyword axDomain D03EEFA
+syn keyword axDomain d03eefAnnaType
+syn keyword axDomain D03FAFA
+syn keyword axDomain d03fafAnnaType
+syn keyword axDomain DBASE
+syn keyword axDomain Database
+syn keyword axDomain DECIMAL
+syn keyword axDomain DecimalExpansion
+syn keyword axDomain DEQUEUE
+syn keyword axDomain Dequeue
+syn keyword axDomain DERHAM
+syn keyword axDomain DeRhamComplex
+syn keyword axDomain DFLOAT
+syn keyword axDomain DoubleFloat
+syn keyword axDomain DFMAT
+syn keyword axDomain DoubleFloatMatrix
+syn keyword axDomain DFVEC
+syn keyword axDomain DoubleFloatVector
+syn keyword axDomain DHMATRIX
+syn keyword axDomain DenavitHartenbergMatrix
+syn keyword axDomain DIAGG-
+syn keyword axDomain Dictionary&
+syn keyword axDomain DIFEXT-
+syn keyword axDomain DifferentialExtension&
+syn keyword axDomain DIFRING-
+syn keyword axDomain DifferentialRing&
+syn keyword axDomain DIOPS-
+syn keyword axDomain DictionaryOperations&
+syn keyword axDomain DIRPCAT-
+syn keyword axDomain DirectProductCategory&
+syn keyword axDomain DIRPROD
+syn keyword axDomain DirectProduct
+syn keyword axDomain DIRRING
+syn keyword axDomain DirichletRing
+syn keyword axDomain DIV
+syn keyword axDomain Divisor
+syn keyword axDomain DIVRING-
+syn keyword axDomain DivisionRing&
+syn keyword axDomain DLIST
+syn keyword axDomain DataList
+syn keyword axDomain DMP
+syn keyword axDomain DistributedMultivariatePolynomial
+syn keyword axDomain DPMM
+syn keyword axDomain DirectProductMatrixModule
+syn keyword axDomain DPMO
+syn keyword axDomain DirectProductModule
+syn keyword axDomain DPOLCAT-
+syn keyword axDomain DifferentialPolynomialCategory&
+syn keyword axDomain DROPT
+syn keyword axDomain DrawOption
+syn keyword axDomain DSMP
+syn keyword axDomain DifferentialSparseMultivariatePolynomial
+syn keyword axDomain DSTREE
+syn keyword axDomain DesingTree
+syn keyword axDomain DVARCAT-
+syn keyword axDomain DifferentialVariableCategory&
+syn keyword axDomain E04DGFA
+syn keyword axDomain e04dgfAnnaType
+syn keyword axDomain E04FDFA
+syn keyword axDomain e04fdfAnnaType
+syn keyword axDomain E04GCFA
+syn keyword axDomain e04gcfAnnaType
+syn keyword axDomain E04JAFA
+syn keyword axDomain e04jafAnnaType
+syn keyword axDomain E04MBFA
+syn keyword axDomain e04mbfAnnaType
+syn keyword axDomain E04NAFA
+syn keyword axDomain e04nafAnnaType
+syn keyword axDomain E04UCFA
+syn keyword axDomain e04ucfAnnaType
+syn keyword axDomain EAB
+syn keyword axDomain ExtAlgBasis
+syn keyword axDomain EFULS
+syn keyword axDomain ElementaryFunctionsUnivariateLaurentSeries
+syn keyword axDomain EFUPXS
+syn keyword axDomain ElementaryFunctionsUnivariatePuiseuxSeries
+syn keyword axDomain ELAGG-
+syn keyword axDomain ExtensibleLinearAggregate&
+syn keyword axDomain ELEMFUN-
+syn keyword axDomain ElementaryFunctionCategory&
+syn keyword axDomain ELTAGG-
+syn keyword axDomain EltableAggregate&
+syn keyword axDomain EMR
+syn keyword axDomain EuclideanModularRing
+syn keyword axDomain EQ
+syn keyword axDomain Equation
+syn keyword axDomain EQTBL
+syn keyword axDomain EqTable
+syn keyword axDomain ES-
+syn keyword axDomain ExpressionSpace&
+syn keyword axDomain EUCDOM-
+syn keyword axDomain EuclideanDomain&
+syn keyword axDomain EVALAB-
+syn keyword axDomain Evalable&
+syn keyword axDomain EXIT
+syn keyword axDomain Exit
+syn keyword axDomain EXPEXPAN
+syn keyword axDomain ExponentialExpansion
+syn keyword axDomain EXPR
+syn keyword axDomain Expression
+syn keyword axDomain EXPUPXS
+syn keyword axDomain ExponentialOfUnivariatePuiseuxSeries
+syn keyword axDomain FAGROUP
+syn keyword axDomain FreeAbelianGroup
+syn keyword axDomain FAMONOID
+syn keyword axDomain FreeAbelianMonoid
+syn keyword axDomain FAMR-
+syn keyword axDomain FiniteAbelianMonoidRing&
+syn keyword axDomain FARRAY
+syn keyword axDomain FlexibleArray
+syn keyword axDomain FAXF-
+syn keyword axDomain FiniteAlgebraicExtensionField&
+syn keyword axDomain FC
+syn keyword axDomain FortranCode
+syn keyword axDomain FCOMP
+syn keyword axDomain FourierComponent
+syn keyword axDomain FDIV
+syn keyword axDomain FiniteDivisor
+syn keyword axDomain FDIVCAT-
+syn keyword axDomain FiniteDivisorCategory&
+syn keyword axDomain FEVALAB-
+syn keyword axDomain FullyEvalableOver&
+syn keyword axDomain FEXPR
+syn keyword axDomain FortranExpression
+syn keyword axDomain FF
+syn keyword axDomain FiniteField
+syn keyword axDomain FFCAT-
+syn keyword axDomain FunctionFieldCategory&
+syn keyword axDomain FFCG
+syn keyword axDomain FiniteFieldCyclicGroup
+syn keyword axDomain FFCGP
+syn keyword axDomain FiniteFieldCyclicGroupExtensionByPolynomial
+syn keyword axDomain FFCGX
+syn keyword axDomain FiniteFieldCyclicGroupExtension
+syn keyword axDomain FFIELDC-
+syn keyword axDomain FiniteFieldCategory&
+syn keyword axDomain FFNB
+syn keyword axDomain FiniteFieldNormalBasis
+syn keyword axDomain FFNBP
+syn keyword axDomain FiniteFieldNormalBasisExtensionByPolynomial
+syn keyword axDomain FFNBX
+syn keyword axDomain FiniteFieldNormalBasisExtension
+syn keyword axDomain FFP
+syn keyword axDomain FiniteFieldExtensionByPolynomial
+syn keyword axDomain FFX
+syn keyword axDomain FiniteFieldExtension
+syn keyword axDomain FGROUP
+syn keyword axDomain FreeGroup
+syn keyword axDomain FIELD-
+syn keyword axDomain Field&
+syn keyword axDomain FILE
+syn keyword axDomain File
+syn keyword axDomain FINAALG-
+syn keyword axDomain FiniteRankNonAssociativeAlgebra&
+syn keyword axDomain FINRALG-
+syn keyword axDomain FiniteRankAlgebra&
+syn keyword axDomain FLAGG-
+syn keyword axDomain FiniteLinearAggregate&
+syn keyword axDomain FLINEXP-
+syn keyword axDomain FullyLinearlyExplicitRingOver&
+syn keyword axDomain FLOAT
+syn keyword axDomain Float
+syn keyword axDomain FM
+syn keyword axDomain FreeModule
+syn keyword axDomain FM1
+syn keyword axDomain FreeModule1
+syn keyword axDomain FMONOID
+syn keyword axDomain FreeMonoid
+syn keyword axDomain FNAME
+syn keyword axDomain FileName
+syn keyword axDomain FNLA
+syn keyword axDomain FreeNilpotentLie
+syn keyword axDomain FORMULA
+syn keyword axDomain ScriptFormulaFormat
+syn keyword axDomain FORTRAN
+syn keyword axDomain FortranProgram
+syn keyword axDomain FPARFRAC
+syn keyword axDomain FullPartialFractionExpansion
+syn keyword axDomain FPC-
+syn keyword axDomain FieldOfPrimeCharacteristic&
+syn keyword axDomain FPS-
+syn keyword axDomain FloatingPointSystem&
+syn keyword axDomain FR
+syn keyword axDomain Factored
+syn keyword axDomain FRAC
+syn keyword axDomain Fraction
+syn keyword axDomain FRAMALG-
+syn keyword axDomain FramedAlgebra&
+syn keyword axDomain FRETRCT-
+syn keyword axDomain FullyRetractableTo&
+syn keyword axDomain FRIDEAL
+syn keyword axDomain FractionalIdeal
+syn keyword axDomain FRMOD
+syn keyword axDomain FramedModule
+syn keyword axDomain FRNAALG-
+syn keyword axDomain FramedNonAssociativeAlgebra&
+syn keyword axDomain FS-
+syn keyword axDomain FunctionSpace&
+syn keyword axDomain FSAGG-
+syn keyword axDomain FiniteSetAggregate&
+syn keyword axDomain FSERIES
+syn keyword axDomain FourierSeries
+syn keyword axDomain FST
+syn keyword axDomain FortranScalarType
+syn keyword axDomain FT
+syn keyword axDomain FortranType
+syn keyword axDomain FTEM
+syn keyword axDomain FortranTemplate
+syn keyword axDomain FUNCTION
+syn keyword axDomain FunctionCalled
+syn keyword axDomain GCDDOM-
+syn keyword axDomain GcdDomain&
+syn keyword axDomain GCNAALG
+syn keyword axDomain GenericNonAssociativeAlgebra
+syn keyword axDomain GDMP
+syn keyword axDomain GeneralDistributedMultivariatePolynomial
+syn keyword axDomain GMODPOL
+syn keyword axDomain GeneralModulePolynomial
+syn keyword axDomain GOPT
+syn keyword axDomain GuessOption
+syn keyword axDomain GOPT0
+syn keyword axDomain GuessOptionFunctions0
+syn keyword axDomain GPOLSET
+syn keyword axDomain GeneralPolynomialSet
+syn keyword axDomain GRALG-
+syn keyword axDomain GradedAlgebra&
+syn keyword axDomain GRIMAGE
+syn keyword axDomain GraphImage
+syn keyword axDomain GRMOD-
+syn keyword axDomain GradedModule&
+syn keyword axDomain GROUP-
+syn keyword axDomain Group&
+syn keyword axDomain GSERIES
+syn keyword axDomain GeneralUnivariatePowerSeries
+syn keyword axDomain GSTBL
+syn keyword axDomain GeneralSparseTable
+syn keyword axDomain GTSET
+syn keyword axDomain GeneralTriangularSet
+syn keyword axDomain HACKPI
+syn keyword axDomain Pi
+syn keyword axDomain HASHTBL
+syn keyword axDomain HashTable
+syn keyword axDomain HDMP
+syn keyword axDomain HomogeneousDistributedMultivariatePolynomial
+syn keyword axDomain HDP
+syn keyword axDomain HomogeneousDirectProduct
+syn keyword axDomain HEAP
+syn keyword axDomain Heap
+syn keyword axDomain HELLFDIV
+syn keyword axDomain HyperellipticFiniteDivisor
+syn keyword axDomain HEXADEC
+syn keyword axDomain HexadecimalExpansion
+syn keyword axDomain HOAGG-
+syn keyword axDomain HomogeneousAggregate&
+syn keyword axDomain HTMLFORM
+syn keyword axDomain HTMLFormat
+syn keyword axDomain HYPCAT-
+syn keyword axDomain HyperbolicFunctionCategory&
+syn keyword axDomain IAN
+syn keyword axDomain InnerAlgebraicNumber
+syn keyword axDomain IARRAY1
+syn keyword axDomain IndexedOneDimensionalArray
+syn keyword axDomain IARRAY2
+syn keyword axDomain IndexedTwoDimensionalArray
+syn keyword axDomain IBITS
+syn keyword axDomain IndexedBits
+syn keyword axDomain ICARD
+syn keyword axDomain IndexCard
+syn keyword axDomain ICP
+syn keyword axDomain InfClsPt
+syn keyword axDomain IDEAL
+syn keyword axDomain PolynomialIdeals
+syn keyword axDomain IDPAG
+syn keyword axDomain IndexedDirectProductAbelianGroup
+syn keyword axDomain IDPAM
+syn keyword axDomain IndexedDirectProductAbelianMonoid
+syn keyword axDomain IDPO
+syn keyword axDomain IndexedDirectProductObject
+syn keyword axDomain IDPOAM
+syn keyword axDomain IndexedDirectProductOrderedAbelianMonoid
+syn keyword axDomain IDPOAMS
+syn keyword axDomain IndexedDirectProductOrderedAbelianMonoidSup
+syn keyword axDomain IEVALAB-
+syn keyword axDomain InnerEvalable&
+syn keyword axDomain IFAMON
+syn keyword axDomain InnerFreeAbelianMonoid
+syn keyword axDomain IFARRAY
+syn keyword axDomain IndexedFlexibleArray
+syn keyword axDomain IFF
+syn keyword axDomain InnerFiniteField
+syn keyword axDomain IIARRAY2
+syn keyword axDomain InnerIndexedTwoDimensionalArray
+syn keyword axDomain ILIST
+syn keyword axDomain IndexedList
+syn keyword axDomain IMATRIX
+syn keyword axDomain IndexedMatrix
+syn keyword axDomain INDE
+syn keyword axDomain IndexedExponents
+syn keyword axDomain INFCLSPS
+syn keyword axDomain InfinitlyClosePointOverPseudoAlgebraicClosureOfFiniteField
+syn keyword axDomain INFCLSPT
+syn keyword axDomain InfinitlyClosePoint
+syn keyword axDomain INFORM
+syn keyword axDomain InputForm
+syn keyword axDomain INS-
+syn keyword axDomain IntegerNumberSystem&
+syn keyword axDomain INT
+syn keyword axDomain Integer
+syn keyword axDomain INTABL
+syn keyword axDomain InnerTable
+syn keyword axDomain INTDOM-
+syn keyword axDomain IntegralDomain&
+syn keyword axDomain INTFTBL
+syn keyword axDomain IntegrationFunctionsTable
+syn keyword axDomain INTRVL
+syn keyword axDomain Interval
+syn keyword axDomain IPADIC
+syn keyword axDomain InnerPAdicInteger
+syn keyword axDomain IPF
+syn keyword axDomain InnerPrimeField
+syn keyword axDomain IR
+syn keyword axDomain IntegrationResult
+syn keyword axDomain ISTRING
+syn keyword axDomain IndexedString
+syn keyword axDomain ISUPS
+syn keyword axDomain InnerSparseUnivariatePowerSeries
+syn keyword axDomain ITAYLOR
+syn keyword axDomain InnerTaylorSeries
+syn keyword axDomain ITUPLE
+syn keyword axDomain InfiniteTuple
+syn keyword axDomain IVECTOR
+syn keyword axDomain IndexedVector
+syn keyword axDomain IXAGG-
+syn keyword axDomain IndexedAggregate&
+syn keyword axDomain JORDAN
+syn keyword axDomain AssociatedJordanAlgebra
+syn keyword axDomain KAFILE
+syn keyword axDomain KeyedAccessFile
+syn keyword axDomain KDAGG-
+syn keyword axDomain KeyedDictionary&
+syn keyword axDomain KERNEL
+syn keyword axDomain Kernel
+syn keyword axDomain LA
+syn keyword axDomain LocalAlgebra
+syn keyword axDomain LALG-
+syn keyword axDomain LeftAlgebra&
+syn keyword axDomain LAUPOL
+syn keyword axDomain LaurentPolynomial
+syn keyword axDomain LEXP
+syn keyword axDomain LieExponentials
+syn keyword axDomain LIB
+syn keyword axDomain Library
+syn keyword axDomain LIE
+syn keyword axDomain AssociatedLieAlgebra
+syn keyword axDomain LIECAT-
+syn keyword axDomain LieAlgebra&
+syn keyword axDomain LIST
+syn keyword axDomain List
+syn keyword axDomain LMDICT
+syn keyword axDomain ListMultiDictionary
+syn keyword axDomain LMOPS
+syn keyword axDomain ListMonoidOps
+syn keyword axDomain LNAGG-
+syn keyword axDomain LinearAggregate&
+syn keyword axDomain LO
+syn keyword axDomain Localize
+syn keyword axDomain LODO
+syn keyword axDomain LinearOrdinaryDifferentialOperator
+syn keyword axDomain LODO1
+syn keyword axDomain LinearOrdinaryDifferentialOperator1
+syn keyword axDomain LODO2
+syn keyword axDomain LinearOrdinaryDifferentialOperator2
+syn keyword axDomain LODOCAT-
+syn keyword axDomain LinearOrdinaryDifferentialOperatorCategory&
+syn keyword axDomain LOGIC-
+syn keyword axDomain Logic&
+syn keyword axDomain LPOLY
+syn keyword axDomain LiePolynomial
+syn keyword axDomain LSAGG-
+syn keyword axDomain ListAggregate&
+syn keyword axDomain LSQM
+syn keyword axDomain LieSquareMatrix
+syn keyword axDomain LWORD
+syn keyword axDomain LyndonWord
+syn keyword axDomain LZSTAGG-
+syn keyword axDomain LazyStreamAggregate&
+syn keyword axDomain M3D
+syn keyword axDomain ThreeDimensionalMatrix
+syn keyword axDomain MAGMA
+syn keyword axDomain Magma
+syn keyword axDomain MATCAT-
+syn keyword axDomain MatrixCategory&
+syn keyword axDomain MATRIX
+syn keyword axDomain Matrix
+syn keyword axDomain MCMPLX
+syn keyword axDomain MachineComplex
+syn keyword axDomain MFLOAT
+syn keyword axDomain MachineFloat
+syn keyword axDomain MINT
+syn keyword axDomain MachineInteger
+syn keyword axDomain MKCHSET
+syn keyword axDomain MakeCachableSet
+syn keyword axDomain MMLFORM
+syn keyword axDomain MathMLFormat
+syn keyword axDomain MODFIELD
+syn keyword axDomain ModularField
+syn keyword axDomain MODMON
+syn keyword axDomain ModMonic
+syn keyword axDomain MODMONOM
+syn keyword axDomain ModuleMonomial
+syn keyword axDomain MODOP
+syn keyword axDomain ModuleOperator
+syn keyword axDomain MODRING
+syn keyword axDomain ModularRing
+syn keyword axDomain MODULE-
+syn keyword axDomain Module&
+syn keyword axDomain MOEBIUS
+syn keyword axDomain MoebiusTransform
+syn keyword axDomain MONAD-
+syn keyword axDomain Monad&
+syn keyword axDomain MONADWU-
+syn keyword axDomain MonadWithUnit&
+syn keyword axDomain MONOGEN-
+syn keyword axDomain MonogenicAlgebra&
+syn keyword axDomain MONOID-
+syn keyword axDomain Monoid&
+syn keyword axDomain MPOLY
+syn keyword axDomain MultivariatePolynomial
+syn keyword axDomain MRING
+syn keyword axDomain MonoidRing
+syn keyword axDomain MSET
+syn keyword axDomain Multiset
+syn keyword axDomain MYEXPR
+syn keyword axDomain MyExpression
+syn keyword axDomain MYUP
+syn keyword axDomain MyUnivariatePolynomial
+syn keyword axDomain NAALG-
+syn keyword axDomain NonAssociativeAlgebra&
+syn keyword axDomain NARNG-
+syn keyword axDomain NonAssociativeRng&
+syn keyword axDomain NASRING-
+syn keyword axDomain NonAssociativeRing&
+syn keyword axDomain Enumeration
+syn keyword axDomain Mapping
+syn keyword axDomain Record
+syn keyword axDomain Union
+syn keyword axDomain NIPROB
+syn keyword axDomain NumericalIntegrationProblem
+syn keyword axDomain NNI
+syn keyword axDomain NonNegativeInteger
+syn keyword axDomain NONE
+syn keyword axDomain None
+syn keyword axDomain NOTTING
+syn keyword axDomain NottinghamGroup
+syn keyword axDomain NSDPS
+syn keyword axDomain NeitherSparseOrDensePowerSeries
+syn keyword axDomain NSMP
+syn keyword axDomain NewSparseMultivariatePolynomial
+syn keyword axDomain NSUP
+syn keyword axDomain NewSparseUnivariatePolynomial
+syn keyword axDomain OC-
+syn keyword axDomain OctonionCategory&
+syn keyword axDomain OCT
+syn keyword axDomain Octonion
+syn keyword axDomain ODEIFTBL
+syn keyword axDomain ODEIntensityFunctionsTable
+syn keyword axDomain ODEPROB
+syn keyword axDomain NumericalODEProblem
+syn keyword axDomain ODP
+syn keyword axDomain OrderedDirectProduct
+syn keyword axDomain ODPOL
+syn keyword axDomain OrderlyDifferentialPolynomial
+syn keyword axDomain ODR
+syn keyword axDomain OrdinaryDifferentialRing
+syn keyword axDomain ODVAR
+syn keyword axDomain OrderlyDifferentialVariable
+syn keyword axDomain OFMONOID
+syn keyword axDomain OrderedFreeMonoid
+syn keyword axDomain OMCONN
+syn keyword axDomain OpenMathConnection
+syn keyword axDomain OMDEV
+syn keyword axDomain OpenMathDevice
+syn keyword axDomain OMENC
+syn keyword axDomain OpenMathEncoding
+syn keyword axDomain OMERR
+syn keyword axDomain OpenMathError
+syn keyword axDomain OMERRK
+syn keyword axDomain OpenMathErrorKind
+syn keyword axDomain OMLO
+syn keyword axDomain OppositeMonogenicLinearOperator
+syn keyword axDomain ONECOMP
+syn keyword axDomain OnePointCompletion
+syn keyword axDomain OP
+syn keyword axDomain Operator
+syn keyword axDomain OPTPROB
+syn keyword axDomain NumericalOptimizationProblem
+syn keyword axDomain ORDCOMP
+syn keyword axDomain OrderedCompletion
+syn keyword axDomain ORDRING-
+syn keyword axDomain OrderedRing&
+syn keyword axDomain ORDSET-
+syn keyword axDomain OrderedSet&
+syn keyword axDomain OREPCAT-
+syn keyword axDomain UnivariateSkewPolynomialCategory&
+syn keyword axDomain ORESUP
+syn keyword axDomain SparseUnivariateSkewPolynomial
+syn keyword axDomain OREUP
+syn keyword axDomain UnivariateSkewPolynomial
+syn keyword axDomain OSI
+syn keyword axDomain OrdSetInts
+syn keyword axDomain OUTFORM
+syn keyword axDomain OutputForm
+syn keyword axDomain OVAR
+syn keyword axDomain OrderedVariableList
+syn keyword axDomain OWP
+syn keyword axDomain OrdinaryWeightedPolynomials
+syn keyword axDomain PACEXT
+syn keyword axDomain PseudoAlgebraicClosureOfAlgExtOfRationalNumber
+syn keyword axDomain PACOFF
+syn keyword axDomain PseudoAlgebraicClosureOfFiniteField
+syn keyword axDomain PACRAT
+syn keyword axDomain PseudoAlgebraicClosureOfRationalNumber
+syn keyword axDomain PADIC
+syn keyword axDomain PAdicInteger
+syn keyword axDomain PADICRAT
+syn keyword axDomain PAdicRational
+syn keyword axDomain PADICRC
+syn keyword axDomain PAdicRationalConstructor
+syn keyword axDomain PALETTE
+syn keyword axDomain Palette
+syn keyword axDomain PARPCURV
+syn keyword axDomain ParametricPlaneCurve
+syn keyword axDomain PARSCURV
+syn keyword axDomain ParametricSpaceCurve
+syn keyword axDomain PARSURF
+syn keyword axDomain ParametricSurface
+syn keyword axDomain PATLRES
+syn keyword axDomain PatternMatchListResult
+syn keyword axDomain PATRES
+syn keyword axDomain PatternMatchResult
+syn keyword axDomain PATTERN
+syn keyword axDomain Pattern
+syn keyword axDomain PBWLB
+syn keyword axDomain PoincareBirkhoffWittLyndonBasis
+syn keyword axDomain PDEPROB
+syn keyword axDomain NumericalPDEProblem
+syn keyword axDomain PDRING-
+syn keyword axDomain PartialDifferentialRing&
+syn keyword axDomain PENDTREE
+syn keyword axDomain PendantTree
+syn keyword axDomain PERM
+syn keyword axDomain Permutation
+syn keyword axDomain PERMGRP
+syn keyword axDomain PermutationGroup
+syn keyword axDomain PF
+syn keyword axDomain PrimeField
+syn keyword axDomain PFECAT-
+syn keyword axDomain PolynomialFactorizationExplicit&
+syn keyword axDomain PFR
+syn keyword axDomain PartialFraction
+syn keyword axDomain PI
+syn keyword axDomain PositiveInteger
+syn keyword axDomain PLACES
+syn keyword axDomain Places
+syn keyword axDomain PLACESPS
+syn keyword axDomain PlacesOverPseudoAlgebraicClosureOfFiniteField
+syn keyword axDomain PLCS
+syn keyword axDomain Plcs
+syn keyword axDomain PLOT
+syn keyword axDomain Plot
+syn keyword axDomain PLOT3D
+syn keyword axDomain Plot3D
+syn keyword axDomain POINT
+syn keyword axDomain Point
+syn keyword axDomain POLY
+syn keyword axDomain Polynomial
+syn keyword axDomain POLYCAT-
+syn keyword axDomain PolynomialCategory&
+syn keyword axDomain PR
+syn keyword axDomain PolynomialRing
+syn keyword axDomain PRIMARR
+syn keyword axDomain PrimitiveArray
+syn keyword axDomain PRODUCT
+syn keyword axDomain Product
+syn keyword axDomain PROJPL
+syn keyword axDomain ProjectivePlane
+syn keyword axDomain PROJPLPS
+syn keyword axDomain ProjectivePlaneOverPseudoAlgebraicClosureOfFiniteField
+syn keyword axDomain PROJSP
+syn keyword axDomain ProjectiveSpace
+syn keyword axDomain PRTITION
+syn keyword axDomain Partition
+syn keyword axDomain PSCAT-
+syn keyword axDomain PowerSeriesCategory&
+syn keyword axDomain PSETCAT-
+syn keyword axDomain PolynomialSetCategory&
+syn keyword axDomain QALGSET
+syn keyword axDomain QuasiAlgebraicSet
+syn keyword axDomain QEQUAT
+syn keyword axDomain QueryEquation
+syn keyword axDomain QFCAT-
+syn keyword axDomain QuotientFieldCategory&
+syn keyword axDomain QFORM
+syn keyword axDomain QuadraticForm
+syn keyword axDomain QUAT
+syn keyword axDomain Quaternion
+syn keyword axDomain QUATCAT-
+syn keyword axDomain QuaternionCategory&
+syn keyword axDomain QUEUE
+syn keyword axDomain Queue
+syn keyword axDomain RADCAT-
+syn keyword axDomain RadicalCategory&
+syn keyword axDomain RADFF
+syn keyword axDomain RadicalFunctionField
+syn keyword axDomain RADIX
+syn keyword axDomain RadixExpansion
+syn keyword axDomain RCAGG-
+syn keyword axDomain RecursiveAggregate&
+syn keyword axDomain RCFIELD-
+syn keyword axDomain RealClosedField&
+syn keyword axDomain RECLOS
+syn keyword axDomain RealClosure
+syn keyword axDomain REF
+syn keyword axDomain Reference
+syn keyword axDomain REGSET
+syn keyword axDomain RegularTriangularSet
+syn keyword axDomain RESRING
+syn keyword axDomain ResidueRing
+syn keyword axDomain RESULT
+syn keyword axDomain Result
+syn keyword axDomain RETRACT-
+syn keyword axDomain RetractableTo&
+syn keyword axDomain RGCHAIN
+syn keyword axDomain RegularChain
+syn keyword axDomain RING-
+syn keyword axDomain Ring&
+syn keyword axDomain RMATCAT-
+syn keyword axDomain RectangularMatrixCategory&
+syn keyword axDomain RMATRIX
+syn keyword axDomain RectangularMatrix
+syn keyword axDomain RNS-
+syn keyword axDomain RealNumberSystem&
+syn keyword axDomain ROIRC
+syn keyword axDomain RightOpenIntervalRootCharacterization
+syn keyword axDomain ROMAN
+syn keyword axDomain RomanNumeral
+syn keyword axDomain ROUTINE
+syn keyword axDomain RoutinesTable
+syn keyword axDomain RPOLCAT-
+syn keyword axDomain RecursivePolynomialCategory&
+syn keyword axDomain RRCC-
+syn keyword axDomain RealRootCharacterizationCategory&
+syn keyword axDomain RSETCAT-
+syn keyword axDomain RegularTriangularSetCategory&
+syn keyword axDomain RULE
+syn keyword axDomain RewriteRule
+syn keyword axDomain RULECOLD
+syn keyword axDomain RuleCalled
+syn keyword axDomain RULESET
+syn keyword axDomain Ruleset
+syn keyword axDomain SAE
+syn keyword axDomain SimpleAlgebraicExtension
+syn keyword axDomain SAOS
+syn keyword axDomain SingletonAsOrderedSet
+syn keyword axDomain SD
+syn keyword axDomain StochasticDifferential
+syn keyword axDomain SDPOL
+syn keyword axDomain SequentialDifferentialPolynomial
+syn keyword axDomain SDVAR
+syn keyword axDomain SequentialDifferentialVariable
+syn keyword axDomain SEG
+syn keyword axDomain Segment
+syn keyword axDomain SEGBIND
+syn keyword axDomain SegmentBinding
+syn keyword axDomain SET
+syn keyword axDomain Set
+syn keyword axDomain SETAGG-
+syn keyword axDomain SetAggregate&
+syn keyword axDomain SETCAT-
+syn keyword axDomain SetCategory&
+syn keyword axDomain SETMN
+syn keyword axDomain SetOfMIntegersInOneToN
+syn keyword axDomain SEX
+syn keyword axDomain SExpression
+syn keyword axDomain SEXOF
+syn keyword axDomain SExpressionOf
+syn keyword axDomain SFORT
+syn keyword axDomain SimpleFortranProgram
+syn keyword axDomain SGROUP-
+syn keyword axDomain SemiGroup&
+syn keyword axDomain SHDP
+syn keyword axDomain SplitHomogeneousDirectProduct
+syn keyword axDomain SINT
+syn keyword axDomain SingleInteger
+syn keyword axDomain SMATCAT-
+syn keyword axDomain SquareMatrixCategory&
+syn keyword axDomain SMP
+syn keyword axDomain SparseMultivariatePolynomial
+syn keyword axDomain SMTS
+syn keyword axDomain SparseMultivariateTaylorSeries
+syn keyword axDomain SPACE3
+syn keyword axDomain ThreeSpace
+syn keyword axDomain SPLNODE
+syn keyword axDomain SplittingNode
+syn keyword axDomain SPLTREE
+syn keyword axDomain SplittingTree
+syn keyword axDomain SQMATRIX
+syn keyword axDomain SquareMatrix
+syn keyword axDomain SRAGG-
+syn keyword axDomain StringAggregate&
+syn keyword axDomain SREGSET
+syn keyword axDomain SquareFreeRegularTriangularSet
+syn keyword axDomain STACK
+syn keyword axDomain Stack
+syn keyword axDomain STAGG-
+syn keyword axDomain StreamAggregate&
+syn keyword axDomain STBL
+syn keyword axDomain SparseTable
+syn keyword axDomain STREAM
+syn keyword axDomain Stream
+syn keyword axDomain STRING
+syn keyword axDomain String
+syn keyword axDomain STRTBL
+syn keyword axDomain StringTable
+syn keyword axDomain SUBSPACE
+syn keyword axDomain SubSpace
+syn keyword axDomain SUCH
+syn keyword axDomain SuchThat
+syn keyword axDomain SULS
+syn keyword axDomain SparseUnivariateLaurentSeries
+syn keyword axDomain SUP
+syn keyword axDomain SparseUnivariatePolynomial
+syn keyword axDomain SUPEXPR
+syn keyword axDomain SparseUnivariatePolynomialExpressions
+syn keyword axDomain SUPXS
+syn keyword axDomain SparseUnivariatePuiseuxSeries
+syn keyword axDomain SUTS
+syn keyword axDomain SparseUnivariateTaylorSeries
+syn keyword axDomain SWITCH
+syn keyword axDomain Switch
+syn keyword axDomain SYMBOL
+syn keyword axDomain Symbol
+syn keyword axDomain SYMPOLY
+syn keyword axDomain SymmetricPolynomial
+syn keyword axDomain SYMS
+syn keyword axDomain TheSymbolTable
+syn keyword axDomain SYMTAB
+syn keyword axDomain SymbolTable
+syn keyword axDomain TABLE
+syn keyword axDomain Table
+syn keyword axDomain TABLEAU
+syn keyword axDomain Tableau
+syn keyword axDomain TBAGG-
+syn keyword axDomain TableAggregate&
+syn keyword axDomain TEX
+syn keyword axDomain TexFormat
+syn keyword axDomain TEXTFILE
+syn keyword axDomain TextFile
+syn keyword axDomain TRANFUN-
+syn keyword axDomain TranscendentalFunctionCategory&
+syn keyword axDomain TREE
+syn keyword axDomain Tree
+syn keyword axDomain TRIGCAT-
+syn keyword axDomain TrigonometricFunctionCategory&
+syn keyword axDomain TS
+syn keyword axDomain TaylorSeries
+syn keyword axDomain TSETCAT-
+syn keyword axDomain TriangularSetCategory&
+syn keyword axDomain TUBE
+syn keyword axDomain TubePlot
+syn keyword axDomain TUPLE
+syn keyword axDomain Tuple
+syn keyword axDomain U32VEC
+syn keyword axDomain U32Vector
+syn keyword axDomain UFD-
+syn keyword axDomain UniqueFactorizationDomain&
+syn keyword axDomain UFPS
+syn keyword axDomain UnivariateFormalPowerSeries
+syn keyword axDomain ULS
+syn keyword axDomain UnivariateLaurentSeries
+syn keyword axDomain ULSCCAT-
+syn keyword axDomain UnivariateLaurentSeriesConstructorCategory&
+syn keyword axDomain ULSCONS
+syn keyword axDomain UnivariateLaurentSeriesConstructor
+syn keyword axDomain UNISEG
+syn keyword axDomain UniversalSegment
+syn keyword axDomain UP
+syn keyword axDomain UnivariatePolynomial
+syn keyword axDomain UPOLYC-
+syn keyword axDomain UnivariatePolynomialCategory&
+syn keyword axDomain UPSCAT-
+syn keyword axDomain UnivariatePowerSeriesCategory&
+syn keyword axDomain UPXS
+syn keyword axDomain UnivariatePuiseuxSeries
+syn keyword axDomain UPXSCCA-
+syn keyword axDomain UnivariatePuiseuxSeriesConstructorCategory&
+syn keyword axDomain UPXSCONS
+syn keyword axDomain UnivariatePuiseuxSeriesConstructor
+syn keyword axDomain UPXSSING
+syn keyword axDomain UnivariatePuiseuxSeriesWithExponentialSingularity
+syn keyword axDomain URAGG-
+syn keyword axDomain UnaryRecursiveAggregate&
+syn keyword axDomain UTS
+syn keyword axDomain UnivariateTaylorSeries
+syn keyword axDomain UTSCAT-
+syn keyword axDomain UnivariateTaylorSeriesCategory&
+syn keyword axDomain UTSZ
+syn keyword axDomain UnivariateTaylorSeriesCZero
+syn keyword axDomain VARIABLE
+syn keyword axDomain Variable
+syn keyword axDomain VECTCAT-
+syn keyword axDomain VectorCategory&
+syn keyword axDomain VECTOR
+syn keyword axDomain Vector
+syn keyword axDomain VIEW2D
+syn keyword axDomain TwoDimensionalViewport
+syn keyword axDomain VIEW3D
+syn keyword axDomain ThreeDimensionalViewport
+syn keyword axDomain VOID
+syn keyword axDomain Void
+syn keyword axDomain VSPACE-
+syn keyword axDomain VectorSpace&
+syn keyword axDomain WP
+syn keyword axDomain WeightedPolynomials
+syn keyword axDomain WUTSET
+syn keyword axDomain WuWenTsunTriangularSet
+syn keyword axDomain XDPOLY
+syn keyword axDomain XDistributedPolynomial
+syn keyword axDomain XF-
+syn keyword axDomain ExtensionField&
+syn keyword axDomain XPBWPOLY
+syn keyword axDomain XPBWPolynomial
+syn keyword axDomain XPOLY
+syn keyword axDomain XPolynomial
+syn keyword axDomain XPR
+syn keyword axDomain XPolynomialRing
+syn keyword axDomain XRPOLY
+syn keyword axDomain XRecursivePolynomial
+syn keyword axDomain ZMOD
+syn keyword axDomain IntegerMod
