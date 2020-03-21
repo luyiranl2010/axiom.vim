@@ -46,11 +46,11 @@ syn match axErrorParen	"\v[)]"		contained
 
 " Builtin categories, domains, packages and operations
 " Choose which words you want to be highlighted
-source $HOME/.vim/syntax/axiom/categories.vim  
-source $HOME/.vim/syntax/axiom/domains.vim
-source $HOME/.vim/syntax/axiom/packages.vim
-source $HOME/.vim/syntax/axiom/operations.vim
-source $HOME/.vim/syntax/axiom/commands.vim  
+source <sfile>:p:h/../axiom/categories.vim  
+source <sfile>:p:h/../axiom/domains.vim
+source <sfile>:p:h/../axiom/packages.vim
+source <sfile>:p:h/../axiom/operations.vim
+source <sfile>:p:h/../axiom/commands.vim  
 
 " A couple of handy shortcuts 
 syn match axCommand "\V)sys\m" 
